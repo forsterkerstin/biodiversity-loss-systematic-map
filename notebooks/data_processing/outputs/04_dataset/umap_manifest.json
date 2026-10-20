@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "grain": "one row per publication, joinable to dataset.parquet on UT (or id)",
+  "primary_key": "UT",
+  "columns": [
+    "id",
+    "UT",
+    "umap_x",
+    "umap_y"
+  ],
+  "rows": 605199,
+  "sha256": "7fb59fcda398ebaa27a7dc97e736a7c089fac1bbb3e431b3d5b9a551eb05ca60",
+  "size_bytes": 9204108,
+  "description": "Two-dimensional UMAP coordinates of title-and-abstract text embeddings (nomic-embed-text, 768 dimensions, prefix 'search_document: '), used for Supplementary Figures S7-S9.",
+  "provenance": "Precomputed layout, distributed as the fixed input of the semantic-map figures."
+}

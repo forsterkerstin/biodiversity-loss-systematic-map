@@ -1,0 +1,39 @@
+\begin{table}[H]
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{4pt}
+\centering
+\scriptsize
+\begin{tabular}{|>{\raggedright\arraybackslash}p{0.20\linewidth}
+                |>{\raggedright\arraybackslash}p{0.16\linewidth}
+                |>{\centering\arraybackslash}p{0.05\linewidth}
+                |>{\centering\arraybackslash}p{0.11\linewidth}
+                |>{\centering\arraybackslash}p{0.11\linewidth}
+                |>{\centering\arraybackslash}p{0.09\linewidth}
+                |>{\centering\arraybackslash}p{0.09\linewidth}|}
+\hline
+\textbf{Dimension} & \textbf{Label} & \textbf{$n$} & \textbf{Precision (\%)} & \textbf{Recall (\%)} & \textbf{F1 (\%)} & \textbf{$\kappa$} \\
+\hline
+Direct drivers & driver & 837 & 81.02 & 87.05 & 83.85 & 0.78 \\
+\hline
+\multirow{2}{*}{Threats} & threats\_l0 & 111 & 72.99 & 65.73 & 68.43 & 0.58 \\
+ & threats\_l1 & 97 & 63.58 & 56.13 & 57.52 & 0.52 \\
+\hline
+\multirow{3}{*}{Geographic scope} & region & 469 & 91.76 & 90.02 & 90.38 & 0.86 \\
+ & sub-region & 404 & 86.99 & 91.21 & 88.41 & 0.83 \\
+ & country & 402 & 91.05 & 77.08 & 82.97 & 0.77 \\
+\hline
+Ecosystem typology & realm & 839 & 95.85 & 89.73 & 92.61 & 0.86 \\
+\hline
+\multirow{6}{*}{Taxonomy} & kingdom & 146 & 100 & 97.96 & 98.90 & 0.94 \\
+ & phylum & 131 & 100 & 99.24 & 99.62 & - \\
+ & class & 126 & 94.46 & 96.09 & 94.95 & 0.25 \\
+ & order & 119 & 95.96 & 93.55 & 94.54 & 0.64 \\
+ & genus & 113 & 92.27 & 95.76 & 93.88 & 0.93 \\
+ & species & 125 & 59.77 & 58.29 & 57.95 & 0.58 \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Aggregate (five dimensions)}} & -- & \textbf{85.10} & \textbf{82.79} & \textbf{83.33} & \textbf{0.74} \\
+\hline
+\end{tabular}
+\caption{\textbf{Agreement between LLM and published reference labels.} Predictions of the final LLM configuration for the held-out test split of the Reference Coding Dataset compared with the expert full-text labels of the published evidence syntheses. Across the five dimensions, the LLM achieved a macro-averaged weighted precision of 85.10\%, recall of 82.79\%, F1 of 83.33\%, and Cohen's~$\kappa$ of 0.74. Weighted metrics were first averaged within each dimension and then macro-averaged across the five dimensions, including both levels of the IUCN threat classification; Cohen's~$\kappa$ was averaged over the fields for which it is defined. $n$ denotes records valid for scoring and varies by field because records without an expert label, and records with unclear or inapplicable labels (e.g., \textit{Unclear}, \textit{Not applicable}), are excluded by the scoring rules; records without a detailed-level threat prediction (broad level \textit{Unclear} or \textit{Other options}) are excluded from threats\_l1. The \textit{phylum} test data contain only one observed phylum (\textit{Chordata}); accordingly, performance may be overstated and Cohen's~$\kappa$ is not applicable (-).}
+\label{tab:cc2_coding}
+\end{table}

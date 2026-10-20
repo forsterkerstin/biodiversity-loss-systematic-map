@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "checked_at": "2026-07-16T15:55:52+00:00",
+  "checks": {
+    "crosswalk_rows": 257,
+    "crosswalk_unique_record_ids": true,
+    "entity_rows": 295,
+    "entity_keys_unique": true,
+    "indicator_rows": 1498,
+    "indicator_keys_unique": true,
+    "current_classification_rows": 265,
+    "historical_classification_rows": 8502,
+    "historical_fy_start": 1989,
+    "historical_fy_end": 2027,
+    "observation_rows": 9011494,
+    "coverage_rows": 398468,
+    "coverage_keys_unique": true,
+    "coverage_arithmetic_valid": true,
+    "missing_cells": 17287394,
+    "non_null_cells": 9011494,
+    "latest_observation_rows": 292013,
+    "latest_keys_unique": true,
+    "latest_years_in_range": true,
+    "bulk_api_indicator_sets_equal": true,
+    "public_mapping_records": 257,
+    "public_mapping_indicator_catalog": 1498,
+    "public_mapping_nested_indicator_values": 248534
+  }
+}

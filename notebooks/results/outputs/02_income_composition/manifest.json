@@ -1,0 +1,41 @@
+{
+  "result": "02_income_composition",
+  "method_details": {
+    "analysis_scope": {
+      "direction": "negative",
+      "years": "2000-2025 complete publication years",
+      "n_publications": 146630,
+      "n_countries": 213,
+      "income_groups": [
+        "Low income",
+        "Lower middle income",
+        "Upper middle income",
+        "High income"
+      ],
+      "n_threat_classes": 12
+    },
+    "composition": {
+      "grain": "UT x country x distinct threat",
+      "income_assignment": "World Bank income group matched to the publication year",
+      "fractional_weight_formula": "w_i,c,t = 1 / (number of countries_i x number of threats_i); weights sum to one per publication across all country-threat pairs",
+      "group_publication_counts": {
+        "Low income": 6956,
+        "Lower middle income": 23549,
+        "Upper middle income": 48122,
+        "High income": 73234
+      }
+    },
+    "contrasts": {
+      "extreme_group_comparison": "High income minus Low income, percentage points",
+      "bootstrap_replicates": 1000,
+      "bootstrap_seed": 20260719,
+      "bootstrap_unit": "publication; all country-resolved publications are resampled jointly"
+    }
+  },
+  "artifacts": {
+    "data/historical_income_publication_country_assignments.parquet": "Publication-country assignments with historical income groups; the shared evidence base of this result and of results notebook 05.",
+    "csv/income_group_threat_composition.csv": "Fractional threat composition within each historical income group.",
+    "csv/high_minus_low_income_bootstrap.csv": "High-income minus low-income threat-share contrasts with bootstrap intervals.",
+    "figures/income_composition.pdf": "Country coverage, income-group threat composition, and extreme-group contrast."
+  }
+}

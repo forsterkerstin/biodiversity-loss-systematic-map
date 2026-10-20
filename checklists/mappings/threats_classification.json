@@ -1,0 +1,580 @@
+{
+  "threats": {
+    "Residential & Commercial Development": {
+      "code": "1",
+      "examples": "Threats from permanent built-up human land uses with a substantial, compact footprint—cities, towns, industrial facilities, tourism infrastructure—that convert or degrade habitat through physical occupation, edge effects, and associated human presence. Use only when the footprint is compact and stationary. If the footprint is linear (roads, pipelines, powerlines) → Transportation & Service Corridors. If the mechanism is disturbance from human activity without permanent infrastructure → Human Intrusions & Disturbance. If land is converted to farming/aquaculture → Agriculture & Aquaculture. If the mechanism is water-flow alteration (dams) → Natural System Modifications > Dams & Water Management/Use",
+      "level1": {
+        "Housing & Urban Areas": {
+          "code": "1.1",
+          "examples": "Cities, towns, villages, suburbs, mixed residential areas. Includes peri-urban sprawl, vacation homes, land reclamation for housing. Boundary: if people live there, default here. If primarily industrial/commercial facility with no residential function, use Commercial & Industrial Areas. If dedicated recreation/tourism facility with substantial footprint, use Tourism & Recreation Areas."
+        },
+        "Commercial & Industrial Areas": {
+          "code": "1.2",
+          "examples": "Non-residential built areas with substantial footprint: factories, industrial parks, power plants, shopping centres, airports as facilities, landfills, military bases with permanent footprint. Boundary: dams/hydropower route to Dams & Water Management/Use. Oil/gas pipelines route to Utility & Service Lines."
+        },
+        "Tourism & Recreation Areas": {
+          "code": "1.3",
+          "examples": "Built tourism/recreation sites with substantial footprint: ski areas, resorts, golf courses, campgrounds with permanent infrastructure, sports fields. Boundary: if main issue is disturbance from recreational activity without permanent footprint, use Recreational Activities. Vacation housing primarily for living use Housing & Urban Areas; resort/tourism complex use here."
+        }
+      }
+    },
+    "Agriculture & Aquaculture": {
+      "code": "2",
+      "examples": "Threats from farming, ranching, plantation forestry, and aquaculture—i.e., the conversion or management of land/water for producing biological commodities. Covers habitat loss from cropland/pasture/plantation expansion and on-site grazing pressure. If the dominant mechanism described is chemical runoff, nutrient loading, or sedimentation rather than land conversion itself → Pollution > Agricultural & Forestry Effluents. If the activity is harvesting wild (unfarmed) organisms → Biological Resource Use. If forest is cleared explicitly to open agricultural land, classify here, not under Biological Resource Use > Logging & Wood Harvesting.",
+      "level1": {
+        "Annual & Perennial Non-Timber Crops": {
+          "code": "2.1",
+          "examples": "Croplands and orchards producing non-timber crops: cereal fields, rice paddies, sugarcane, oil palm, orchards, vineyards, coca. Guidance: if mixed subsistence cropping includes minor livestock, keep here rather than Livestock Farming & Ranching.",
+          "level2": {
+            "Shifting Agriculture": {
+              "code": "2.1.1",
+              "examples": "Use for swidden/shifting cultivation systems with rotational clearing and fallow (e.g., slash-and-burn plots that move over time). Key signal: cyclical clearing, short-term cropping, then abandonment/fallow and relocation."
+            },
+            "Small-holder Farming": {
+              "code": "2.1.2",
+              "examples": "Use for small-scale household or community farms (subsistence or local market), typically mosaics of small plots. Key signal: limited mechanization, small parcels, household-managed production."
+            },
+            "Agro-industry Farming": {
+              "code": "2.1.3",
+              "examples": "Use for large-scale commercial plantations/industrial agriculture (monocultures, estate plantations, corporate farms). Key signal: large contiguous areas, mechanized inputs, export-oriented or high-intensity production."
+            },
+            "Scale Unknown/Unrecorded": {
+              "code": "2.1.4",
+              "examples": "Use only when cropland/orchard conversion is evident but the production scale (shifting vs small-holder vs agro-industry) cannot be inferred from the text."
+            }
+          }
+        },
+        "Wood & Pulp Plantations": {
+          "code": "2.2",
+          "examples": "Planted tree stands for timber/fibre on rotation cycles. Key signal: plantation forestry, uniform stands, industrial pulp/timber production. Boundary: if multi-species harvesting in quasi-natural forest (selective logging, enrichment), use Logging & Wood Harvesting. If land conversion to agriculture rather than tree plantations, use Annual & Perennial Non-Timber Crops.",
+          "level2": {
+            "Small-holder Plantations": {
+              "code": "2.2.1",
+              "examples": "Use for small-scale plantation plots managed by households/small owners (limited area, local production)."
+            },
+            "Agro-industry Plantations": {
+              "code": "2.2.2",
+              "examples": "Use for industrial-scale plantation forestry (corporate/estate plantations supplying pulp/timber markets)."
+            },
+            "Scale Unknown/Unrecorded": {
+              "code": "2.2.3",
+              "examples": "Use only when plantation forestry is clear but scale cannot be determined."
+            }
+          }
+        },
+        "Livestock Farming & Ranching": {
+          "code": "2.3",
+          "examples": "Domestic terrestrial animal production: feedlots, barns, dairies (farming) or domestic/semi-domesticated animals roaming pastures (ranching/herding). Boundary: if livestock is minor component in subsistence cropping, use Annual & Perennial Non-Timber Crops. If domesticated livestock has gone effectively unmanaged and functions as invasive, consider Invasive Non-Native/Alien Species/Diseases.",
+          "level2": {
+            "Nomadic Grazing": {
+              "code": "2.3.1",
+              "examples": "Use for mobile pastoralism where herders move seasonally/episodically across landscapes (often following rainfall/forage pulses). Key signal: transhumance/nomadic movements; temporary presence."
+            },
+            "Small-holder Grazing, Ranching or Farming": {
+              "code": "2.3.2",
+              "examples": "Use for small-scale livestock keeping (household or local operations), including small ranches, village grazing systems, and small farms."
+            },
+            "Agro-industry Grazing, Ranching or Farming": {
+              "code": "2.3.3",
+              "examples": "Use for large-scale industrial livestock systems (large feedlots, intensive poultry/pork operations, extensive commercial ranching over large areas)."
+            },
+            "Scale Unknown/Unrecorded": {
+              "code": "2.3.4",
+              "examples": "Use only when livestock impacts are clear but the production scale/type cannot be inferred."
+            }
+          }
+        },
+        "Marine & Freshwater Aquaculture": {
+          "code": "2.4",
+          "examples": "Farming aquatic animals/plants in controlled systems: shrimp/fish farms, fish ponds, cage aquaculture, shellfish beds, algal farms. Boundary: if dominant impact is pollution/effluent discharge rather than farming activity itself, also consider Agricultural & Forestry Effluents.",
+          "level2": {
+            "Subsistence/Artisinal Aquaculture": {
+              "code": "2.4.1",
+              "examples": "Use for small-scale, local aquaculture systems (household ponds, small community mariculture) with limited industrial infrastructure."
+            },
+            "Industrial Aquaculture": {
+              "code": "2.4.2",
+              "examples": "Use for large-scale commercial aquaculture (industrial shrimp farms, large cage networks, intensive mariculture operations)."
+            },
+            "Scale Unknown/Unrecorded": {
+              "code": "2.4.3",
+              "examples": "Use only when aquaculture is evident but scale cannot be inferred."
+            }
+          }
+        }
+      }
+    },
+    "Energy Production & Mining": {
+      "code": "3",
+      "examples": "Exploration, development, production of petroleum and natural gas at extraction sites: oil wells, offshore platforms, fracking, well pads. Routing: pipelines/transmission corridors use Utility & Service Lines. Oil spills from extraction site use here; if focus is pollution impact from spill use Industrial & Military Effluents.",
+      "level1": {
+        "Oil & Gas Drilling": {
+          "code": "3.1",
+          "examples": "Use for exploration, development, and production activities for petroleum and natural gas at extraction sites.\n\nIncludes: oil wells, offshore drilling platforms, fracking sites, well pads, associated on-site infrastructure.\n\nRouting rules:\n- Pipelines and transmission corridors → 4.2 Utility & Service Lines.\n- Oil spills: if explicitly tied to the extraction site (well/platform) → here; if from pipeline transport or shipping/tankers → consider 4.2/4.3 or 9.2 depending on whether you want to emphasize the corridor vs the pollutant effluent.\n- If the text focuses on pollution impacts (e.g., chronic contamination) rather than the extraction footprint, 9.2 may be more direct."
+        },
+        "Mining & Quarrying": {
+          "code": "3.2",
+          "examples": "Extraction/processing of minerals/rocks: coal strip mines, underground mines, open pits, quarries, sand/salt extraction, alluvial mining, deep-sea mining. Boundary: if dominant mechanism is contaminated runoff/tailings rather than extraction footprint, also consider Industrial & Military Effluents."
+        },
+        "Renewable Energy": {
+          "code": "3.3",
+          "examples": "Development/operation of renewable energy installations: wind farms (including bird/bat collision), solar farms, geothermal plants, tidal/wave installations. Boundary: hydropower facilities use Dams & Water Management/Use. Transmission lines use Utility & Service Lines."
+        }
+      }
+    },
+    "Transportation & Service Corridors": {
+      "code": "4",
+      "examples": "Threats from linear infrastructure corridors—roads, railways, utility lines, shipping lanes, flight paths—and the vehicles/vessels using them. Key mechanisms: habitat fragmentation, barrier effects, wildlife mortality (collisions), facilitated access for other threats (poaching, invasive spread). If the issue is a compact facility (airport, port, rail yard) → Residential & Commercial Development > Commercial & Industrial Areas. If vehicles operate off established corridors (off-road recreation) → Human Intrusions & Disturbance > Recreational Activities.",
+      "level1": {
+        "Roads & Railroads": {
+          "code": "4.1",
+          "examples": "Surface transport corridors: highways, secondary roads, logging roads, bridges, railroads; roadkill/wildlife collisions, road-associated fencing. Boundary: off-road vehicles in natural areas not on established road use Recreational Activities. Small roads mainly servicing utility corridors use Utility & Service Lines."
+        },
+        "Utility & Service Lines": {
+          "code": "4.2",
+          "examples": "Linear corridors transporting energy/resources/services: powerlines, pipelines (oil/gas), communication towers; associated wildlife mortality (electrocution). Boundary: if primarily road/rail line with minor utilities, use Roads & Railroads. Oil spills from pipelines: use Industrial & Military Effluents if focus is pollution; use here if corridor itself is emphasised."
+        },
+        "Shipping Lanes": {
+          "code": "4.3",
+          "examples": "Water-based transport corridors and vessel impacts: canals, dredged navigation channels, ship strikes on wildlife (e.g. whale collisions), wake impacts, traffic-related disturbance. Boundary: ports/shipyards as facilities use Commercial & Industrial Areas."
+        },
+        "Flight Paths": {
+          "code": "4.4",
+          "examples": "Air/space transport routes: bird strikes, aircraft overflight disturbance when framed as transport routing. Boundary: airports as built facilities use Commercial & Industrial Areas."
+        }
+      }
+    },
+    "Biological Resource Use": {
+      "code": "5",
+      "examples": "Threats from consumptive harvest, killing, or removal of wild organisms—hunting, fishing, logging, plant gathering—including bycatch, persecution/control of unwanted species, and habitat damage from extraction methods (e.g., trawling). The defining feature is that biomass is removed from the system. If many people can use the resource without removing it (tourism, birdwatching) → Human Intrusions & Disturbance. If organisms are farmed rather than wild-harvested → Agriculture & Aquaculture.",
+      "level1": {
+        "Hunting & Collecting Terrestrial Animals": {
+          "code": "5.1",
+          "examples": "Killing/trapping terrestrial wild animals for commercial, subsistence, recreation, research, cultural reasons, or persecution/control; includes accidental mortality. Includes: hunting, trapping, trophy hunting, bushmeat, predator control. Also use when a study describes reintroduction or recovery of a commercially exploited or fur/game species, as prior overexploitation is the implied threat. Semi-aquatic taxa (otters, beavers, amphibians, waterfowl): generally here. Seals, whales, marine mammals, marine turtles: use Fishing & Harvesting Aquatic Resources.",
+          "level2": {
+            "Intentional Use (species being assessed is the target)": {
+              "code": "5.1.1",
+              "examples": "Use when the focal species (or its products) is deliberately targeted for harvest/collection (meat, trophies, specimens, eggs/honey/nests). Examples: bushmeat hunting, trophy hunting, beaver trapping, butterfly collecting."
+            },
+            "Unintentional effects (species being assessed is not the target)": {
+              "code": "5.1.2",
+              "examples": "Use when the focal species is harmed incidentally during hunting/collection of other species or through indirect harvest effects (e.g., non-target kills by hunting methods, dogs killing non-target wildlife, prey-base depletion due to overharvest of prey). Note: prey-base depletion is still a harvest-driven indirect effect; document it explicitly in notes."
+            },
+            "Persecution/Control": {
+              "code": "5.1.3",
+              "examples": "Use when animals are killed/removed because they are considered pests, dangerous, or undesirable (predator control, culling, superstition-driven killing, pest campaigns)."
+            },
+            "Motivation Unknown/Unrecorded": {
+              "code": "5.1.4",
+              "examples": "Use only when hunting/collection is present but the text does not allow deciding whether it is targeted harvest, incidental harm, or persecution/control."
+            }
+          }
+        },
+        "Gathering Terrestrial Plants": {
+          "code": "5.2",
+          "examples": "Harvesting wild terrestrial plants/fungi: wild mushrooms, medicinal plants, orchid/rattan collection. Boundary: trees/woody vegetation for timber/fibre/fuel use Logging & Wood Harvesting.",
+          "level2": {
+            "Intentional Use (species being assessed is the target)": {
+              "code": "5.2.1",
+              "examples": "Use when the focal plant/fungus species is directly targeted for collection/harvest (food, medicine, ornamentals, fibres)."
+            },
+            "Unintentional effects (species being assessed is not the target)": {
+              "code": "5.2.2",
+              "examples": "Use when non-target plants are damaged/removed incidentally by harvesting methods aimed at other species (trampling, uprooting, collateral removal)."
+            },
+            "Persecution/Control": {
+              "code": "5.2.3",
+              "examples": "Use when plants are removed/killed to control them or to manage other outcomes (e.g., removing host plants to combat disease, eradication campaigns)."
+            },
+            "Motivation Unknown/Unrecorded": {
+              "code": "5.2.4",
+              "examples": "Use only when plant removal is described but it is unclear whether it is targeted use, incidental harm, or control."
+            }
+          }
+        },
+        "Logging & Wood Harvesting": {
+          "code": "5.3",
+          "examples": "Harvesting trees/woody vegetation from natural/semi-natural systems: clearcutting, selective logging, fuelwood, charcoal, woodchips in quasi-natural forests. Boundary: clearing trees to convert land to agriculture use Agriculture & Aquaculture. Planted timber plantations on rotation use Wood & Pulp Plantations.",
+          "level2": {
+            "Intentional Use: subsistence/small scale (species being assessed is the target) [harvest]": {
+              "code": "5.3.1",
+              "examples": "Use when small-scale logging/fuelwood/charcoal harvest directly targets the focal woody species (local/subsistence or small market)."
+            },
+            "Intentional Use: large scale (species being assessed is the target) [harvest]": {
+              "code": "5.3.2",
+              "examples": "Use when industrial/commercial logging operations directly target the focal woody species (large concessions, mechanized logging, high-volume extraction)."
+            },
+            "Unintentional effects: subsistence/small scale (species being assessed is not the target) [harvest]": {
+              "code": "5.3.3",
+              "examples": "Use when small-scale wood harvesting targets other species but causes incidental damage/mortality to the focal species (collateral felling, damage during extraction, edge impacts)."
+            },
+            "Unintentional effects: large scale (species being assessed is not the target) [harvest]": {
+              "code": "5.3.4",
+              "examples": "Use when large-scale logging targets other species but incidentally harms the focal species through bycatch-like effects (collateral damage from roads/skid trails, felling damage, fragmentation within harvest blocks)."
+            },
+            "MotivationUnknown/Unrecorded": {
+              "code": "5.3.5",
+              "examples": "Use only when woody harvest/logging is clearly occurring but you cannot determine target vs incidental effects or scale."
+            }
+          }
+        },
+        "Fishing & Harvesting Aquatic Resources": {
+          "code": "5.4",
+          "examples": "Harvesting wild aquatic animals/plants (freshwater or marine): commercial, subsistence, recreation, persecution/control; includes bycatch. Semi-aquatic distinction: seals, whales, marine mammals, freshwater/marine turtles here; otters/beavers/amphibians/polar bears/penguins/waterfowl/seabirds generally use Hunting & Collecting Terrestrial Animals.",
+          "level2": {
+            "Intentional Use: subsistence/small scale (species being assessed is the target) [harvest]": {
+              "code": "5.4.1",
+              "examples": "Use when small-scale/artisanal/subsistence fishing/collecting directly targets the focal species (handlines, traps, spear fishing, shellfish/seaweed collection, local aquarium collection)."
+            },
+            "Intentional Use: large scale (species being assessed is the target) [harvest]": {
+              "code": "5.4.2",
+              "examples": "Use when industrial/commercial fleets directly target the focal species (commercial trawling/longlines, large-scale harvesting, industrial collection)."
+            },
+            "Unintentional effects: subsistence/small scale (species being assessed is not the target) [harvest]": {
+              "code": "5.4.3",
+              "examples": "Use when the focal species is harmed incidentally in small-scale fisheries (bycatch, non-target capture, destructive methods harming non-targets). Also use for prey-base depletion driven by small-scale harvest; note indirect mechanism explicitly."
+            },
+            "Unintentional effects: large scale (species being assessed is not the target) [harvest]": {
+              "code": "5.4.4",
+              "examples": "Use when the focal species is harmed incidentally in industrial fisheries (bycatch in trawls/longlines, discards, collateral capture). Also covers large-scale prey-base depletion; document indirect mechanism."
+            },
+            "Persecution/Control": {
+              "code": "5.4.5",
+              "examples": "Use when aquatic species are killed/removed because they are considered undesirable or for protecting fisheries/people (e.g., shark nets for beach protection, culling predators of commercial fish)."
+            },
+            "Motivation Unknown/Unrecorded": {
+              "code": "5.4.6",
+              "examples": "Use only when fishing/harvest is clear but you cannot determine targeted vs incidental vs persecution/control or scale."
+            }
+          }
+        }
+      }
+    },
+    "Human Intrusions & Disturbance": {
+      "code": "6",
+      "examples": "Threats from non-consumptive human activities that disturb species or habitats through presence, noise, trampling, or movement—typically without permanently converting habitat. Covers recreation, military exercises, and work-related intrusions. If the activity removes biological resources (hunting, logging, fishing) → Biological Resource Use. If the impact comes from permanent recreation/tourism facilities → Residential & Commercial Development > Tourism & Recreation Areas. If vehicles operate on established transport corridors → Transportation & Service Corridors",
+      "level1": {
+        "Recreational Activities": {
+          "code": "6.1",
+          "examples": "Recreation and leisure activities in natural environments without established transport corridors: off-road vehicles, motorboats/jet-skis, snowmobiles, dive boats, hiking, mountain biking, climbing, scuba diving, pets in recreation areas. Boundary: permanent recreation facilities use Tourism & Recreation Areas."
+        },
+        "War, Civil Unrest & Military Exercises": {
+          "code": "6.2",
+          "examples": "Military/paramilitary actions without single permanent facility: armed conflict, training exercises, minefields, military vehicles in field, defoliation, munitions testing. Boundary: permanent military bases use Commercial & Industrial Areas. If soldiers hunt wildlife, code hunting under Hunting & Collecting Terrestrial Animals."
+        },
+        "Work & Other Activities": {
+          "code": "6.3",
+          "examples": "Non-recreational, non-military human presence causing disturbance: research/monitoring, law enforcement patrols, illegal migration routes, vandalism, other work-related intrusions. Boundary: if primarily infrastructure development use Residential & Commercial Development or Transportation & Service Corridors; if primarily consumptive extraction use Biological Resource Use."
+        }
+      }
+    },
+    "Natural System Modifications": {
+      "code": "7",
+      "examples": "Threats from human actions that alter ecological processes—fire regimes, hydrological cycles, sediment dynamics—to manage systems or improve human welfare, rather than converting land use or building infrastructure. Includes dams, water abstraction, fire suppression/increase, and other ecosystem-process interventions. Agricultural land conversion → Agriculture & Aquaculture. Pollution as excess material/energy input → Pollution. Hydropower belongs here under Natural System Modifications > Dams & Water Management/Use, not under Energy Production & Mining > Renewable Energy.",
+      "level1": {
+        "Fire & Fire Suppression": {
+          "code": "7.1",
+          "examples": "Human-driven changes to fire frequency/intensity outside natural variation (too much fire, too little fire, altered seasonality). Boundary: fire used explicitly to clear NEW land for agriculture, classify conversion under Agriculture & Aquaculture. If text is about ignition sources and management choices affecting fire regime in natural systems, keep here.",
+          "level2": {
+            "Increase in Fire Frequency/Intensity": {
+              "code": "7.1.1",
+              "examples": "Use when human activities increase fire occurrence/severity beyond natural variation. Record ignition/source when known (escaped agricultural fires, arson, campfires, hunting fires, poor fire management)."
+            },
+            "Suppression in Fire Frequency/Intensity": {
+              "code": "7.1.2",
+              "examples": "Use when fire is reduced below natural variation due to suppression/exclusion. Record cause when known (suppression to protect homes/infrastructure, policy exclusion, inappropriate management)."
+            },
+            "Trend Unknown/Unrecorded": {
+              "code": "7.1.3",
+              "examples": "Use only when altered fire regime is mentioned but it is unclear whether the change is increased fire or suppressed fire."
+            }
+          }
+        },
+        "Dams & Water Management/Use": {
+          "code": "7.2",
+          "examples": "Changes to water flow patterns or hydrologic regime: surface/groundwater withdrawal, levees/dikes, channelization, wetland filling, artificial lakes, altered water temperature/volume releases, sediment trapping. Includes hydropower (not Renewable Energy) because defining mechanism is flow alteration. Boundary: dredging for navigation use Shipping Lanes.",
+          "level2": {
+            "Abstraction of Surface Water (domestic use)": {
+              "code": "7.2.1",
+              "examples": "Use for surface water withdrawals for household/municipal/domestic supply (drinking water, municipal consumption)."
+            },
+            "Abstraction of Surface Water (commercial use)": {
+              "code": "7.2.2",
+              "examples": "Use for surface water withdrawals for commercial/industrial activities (industry cooling/process water, commercial services)."
+            },
+            "Abstraction of Surface Water (agricultural use)": {
+              "code": "7.2.3",
+              "examples": "Use for surface water withdrawals for irrigation or other agricultural demands."
+            },
+            "Abstraction of Surface Water (unknown use)": {
+              "code": "7.2.4",
+              "examples": "Use when surface water abstraction is described but the end use (domestic/commercial/agricultural) cannot be determined."
+            },
+            "Abstraction of Ground Water (domestic use)": {
+              "code": "7.2.5",
+              "examples": "Use for groundwater pumping for household/municipal/domestic supply."
+            },
+            "Abstraction of Ground Water (commercial use)": {
+              "code": "7.2.6",
+              "examples": "Use for groundwater pumping for commercial/industrial activities."
+            },
+            "Abstraction of Ground Water (agricultural use)": {
+              "code": "7.2.7",
+              "examples": "Use for groundwater pumping for irrigation or other agricultural demands."
+            },
+            "Abstraction of Ground Water (unknown use)": {
+              "code": "7.2.8",
+              "examples": "Use when groundwater abstraction is described but the end use cannot be determined."
+            },
+            "Small Dams": {
+              "code": "7.2.9",
+              "examples": "Use for small dam construction/operation affecting flow regimes (size explicitly small or local, e.g., weirs, small impoundments) when described."
+            },
+            "Large Dams": {
+              "code": "7.2.10",
+              "examples": "Use for major dam construction/operation (large reservoirs, major river regulation, large impoundments) when described."
+            },
+            "Dams (size unknown)": {
+              "code": "7.2.11",
+              "examples": "Use when dams are clearly involved but size category cannot be inferred."
+            }
+          }
+        },
+        "Other Ecosystem Modifications": {
+          "code": "7.3",
+          "examples": "Other human management actions modifying ecosystem structure/processes: land reclamation, shoreline riprap, mowing/thinning, beach construction, removal of snags from streams, habitat abandonment leading to ecological change. Also use for deliberate reintroductions/translocations of native species within their native range when the ecological modification (altered population composition) is the study focus. Boundary: if built development footprint use Residential & Commercial Development. If key mechanism is pollution use Pollution."
+        }
+      }
+    },
+    "Invasive & Other Problematic Species, Genes & Diseases": {
+      "code": "8",
+      "examples": "Threats from organisms, pathogens, or genetic material that harm biodiversity after introduction, spread, or human-driven increase in abundance. Distinguishes non-native invasives, native species made problematic by human-altered conditions, introduced genetic material, unknown-origin problem species, viral/prion diseases, and diseases of unknown cause. If feral livestock is still periodically managed → Agriculture & Aquaculture > Livestock Farming & Ranching; if unmanaged and ecologically invasive → classify here under Invasive & Other Problematic Species, Genes & Diseases > Invasive Non-Native/Alien Species/Diseases.",
+      "level1": {
+        "Invasive Non-Native/Alien Species/Diseases": {
+          "code": "8.1",
+          "examples": "Harmful non-native plants, animals, pathogens introduced intentionally or accidentally by humans AND causing negative ecological impacts on native biodiversity. Includes feral domesticated animals when effectively unmanaged. Boundary: if livestock periodically managed/rounded up as production, use Livestock Farming & Ranching. If little/no management and function as feral/invasive, use here. NEVER use for deliberate reintroductions or translocations of native species within their native range.",
+          "level2": {
+            "Unspecified Species": {
+              "code": "8.1.1",
+              "examples": "Use only when the text clearly indicates a non-native invasive threat but does not identify the organism beyond a broad group (e.g., 'invasive plants', 'alien predators'). Record any clues (taxonomic group, pathway, location) in notes."
+            },
+            "Named Species": {
+              "code": "8.1.2",
+              "examples": "Use when the invasive organism/pathogen is identified (species or clearly defined group). Record the name(s) explicitly. Examples: zebra mussels, Dutch elm disease agent, chestnut blight agent, chytrid fungus, Miconia, feral cattle, introduced biocontrol species.\n\nBoundary rule for viruses/prions:\n- If the named disease agent is viral or prion-based, use 8.5 instead."
+            }
+          }
+        },
+        "Problematic Native Species/Diseases": {
+          "code": "8.2",
+          "examples": "Native taxa becoming unusually abundant or out-of-balance due to human-driven changes: native species outbreaks, native predators overabundant due to subsidies, native pathogens increasing due to altered conditions. Boundary: if origin clearly non-native use Invasive Non-Native/Alien Species/Diseases. If origin truly unknown use Problematic Species/Diseases of Unknown Origin.",
+          "level2": {
+            "Unspecified Species": {
+              "code": "8.2.1",
+              "examples": "Use only when the text indicates a problematic native taxon but does not name it beyond a broad group (e.g., 'native predators increased', 'native pathogen outbreak'). Record any details in notes."
+            },
+            "Named Species": {
+              "code": "8.2.2",
+              "examples": "Use when the problematic native organism/pathogen is identified. Record the name(s) explicitly and, when possible, the human-driven condition enabling the imbalance (e.g., reduced predators, eutrophication, habitat alteration)."
+            }
+          }
+        },
+        "Introduced Genetic Material": {
+          "code": "8.3",
+          "examples": "Human-altered or transported genetic material affecting native populations via genetic introgression: GMO crops/insects/trees, non-local seed stock in restoration, hatchery-origin fish affecting wild gene pools. Boundary: if non-native organism becomes invasive as a species use Invasive Non-Native/Alien Species/Diseases; if emphasis is genetic mixing/stocking altering gene pools use here."
+        },
+        "Problematic Species/Diseases of Unknown Origin": {
+          "code": "8.4",
+          "examples": "Harmful taxon/pathogen where origin cannot be determined (unclear whether non-native vs native). Use only after attempting to decide between Invasive Non-Native/Alien Species/Diseases and Problematic Native Species/Diseases.",
+          "level2": {
+            "Unspecified Species": {
+              "code": "8.4.1",
+              "examples": "Use only when the text indicates a problematic taxon of unknown origin but does not identify it beyond a broad group. Record any hints about origin/pathway in notes."
+            },
+            "Named Species": {
+              "code": "8.4.2",
+              "examples": "Use when the problematic taxon is identified but its origin (native vs non-native) is unresolved. Record the name(s) and the uncertainty explicitly in notes."
+            }
+          }
+        },
+        "Viral/Prion-induced Diseases": {
+          "code": "8.5",
+          "examples": "Disease threats where causative agent is specifically a virus or prion: West Nile Virus, Rabies, Foot-and-Mouth Disease, BSE/scrapie.",
+          "level2": {
+            "Unspecified \"Species\" (Disease)": {
+              "code": "8.5.1",
+              "examples": "Use only when the text indicates a likely viral/prion disease threat but does not name the agent beyond a broad label (e.g., 'avian virus'). Record symptoms/context in notes."
+            },
+            "Named \"Species\" (Disease)": {
+              "code": "8.5.2",
+              "examples": "Use when the specific virus/prion disease agent is named (e.g., West Nile Virus, Rabies Virus, Foot-and-Mouth Disease Virus; prion diseases such as scrapie, BSE). Record the agent name explicitly."
+            }
+          }
+        },
+        "Diseases of Unknown Cause": {
+          "code": "8.6",
+          "examples": "Disease syndrome described as a threat but pathogen/agent is unknown. Record disease name and symptoms. Recode once causative agent becomes known"
+        }
+      }
+    },
+    "Pollution": {
+      "code": "9",
+      "examples": "Threats from introduction of excess or exotic materials or energy into the environment. Covers domestic/urban wastewater, industrial/military effluents, agricultural/forestry runoff and agrochemicals, solid waste, airborne pollutants, and excess energy (light, heat, noise). When pollution originates from another threat category (pipeline spill, mining runoff), classify based on which mechanism the text emphasises: the infrastructure/extraction activity vs. the pollutant itself. Landfills as built facilities → Residential & Commercial Development > Commercial & Industrial Areas.",
+      "level1": {
+        "Domestic & Urban Waste Water": {
+          "code": "9.1",
+          "examples": "Sewage and urban runoff from housing/settlements: nutrients, toxic chemicals, sediments, pharmaceuticals from municipal systems or domestic sanitation failures. Boundary: if discharge primarily industrial/military use Industrial & Military Effluents. If runoff agricultural/forestry use Agricultural & Forestry Effluents",
+          "level2": {
+            "Sewage": {
+              "code": "9.1.1",
+              "examples": "Use for wastewater/sewage inputs from municipal systems or domestic sanitation failures. Examples: treatment plant discharge, leaking septic systems, untreated sewage, outhouses. Record source and pollutants when known."
+            },
+            "Run-off": {
+              "code": "9.1.2",
+              "examples": "Use for non-point urban runoff carrying pollutants/sediment. Examples: oil/sediment from roads, fertilizers/pesticides from lawns and golf courses, road salt. Record source and pollutants when known."
+            },
+            "Type Unknown/Unrecorded": {
+              "code": "9.1.3",
+              "examples": "Use only when domestic/urban wastewater pollution is present but it is unclear whether it is sewage vs runoff."
+            }
+          }
+        },
+        "Industrial & Military Effluents": {
+          "code": "9.2",
+          "examples": "Water-borne pollutants from industrial/military activities including mining and energy production: toxic chemicals, heavy metals, hydrocarbons, contaminated sediments, oil spills from pipelines when framed as pollution impact.",
+          "level2": {
+            "Oil Spills": {
+              "code": "9.2.1",
+              "examples": "Use for hydrocarbon releases into water/soil when framed as pollution. Examples: pipeline leaks, fuel tank leakage, oil contamination/PCBs in sediments. Record source/context when known."
+            },
+            "Seepage from Mining": {
+              "code": "9.2.2",
+              "examples": "Use for contaminated drainage/tailings seepage from mining operations (acid mine drainage, arsenic/heavy metals, tailings leaks). Record pollutants when known."
+            },
+            "Type Unknown/Unrecorded": {
+              "code": "9.2.3",
+              "examples": "Use when industrial/military pollution is present but does not fit the oil spill or mining seepage subtypes, or subtype is unclear. Examples: factory chemical discharges, illegal dumping, ship waste discharge, other industrial effluents. Record the described type/cause in notes."
+            }
+          }
+        },
+        "Agricultural & Forestry Effluents": {
+          "code": "9.3",
+          "examples": "Pollution/effluents from agriculture, forestry, aquaculture: nutrients, pesticides, sediments, agrochemicals. Boundary: wind-borne agricultural sediments or smoke use Air-Borne Pollutants. If primary issue is direct conversion to farming use Agriculture & Aquaculture.",
+          "level2": {
+            "Nutrient Loads": {
+              "code": "9.3.1",
+              "examples": "Use for nutrient enrichment from fertilizers/manure/aquaculture causing eutrophication or water quality change. Record source and nutrient type when known."
+            },
+            "Soil Erosion, Sedimentation": {
+              "code": "9.3.2",
+              "examples": "Use for increased sediment loads due to agriculture/forestry practices (overgrazing-driven erosion, conversion increasing runoff and sedimentation). Record source and pathway when known."
+            },
+            "Herbicides and Pesticides": {
+              "code": "9.3.3",
+              "examples": "Use for pesticide/herbicide contamination from agricultural/forestry/aquaculture practices (runoff, drift, residues). Record compound/source when known."
+            },
+            "Type Unknown/Unrecorded": {
+              "code": "9.3.4",
+              "examples": "Use only when agricultural/forestry effluent pollution is present but the specific subtype cannot be determined."
+            }
+          }
+        },
+        "Garbage & Solid Waste": {
+          "code": "9.4",
+          "examples": "Solid waste and debris in environment especially where entangling/ingesting wildlife: municipal litter, roadside trash, marine debris, fishing/boating waste. Boundary: landfills as facilities use Commercial & Industrial Areas. Toxic leachate/chemical seepage use Industrial & Military Effluents."
+        },
+        "Air-Borne Pollutants": {
+          "code": "9.5",
+          "examples": "Atmospheric pollution affecting biodiversity: acid deposition, smog, ozone formation, radioactive fallout, wind dispersion of pollutants/sediments, smoke when framed as air pollution input.",
+          "level2": {
+            "Acid Rain": {
+              "code": "9.5.1",
+              "examples": "Use for acid deposition or similar atmospheric deposition affecting ecosystems (acid rain, excess nitrogen deposition, radioactive fallout, wind-borne pollutant/sediment deposition, smoke when framed as deposition). Record sources/pollutants when known."
+            },
+            "Smog": {
+              "code": "9.5.2",
+              "examples": "Use for photochemical or industrial smog impacts (vehicle emissions, industrial fumes reacting with sunlight; coal-burning smog). Record source type when known."
+            },
+            "Ozone": {
+              "code": "9.5.3",
+              "examples": "Use for ground-level ozone impacts formed secondarily from NOx/hydrocarbons under sunlight (not directly emitted). Record source context (traffic/industry/biomass burning) when described."
+            },
+            "Type Unknown/Unrecorded": {
+              "code": "9.5.4",
+              "examples": "Use only when air-borne pollution is present but specific subtype cannot be determined."
+            }
+          }
+        },
+        "Excess Energy": {
+          "code": "9.6",
+          "examples": "Non-material pollution where excess energy inputs disturb wildlife/ecosystems: artificial light at night, anthropogenic heat, noise (including underwater noise from sonar/vessels). Examples: light pollution disorienting turtles/insects, thermal discharge from power plants, highway noise affecting bird communication.",
+          "level2": {
+            "Light Pollution": {
+              "code": "9.6.1",
+              "examples": "Use for artificial lighting that disrupts organisms/ecosystems (insect attraction, turtle disorientation, altered diel cycles). Record source (streetlights, buildings, coastal lighting) when known."
+            },
+            "Thermal Pollution": {
+              "code": "9.6.2",
+              "examples": "Use for anthropogenic heat inputs (heated water discharge from power plants, thermal effluent) and other heat-related energy inputs described as pollution."
+            },
+            "Noise Pollution": {
+              "code": "9.6.3",
+              "examples": "Use for anthropogenic noise disturbing wildlife (highways, aircraft noise, industrial noise, naval sonar affecting marine mammals). Record source/context when known."
+            },
+            "Type Unknown/Unrecorded": {
+              "code": "9.6.4",
+              "examples": "Use only when excess energy pollution is present but the type (light/thermal/noise) cannot be determined."
+            }
+          }
+        }
+      }
+    },
+    "Geological Events": {
+      "code": "10",
+      "examples": "Threats from catastrophic geological disturbances—volcanic eruptions, earthquakes/tsunamis, avalanches/landslides—when they cause conservation-relevant harm, especially where human activity has reduced ecosystem resilience. If the event is described as part of a normal disturbance regime without net negative impact, do not code as a threat",
+      "level1": {
+        "Volcanoes": {
+          "code": "10.1",
+          "examples": "Use for volcanic activity impacting biodiversity (eruptions, ashfall, lava flows, toxic gas emissions) when linked to habitat/species damage."
+        },
+        "Earthquakes/Tsunamis": {
+          "code": "10.2",
+          "examples": "Use for earthquakes and associated events (tsunamis, ground rupture) causing habitat destruction or species mortality."
+        },
+        "Avalanches/Landslides": {
+          "code": "10.3",
+          "examples": "Use for mass-wasting events (avalanches, landslides, mudslides) impacting habitats or populations."
+        }
+      }
+    },
+    "Climate Change & Severe Weather": {
+      "code": "11",
+      "examples": "Threats from long-term climatic shifts and severe weather events outside the natural range of variation, especially those linked to anthropogenic climate change. Covers habitat shifting/alteration (sea-level rise, coral bleaching, biome shifts), droughts, temperature extremes, storms/flooding, and other climate-driven impacts (e.g., phenological mismatch). Code when the study frames the event as driving biodiversity decline or impact beyond historical norms.",
+      "level1": {
+        "Habitat Shifting & Alteration": {
+          "code": "11.1",
+          "examples": "Climate change primarily alters habitat composition, location, or physical state: sea-level rise, desertification, tundra thaw, coral bleaching, shifting biomes/ecotones."
+        },
+        "Droughts": {
+          "code": "11.2",
+          "examples": "Prolonged rainfall deficits or water scarcity outside normal variation causing ecosystem degradation or species mortality."
+        },
+        "Temperature Extremes": {
+          "code": "11.3",
+          "examples": "Heat/cold extremes outside normal variation: heat waves, cold spells, ocean temperature anomalies, glacier/sea-ice disappearance."
+        },
+        "Storms & Flooding": {
+          "code": "11.4",
+          "examples": "Extreme precipitation/wind events outside normal variation: hurricanes, cyclones, tornadoes, hail/ice storms, blizzards, associated flooding/erosion."
+        },
+        "Other Impacts": {
+          "code": "11.5",
+          "examples": "Climate/severe-weather impacts not covered above: phenological mismatch, increased variability, compound events."
+        }
+      }
+    },
+    "Other Options": {
+      "code": "12",
+      "examples": "Use only for genuinely new/emerging threats that do not fit any category 1–11. Provide a clear description in notes so the scheme can be updated or the threat can be recoded later if a suitable category becomes available."
+    }
+  }
+}

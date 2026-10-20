@@ -1,0 +1,33 @@
+{
+  "analysis": "taxonomic attention versus described diversity, and its trajectory",
+  "anchor_publications": 171791,
+  "annual_output_growth_multiple": 7.079,
+  "bootstrap_replicates": 1000,
+  "chordate_share_pct": 34.8262,
+  "direction": "negative",
+  "figures": [
+    "04_taxonomic_and_geographic_gap.pdf"
+  ],
+  "geographic_benchmark_scope": "all IUCN comprehensively-assessed taxa (CR+EN+VU); evidence: the broad Chordates group (phylum Chordata)",
+  "geographic_benchmark_source": "Starnes et al. (2026), Zenodo doi:10.5281/zenodo.18348560",
+  "non_chordate_animal_share_pct": 19.706,
+  "prepared_grouping_rules_sha256": "42222c9b8afd127c9adb4d36bf208414b34e4d646c31b7bf31a622995cb2f477",
+  "prepared_schema_version": 4,
+  "primary_years": [
+    2000,
+    2025
+  ],
+  "random_seed": 20260731,
+  "reported_tables": [
+    "04_denominators.csv",
+    "04_attention_vs_described_diversity.csv",
+    "04_attention_trend_by_year.csv",
+    "04_attention_trend_summary.csv",
+    "04_starnes_threatened_species_by_region.csv",
+    "04_chordate_evidence_by_region.csv",
+    "04_evidence_vs_starnes_threatened_by_region.csv",
+    "04_chordate_evidence_regional_trend_starnes.csv",
+    "04_chordate_evidence_regional_trend_summary_starnes.csv"
+  ],
+  "universe_publications": 245168
+}

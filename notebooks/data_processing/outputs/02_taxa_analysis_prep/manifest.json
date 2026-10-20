@@ -1,0 +1,953 @@
+{
+  "artifacts": {
+    "gbif_broad_benchmark": "gbif_broad_benchmark.csv",
+    "taxa_matches": "taxa_matches.parquet",
+    "taxa_publications": "taxa_publications.parquet"
+  },
+  "audits": {
+    "auxiliary_labels": [
+      {
+        "column": "drivers",
+        "label": "Pollution",
+        "n_publications": 250827,
+        "source": "driver",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "drivers",
+        "label": "Land/sea use change",
+        "n_publications": 200347,
+        "source": "driver",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "drivers",
+        "label": "Climate Change",
+        "n_publications": 148545,
+        "source": "driver",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "drivers",
+        "label": "Direct Exploitation and Resource Extraction",
+        "n_publications": 95138,
+        "source": "driver",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "drivers",
+        "label": "Invasive alien species",
+        "n_publications": 67451,
+        "source": "driver",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "threat_l0",
+        "label": "Pollution",
+        "n_publications": 194253,
+        "source": "threats_l0",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "threat_l0",
+        "label": "Climate Change & Severe Weather",
+        "n_publications": 125556,
+        "source": "threats_l0",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "threat_l0",
+        "label": "Agriculture & Aquaculture",
+        "n_publications": 85838,
+        "source": "threats_l0",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "threat_l0",
+        "label": "Invasive & Other Problematic Species, Genes & Diseases",
+        "n_publications": 77615,
+        "source": "threats_l0",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "threat_l0",
+        "label": "Unclear",
+        "n_publications": 75834,
+        "source": "threats_l0",
+        "special_for_later_crosscuts": true
+      },
+      {
+        "column": "threat_l0",
+        "label": "Natural System Modifications",
+        "n_publications": 62464,
+        "source": "threats_l0",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "threat_l0",
+        "label": "Biological Resource Use",
+        "n_publications": 49136,
+        "source": "threats_l0",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "threat_l0",
+        "label": "Residential & Commercial Development",
+        "n_publications": 29241,
+        "source": "threats_l0",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "threat_l0",
+        "label": "Energy Production & Mining",
+        "n_publications": 16874,
+        "source": "threats_l0",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "threat_l0",
+        "label": "Transportation & Service Corridors",
+        "n_publications": 12852,
+        "source": "threats_l0",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "threat_l0",
+        "label": "Human Intrusions & Disturbance",
+        "n_publications": 10156,
+        "source": "threats_l0",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "threat_l0",
+        "label": "Other Options",
+        "n_publications": 7246,
+        "source": "threats_l0",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "realms",
+        "label": "Terrestrial",
+        "n_publications": 321480,
+        "source": "realm",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "realms",
+        "label": "Freshwater",
+        "n_publications": 138751,
+        "source": "realm",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "realms",
+        "label": "Marine",
+        "n_publications": 82241,
+        "source": "realm",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "realms",
+        "label": "Not Applicable",
+        "n_publications": 23635,
+        "source": "realm",
+        "special_for_later_crosscuts": true
+      },
+      {
+        "column": "realms",
+        "label": "Freshwater-Marine",
+        "n_publications": 18367,
+        "source": "realm",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "realms",
+        "label": "Freshwater-Terrestrial",
+        "n_publications": 7231,
+        "source": "realm",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "realms",
+        "label": "Marine-Terrestrial",
+        "n_publications": 6849,
+        "source": "realm",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "realms",
+        "label": "Subterranean",
+        "n_publications": 2734,
+        "source": "realm",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "realms",
+        "label": "Subterranean-Freshwater",
+        "n_publications": 2566,
+        "source": "realm",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "realms",
+        "label": "All realms",
+        "n_publications": 1118,
+        "source": "realm",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "realms",
+        "label": "Marine-Freshwater-Terrestrial",
+        "n_publications": 789,
+        "source": "realm",
+        "special_for_later_crosscuts": false
+      },
+      {
+        "column": "realms",
+        "label": "Subterranean-Marine",
+        "n_publications": 87,
+        "source": "realm",
+        "special_for_later_crosscuts": false
+      }
+    ],
+    "broad_group_reason": [
+      {
+        "broad_group_reason": "matched_rule",
+        "share_of_taxon_items_pct": 77.59071910507294,
+        "taxon_item_count": 812350
+      },
+      {
+        "broad_group_reason": "not_applicable",
+        "share_of_taxon_items_pct": 11.416490284325786,
+        "taxon_item_count": 119527
+      },
+      {
+        "broad_group_reason": "ineligible_match_status:rank_mismatch",
+        "share_of_taxon_items_pct": 3.985508630636275,
+        "taxon_item_count": 41727
+      },
+      {
+        "broad_group_reason": "ineligible_match_status:ambiguous",
+        "share_of_taxon_items_pct": 2.297968992366529,
+        "taxon_item_count": 24059
+      },
+      {
+        "broad_group_reason": "ineligible_match_status:no_match",
+        "share_of_taxon_items_pct": 2.109520061740187,
+        "taxon_item_count": 22086
+      },
+      {
+        "broad_group_reason": "ineligible_match_status:higher_rank",
+        "share_of_taxon_items_pct": 1.0215211926247985,
+        "taxon_item_count": 10695
+      },
+      {
+        "broad_group_reason": "ineligible_match_status:special_value",
+        "share_of_taxon_items_pct": 0.8897120064796631,
+        "taxon_item_count": 9315
+      },
+      {
+        "broad_group_reason": "accepted_insufficient_hierarchy",
+        "share_of_taxon_items_pct": 0.6345943715567238,
+        "taxon_item_count": 6644
+      },
+      {
+        "broad_group_reason": "ineligible_match_status:fuzzy_review",
+        "share_of_taxon_items_pct": 0.053965355197102494,
+        "taxon_item_count": 565
+      }
+    ],
+    "match_status": [
+      {
+        "eligible_for_grouping": true,
+        "match_status": "exact",
+        "share_of_taxon_items_pct": 77.93695700346143,
+        "taxon_item_count": 815975
+      },
+      {
+        "eligible_for_grouping": false,
+        "match_status": "special_value",
+        "share_of_taxon_items_pct": 12.306106776902446,
+        "taxon_item_count": 128841
+      },
+      {
+        "eligible_for_grouping": false,
+        "match_status": "rank_mismatch",
+        "share_of_taxon_items_pct": 3.985508630636275,
+        "taxon_item_count": 41727
+      },
+      {
+        "eligible_for_grouping": false,
+        "match_status": "ambiguous",
+        "share_of_taxon_items_pct": 2.297968992366529,
+        "taxon_item_count": 24059
+      },
+      {
+        "eligible_for_grouping": false,
+        "match_status": "no_match",
+        "share_of_taxon_items_pct": 2.1096155756431907,
+        "taxon_item_count": 22087
+      },
+      {
+        "eligible_for_grouping": false,
+        "match_status": "higher_rank",
+        "share_of_taxon_items_pct": 1.0215211926247985,
+        "taxon_item_count": 10695
+      },
+      {
+        "eligible_for_grouping": true,
+        "match_status": "fuzzy_accepted",
+        "share_of_taxon_items_pct": 0.2883564731682344,
+        "taxon_item_count": 3019
+      },
+      {
+        "eligible_for_grouping": false,
+        "match_status": "fuzzy_review",
+        "share_of_taxon_items_pct": 0.053965355197102494,
+        "taxon_item_count": 565
+      }
+    ],
+    "source_grain": [
+      {
+        "duplicated_UT": 0,
+        "grain": "one row per UT",
+        "missing_UT": 0,
+        "rows": 605199,
+        "source": "eligible merged corpus",
+        "unique_UT": 605199
+      },
+      {
+        "duplicated_UT": 0,
+        "grain": "one row per UT",
+        "missing_UT": 0,
+        "rows": 605199,
+        "source": "taxa-with-api",
+        "unique_UT": 605199
+      }
+    ],
+    "special_value": [
+      {
+        "article_exclusion_value": true,
+        "share_of_special_values_pct": 92.76627781529172,
+        "special_value": "Not applicable",
+        "taxon_item_count": 119521
+      },
+      {
+        "article_exclusion_value": true,
+        "share_of_special_values_pct": 7.173182449686047,
+        "special_value": "Unclear",
+        "taxon_item_count": 9242
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.003104601796012139,
+        "special_value": "Chironomidae",
+        "taxon_item_count": 4
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0015523008980060694,
+        "special_value": "Asteraceae",
+        "taxon_item_count": 2
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0015523008980060694,
+        "special_value": "Poaceae",
+        "taxon_item_count": 2
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0015523008980060694,
+        "special_value": "Fabaceae",
+        "taxon_item_count": 2
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0015523008980060694,
+        "special_value": "Symbiodiniaceae",
+        "taxon_item_count": 2
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0015523008980060694,
+        "special_value": "Unionidae",
+        "taxon_item_count": 2
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0015523008980060694,
+        "special_value": "Paraonidae",
+        "taxon_item_count": 2
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Amaranthaceae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Chenopodiaceae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Muribaculaceae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Geobacteraceae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Sphingomonadaceae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Dipterocarpaceae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Saprospiraceae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Cactaceae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Laridae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Not applicable}]}Oops I inserted a typo: the JSON must be valid. I need to correct: The closing quotes around Not applicable for canonical_name. It should be",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Nectriaceae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Not applicable}]} }? Wait there is extra characters. I must ensure proper JSON. The string above ended with a mismatched brace. Let me reconstruct correctly. The correct JSON should be exactly: {",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Cyprinidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Pangasiidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Ithomiini",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Caenogastropoda",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Teleostei",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Nitrospiraceae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Gerromorpha",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Ramphastidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Psittacidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Acariformes",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Acari",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Bathyarchaeia",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Methanocellaceae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Auchenorrhyncha",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Pimelodinae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Cossuridae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Comamonadaceae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Sapotaceae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Not applicable}",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Capitellidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Dorvilleidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Glyceridae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Nereididae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Oweniidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Spionidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Magelonidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Maldanidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Nephtyidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Onuphidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Paralacydoniidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Sabellidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Cirratulidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Proteaceae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Pocilloporidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Acroporidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Poritidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Parmeliaceae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Collemataceae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Michrochloa indica",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Blennidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Clinidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Gobiidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Lutjanidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Rajidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Sciaenidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Scyliorhinidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Sparidae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Not applicable}]}**Note: There is a formatting error in the final JSON above due to a stray brace. The correct JSON should be: {",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Amphiprioninae",
+        "taxon_item_count": 1
+      },
+      {
+        "article_exclusion_value": false,
+        "share_of_special_values_pct": 0.0007761504490030347,
+        "special_value": "Dreissenidae",
+        "taxon_item_count": 1
+      }
+    ]
+  },
+  "benchmark_audit": [
+    {
+      "metric": "GBIF backbone rows scanned",
+      "value": 7746724
+    },
+    {
+      "metric": "Species-rank rows",
+      "value": 4994322
+    },
+    {
+      "metric": "Accepted species-rank rows",
+      "value": 2614593
+    },
+    {
+      "metric": "Accepted species rows missing taxonID",
+      "value": 0
+    },
+    {
+      "metric": "Broad-group benchmark total",
+      "value": 2614593
+    }
+  ],
+  "broad_inclusion_counts": {
+    "Excluded: Not applicable only": 119503,
+    "Excluded: Unclear only": 4501,
+    "Excluded: accepted taxon but broad hierarchy unresolved": 4446,
+    "Excluded: mixed Not applicable and Unclear": 0,
+    "Excluded: no taxon item returned": 0,
+    "Excluded: reported taxon but no accepted benchmarkable match": 31949,
+    "Included: at least one benchmarkable broad group": 444800
+  },
+  "created_at_utc": "2026-10-02T18:47:15.095542+00:00",
+  "group_schemes": {
+    "analysis": {
+      "group_order": [
+        "Vertebrates",
+        "Arthropods",
+        "Other invertebrates",
+        "Vascular plants",
+        "Other or unspecified plants",
+        "Fungi",
+        "Bacteria & archaea",
+        "Other taxa",
+        "Unresolved"
+      ],
+      "resolved_publications": 444748,
+      "state_counts": {
+        "no_group": 155953,
+        "resolved": 444748,
+        "unresolved_only": 4498
+      }
+    },
+    "broad": {
+      "group_order": [
+        "Chordates",
+        "Non-chordate animals",
+        "Plants",
+        "Fungi",
+        "Other",
+        "Unresolved"
+      ],
+      "resolved_publications": 444800,
+      "state_counts": {
+        "no_group": 155953,
+        "resolved": 444800,
+        "unresolved_only": 4446
+      }
+    },
+    "detail": {
+      "group_order": [
+        "Mammals",
+        "Birds",
+        "Fishes",
+        "Reptiles & amphibians",
+        "Arthropods",
+        "Molluscs",
+        "Other invertebrates",
+        "Vascular plants",
+        "Non-vascular plants & Plantae algae",
+        "Plants\u2014phylum unspecified",
+        "Fungi",
+        "Bacteria & archaea",
+        "Other taxa",
+        "Unresolved"
+      ],
+      "resolved_publications": 444748,
+      "state_counts": {
+        "no_group": 155953,
+        "resolved": 444748,
+        "unresolved_only": 4498
+      }
+    }
+  },
+  "grouping_rules_sha256": "42222c9b8afd127c9adb4d36bf208414b34e4d646c31b7bf31a622995cb2f477",
+  "regrouped_from": {
+    "method": "Grouping rules re-applied to the stored LLM taxon names, GBIF match statuses, and accepted GBIF lineages in taxa_matches.parquet (regroup_prepared_taxa); non-grouping fields carried over unchanged.",
+    "previous_artifacts": {
+      "manifest.json": {
+        "sha256": "7913d6efb14d85a5ef4c74955e7627496c94b094ada908f6758f3cbdcbc45150",
+        "size_bytes": 28507
+      },
+      "taxa_matches.parquet": {
+        "sha256": "359c3f16b025d464498c76f7d9d51373557821c744fd841bf04a19caac4dbda4",
+        "size_bytes": 57120342
+      },
+      "taxa_publications.parquet": {
+        "sha256": "1c1bb7fdd4db8e363635464b3c7e3f7da4698e6d71c42e5385167f635e9c4c8c",
+        "size_bytes": 15627323
+      }
+    },
+    "previous_created_at_utc": "2026-08-15T00:28:25.124105+00:00",
+    "previous_grouping_rules_sha256": "c211129eb583ecf57cab705564db4763cb671b1e46c5dde13aae62b164902c8f"
+  },
+  "rows": {
+    "gbif_benchmark_groups": 6,
+    "taxa_matches": 605199,
+    "taxa_publications": 605199,
+    "taxon_items": 1046968,
+    "unique_UT": 605199
+  },
+  "schema_version": 4,
+  "sources": {
+    "gbif": {
+      "mtime_ns": 1790965736237801700,
+      "path": "data/gbif/curated/gbif_curated.csv",
+      "size_bytes": 1241777380
+    },
+    "gbif_eml": {
+      "mtime_ns": 1790965701515068600,
+      "path": "data/gbif/extracted/eml.xml",
+      "size_bytes": 13198
+    },
+    "taxa_group_mapping": {
+      "mtime_ns": 1787756107209764300,
+      "path": "checklists/mappings/taxa_broad_groups.json",
+      "size_bytes": 41372
+    }
+  },
+  "taxa_matches_audit": {
+    "match_status_counts": {
+      "ambiguous": 24059,
+      "exact": 815975,
+      "fuzzy_accepted": 3019,
+      "fuzzy_review": 565,
+      "higher_rank": 10695,
+      "no_match": 22087,
+      "rank_mismatch": 41727,
+      "special_value": 128841
+    },
+    "publications": 605199,
+    "resolved_lineage_rows": 8137051,
+    "source_lineage_rows": 8365025,
+    "taxon_items": 1046968,
+    "unique_UT": 605199
+  },
+  "taxonomy_rank_columns": [
+    "taxa_kingdom_labels",
+    "taxa_phylum_labels",
+    "taxa_class_labels",
+    "taxa_order_labels",
+    "taxa_family_labels",
+    "taxa_genus_labels",
+    "taxa_species_labels"
+  ],
+  "upstream_sources": {
+    "corpus_config": {
+      "mtime_ns": 1786751999007877259,
+      "path": "checklists/mappings/repo_config.json",
+      "size_bytes": 7091
+    },
+    "gbif": {
+      "mtime_ns": 1756135354000000000,
+      "path": "data/gbif/curated/gbif_curated.csv",
+      "size_bytes": 3673279014
+    },
+    "gbif_eml": {
+      "mtime_ns": 1755641390000000000,
+      "path": "data/gbif/extracted/eml.xml",
+      "size_bytes": 13198
+    },
+    "taxa": {
+      "mtime_ns": 1785487714488654980,
+      "path": "data/coding-taxa/all/taxa_all.parquet",
+      "size_bytes": 494348109
+    },
+    "taxa_group_mapping": {
+      "mtime_ns": 1786636661203281734,
+      "path": "checklists/mappings/taxa_broad_groups.json",
+      "size_bytes": 40211
+    },
+    "taxa_lineage": {
+      "mtime_ns": 1785487714492162530,
+      "path": "data/coding-taxa/all/taxa_lineages.parquet",
+      "size_bytes": 61397193
+    }
+  }
+}

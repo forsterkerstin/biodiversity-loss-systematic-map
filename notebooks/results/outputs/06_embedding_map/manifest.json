@@ -1,0 +1,42 @@
+{
+  "result": "06_embedding_map",
+  "method_details": {
+    "n_articles": 253081,
+    "n_corpus": 605199,
+    "filter": "s2_dir == 'negative' (biodiversity change direction)",
+    "layout": "precomputed UMAP of nomic-embed-text (768-d) title-and-abstract embeddings; see umap_manifest.json",
+    "taxa_top_n": 11,
+    "colour_rule": "most frequent label (by unique-document count) wins for multi-label articles",
+    "legend_share": "share of the records drawn in that map (its n) naming the label; may sum to more than 100%",
+    "taxa_scope": "the class map draws only articles with a class label",
+    "skipped_labels": [
+      "Not Applicable",
+      "empty list"
+    ],
+    "modes": {
+      "realm": {
+        "column": "realm",
+        "n_articles": 253081,
+        "n_unplotted": 12240
+      },
+      "direct_drivers": {
+        "column": "driver",
+        "n_articles": 253081,
+        "n_unplotted": 0
+      },
+      "class": {
+        "column": "taxa_class_labels",
+        "n_articles": 163227,
+        "n_unplotted": 0
+      }
+    }
+  },
+  "artifacts": {
+    "figures/umap_realm_253_081.pdf": "UMAP scatter coloured by realm.",
+    "figures/umap_direct_drivers_253_081.pdf": "UMAP scatter coloured by direct_drivers.",
+    "figures/umap_class_163_227.pdf": "UMAP scatter coloured by class.",
+    "csv/umap_realm_distribution.csv": "Label distribution for realm.",
+    "csv/umap_direct_drivers_distribution.csv": "Label distribution for direct_drivers.",
+    "csv/umap_class_distribution.csv": "Label distribution for class."
+  }
+}

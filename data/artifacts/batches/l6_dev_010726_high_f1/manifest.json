@@ -1,0 +1,16 @@
+{
+  "run_name": "l6_dev_010726_high_f1",
+  "created_at": "2026-06-21T11:47:46.527727Z",
+  "batch_size": 10000,
+  "total_documents": 148,
+  "data_dir": "data/artifacts/batches/l6_dev_010726_high_f1/data",
+  "request_dir": "data/artifacts/batches/l6_dev_010726_high_f1/request",
+  "batches": [
+    {
+      "data_path": "data/artifacts/batches/l6_dev_010726_high_f1/data/batch-l6_dev_010726_high_f1-001.jsonl",
+      "request_path": "data/artifacts/batches/l6_dev_010726_high_f1/request/batch-l6_dev_010726_high_f1-001-requests.jsonl",
+      "path": "data/artifacts/batches/l6_dev_010726_high_f1/data/batch-l6_dev_010726_high_f1-001.jsonl",
+      "count": 148
+    }
+  ]
+}

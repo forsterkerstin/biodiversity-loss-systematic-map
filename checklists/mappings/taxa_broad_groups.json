@@ -1,0 +1,1141 @@
+{
+  "schema_version": 3,
+  "description": "Ordered hierarchy rules for assigning every eligible matched LLM taxon item at three analysis resolutions. UT-level list columns are de-duplicated independently in configured order.",
+  "eligible_match_statuses": [
+    "exact",
+    "fuzzy_accepted"
+  ],
+  "not_applicable_values": [
+    "Not applicable",
+    "Not Applicable",
+    "Non Applicable"
+  ],
+  "clipart_note": "Small monochrome silhouettes for scientific figures. Organism images are representative examples, not exhaustive definitions of heterogeneous or combined groups. PhyloPic assets were selected under public-domain CC0 1.0 or PDM 1.0 terms; retain the supplied source and attribution metadata when publishing.",
+  "clipart_assets": {
+    "fish_carp": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Cyprinus carpio",
+      "asset_id": "25a76141-cca2-4b56-bd9f-9f5fdcd8efa1",
+      "page_url": "https://www.phylopic.org/images/25a76141-cca2-4b56-bd9f-9f5fdcd8efa1",
+      "svg_url": "https://images.phylopic.org/images/25a76141-cca2-4b56-bd9f-9f5fdcd8efa1/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/25a76141-cca2-4b56-bd9f-9f5fdcd8efa1/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Carlos Cano-Barbacil"
+    },
+    "butterfly_monarch": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Danaus plexippus",
+      "asset_id": "e6705593-91ba-4b6e-9dfd-515005e35fc6",
+      "page_url": "https://www.phylopic.org/images/e6705593-91ba-4b6e-9dfd-515005e35fc6",
+      "svg_url": "https://images.phylopic.org/images/e6705593-91ba-4b6e-9dfd-515005e35fc6/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/e6705593-91ba-4b6e-9dfd-515005e35fc6/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Andy Wilson"
+    },
+    "plant_arabidopsis": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Arabidopsis thaliana var. thaliana",
+      "asset_id": "7fb6a9de-0024-4e45-bb8d-1cc32fb2470f",
+      "page_url": "https://www.phylopic.org/images/7fb6a9de-0024-4e45-bb8d-1cc32fb2470f",
+      "svg_url": "https://images.phylopic.org/images/7fb6a9de-0024-4e45-bb8d-1cc32fb2470f/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/7fb6a9de-0024-4e45-bb8d-1cc32fb2470f/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Jake Warner"
+    },
+    "fungus_field_mushroom": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Agaricus campestris",
+      "asset_id": "afd875a3-815f-443b-9b93-3e5bedd9a7a3",
+      "page_url": "https://www.phylopic.org/images/afd875a3-815f-443b-9b93-3e5bedd9a7a3",
+      "svg_url": "https://images.phylopic.org/images/afd875a3-815f-443b-9b93-3e5bedd9a7a3/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/afd875a3-815f-443b-9b93-3e5bedd9a7a3/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": null
+    },
+    "protist_euglena": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Euglena gracilis",
+      "asset_id": "e5ad7dde-e8c9-44fc-94be-d07b67c17c1d",
+      "page_url": "https://www.phylopic.org/images/e5ad7dde-e8c9-44fc-94be-d07b67c17c1d",
+      "svg_url": "https://images.phylopic.org/images/e5ad7dde-e8c9-44fc-94be-d07b67c17c1d/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/e5ad7dde-e8c9-44fc-94be-d07b67c17c1d/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Arcadia Science"
+    },
+    "bee_honeybee": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Apis mellifera",
+      "asset_id": "956cf95f-9cbd-459b-a457-c80ba19877a4",
+      "page_url": "https://www.phylopic.org/images/956cf95f-9cbd-459b-a457-c80ba19877a4",
+      "svg_url": "https://images.phylopic.org/images/956cf95f-9cbd-459b-a457-c80ba19877a4/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/956cf95f-9cbd-459b-a457-c80ba19877a4/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Adrian Reich"
+    },
+    "jellyfish_atlantic_sea_nettle": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Chrysaora quinquecirrha",
+      "asset_id": "6f25228d-34f6-4a84-b52d-ce03d3fcd152",
+      "page_url": "https://www.phylopic.org/images/6f25228d-34f6-4a84-b52d-ce03d3fcd152",
+      "svg_url": "https://images.phylopic.org/images/6f25228d-34f6-4a84-b52d-ce03d3fcd152/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/6f25228d-34f6-4a84-b52d-ce03d3fcd152/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": null
+    },
+    "fern_common_polypody": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Polypodium vulgare",
+      "asset_id": "ee243ea1-c311-4fa2-b730-928b80117515",
+      "page_url": "https://www.phylopic.org/images/ee243ea1-c311-4fa2-b730-928b80117515",
+      "svg_url": "https://images.phylopic.org/images/ee243ea1-c311-4fa2-b730-928b80117515/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/ee243ea1-c311-4fa2-b730-928b80117515/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": null
+    },
+    "bacterium_salmonella": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Salmonella enterica",
+      "asset_id": "0698c39f-9ab0-44e0-ba70-2faefaf22216",
+      "page_url": "https://www.phylopic.org/images/0698c39f-9ab0-44e0-ba70-2faefaf22216",
+      "svg_url": "https://images.phylopic.org/images/0698c39f-9ab0-44e0-ba70-2faefaf22216/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/0698c39f-9ab0-44e0-ba70-2faefaf22216/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": null
+    },
+    "mammal_wolf": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Canis lupus",
+      "asset_id": "5036f260-5a0d-42c5-a0bd-9eb0729e54e0",
+      "page_url": "https://www.phylopic.org/images/5036f260-5a0d-42c5-a0bd-9eb0729e54e0",
+      "svg_url": "https://images.phylopic.org/images/5036f260-5a0d-42c5-a0bd-9eb0729e54e0/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/5036f260-5a0d-42c5-a0bd-9eb0729e54e0/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Steven Traver"
+    },
+    "bird_common_nighthawk": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Chordeiles minor",
+      "asset_id": "0b787dde-fb79-4e1a-ab58-da3fa04d96dc",
+      "page_url": "https://www.phylopic.org/images/0b787dde-fb79-4e1a-ab58-da3fa04d96dc",
+      "svg_url": "https://images.phylopic.org/images/0b787dde-fb79-4e1a-ab58-da3fa04d96dc/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/0b787dde-fb79-4e1a-ab58-da3fa04d96dc/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Andy Wilson"
+    },
+    "frog_common": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Rana temporaria",
+      "asset_id": "e73c5c1c-7727-4687-bf0b-3957343edfc3",
+      "page_url": "https://www.phylopic.org/images/e73c5c1c-7727-4687-bf0b-3957343edfc3",
+      "svg_url": "https://images.phylopic.org/images/e73c5c1c-7727-4687-bf0b-3957343edfc3/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/e73c5c1c-7727-4687-bf0b-3957343edfc3/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Beth Reinke"
+    },
+    "snail_roman": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Helix pomatia",
+      "asset_id": "d8f236a7-e36b-4313-9162-8f2dead31a8a",
+      "page_url": "https://www.phylopic.org/images/d8f236a7-e36b-4313-9162-8f2dead31a8a",
+      "svg_url": "https://images.phylopic.org/images/d8f236a7-e36b-4313-9162-8f2dead31a8a/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/d8f236a7-e36b-4313-9162-8f2dead31a8a/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Martin R. Smith, from photo by Jürgen Schoner"
+    },
+    "moss_sphagnum": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Sphagnum fallax",
+      "asset_id": "c9433947-a86d-453e-817a-7aba27fb453f",
+      "page_url": "https://www.phylopic.org/images/c9433947-a86d-453e-817a-7aba27fb453f",
+      "svg_url": "https://images.phylopic.org/images/c9433947-a86d-453e-817a-7aba27fb453f/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/c9433947-a86d-453e-817a-7aba27fb453f/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": null
+    },
+    "animal_cat": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Felis silvestris catus",
+      "asset_id": "81e1f778-d176-47ba-a0c4-01f54e1157a9",
+      "page_url": "https://www.phylopic.org/images/81e1f778-d176-47ba-a0c4-01f54e1157a9/felis-silvestris-catus",
+      "svg_url": "https://images.phylopic.org/images/81e1f778-d176-47ba-a0c4-01f54e1157a9/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/81e1f778-d176-47ba-a0c4-01f54e1157a9/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Mozillian"
+    },
+    "flower_hibiscus": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Hibiscus",
+      "asset_id": "21d61af7-a191-4561-9dff-d106ac4f53f7",
+      "page_url": "https://www.phylopic.org/images/21d61af7-a191-4561-9dff-d106ac4f53f7/hibiscus",
+      "svg_url": "https://images.phylopic.org/images/21d61af7-a191-4561-9dff-d106ac4f53f7/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/21d61af7-a191-4561-9dff-d106ac4f53f7/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Rachel Wooliver"
+    },
+    "monocot_tofieldia": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Tofieldia calyculata",
+      "asset_id": "04a6f357-2d4f-4aef-907a-d6dbacd59853",
+      "page_url": "https://www.phylopic.org/images/04a6f357-2d4f-4aef-907a-d6dbacd59853/tofieldia-calyculata",
+      "svg_url": "https://images.phylopic.org/images/04a6f357-2d4f-4aef-907a-d6dbacd59853/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/04a6f357-2d4f-4aef-907a-d6dbacd59853/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Guillaume Dera"
+    },
+    "grass_poa": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Poa pratensis",
+      "asset_id": "e6e580fb-56e4-4896-8b65-d11858ca7e90",
+      "page_url": "https://www.phylopic.org/images/e6e580fb-56e4-4896-8b65-d11858ca7e90/poa-pratensis",
+      "svg_url": "https://images.phylopic.org/images/e6e580fb-56e4-4896-8b65-d11858ca7e90/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/e6e580fb-56e4-4896-8b65-d11858ca7e90/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Guillaume Dera"
+    },
+    "tree_ginkgo": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Ginkgo biloba",
+      "asset_id": "798f147f-fe2a-4227-8805-228f5aea9bb6",
+      "page_url": "https://www.phylopic.org/images/798f147f-fe2a-4227-8805-228f5aea9bb6/ginkgo-biloba",
+      "svg_url": "https://images.phylopic.org/images/798f147f-fe2a-4227-8805-228f5aea9bb6/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/798f147f-fe2a-4227-8805-228f5aea9bb6/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Guillaume Dera"
+    },
+    "tree_oak": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Quercus robur",
+      "asset_id": "43afe2df-ab6c-47e6-a105-c0a82b8af1c5",
+      "page_url": "https://www.phylopic.org/images/43afe2df-ab6c-47e6-a105-c0a82b8af1c5/quercus-robur",
+      "svg_url": "https://images.phylopic.org/images/43afe2df-ab6c-47e6-a105-c0a82b8af1c5/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/43afe2df-ab6c-47e6-a105-c0a82b8af1c5/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Carlo De Rito"
+    },
+    "flower_sunflower": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Helianthus annuus",
+      "asset_id": "40b91c6c-4ef8-4a5a-9b90-85fb50d74c5b",
+      "page_url": "https://www.phylopic.org/images/40b91c6c-4ef8-4a5a-9b90-85fb50d74c5b/helianthus-annuus",
+      "svg_url": "https://images.phylopic.org/images/40b91c6c-4ef8-4a5a-9b90-85fb50d74c5b/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/40b91c6c-4ef8-4a5a-9b90-85fb50d74c5b/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Mason McNair"
+    },
+    "palm_sabal": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Sabal palmetto",
+      "asset_id": "ec3604c4-768d-4db3-b228-726db07ed1a2",
+      "page_url": "https://www.phylopic.org/images/ec3604c4-768d-4db3-b228-726db07ed1a2/sabal-palmetto",
+      "svg_url": "https://images.phylopic.org/images/ec3604c4-768d-4db3-b228-726db07ed1a2/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/ec3604c4-768d-4db3-b228-726db07ed1a2/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Caleb M. Gordon"
+    },
+    "rice_oryza": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Oryza sativa",
+      "asset_id": "bdae8ff7-6c00-4af9-8464-a44b3e6c65f9",
+      "page_url": "https://www.phylopic.org/images/bdae8ff7-6c00-4af9-8464-a44b3e6c65f9/oryza-sativa",
+      "svg_url": "https://images.phylopic.org/images/bdae8ff7-6c00-4af9-8464-a44b3e6c65f9/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/bdae8ff7-6c00-4af9-8464-a44b3e6c65f9/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Mason McNair"
+    },
+    "pea_garden": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Pisum sativum",
+      "asset_id": "e9f1ec77-7dea-45a8-9bdb-87f9c9444287",
+      "page_url": "https://www.phylopic.org/images/e9f1ec77-7dea-45a8-9bdb-87f9c9444287/pisum-sativum",
+      "svg_url": "https://images.phylopic.org/images/e9f1ec77-7dea-45a8-9bdb-87f9c9444287/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/e9f1ec77-7dea-45a8-9bdb-87f9c9444287/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Warren Siegrist"
+    },
+    "mammal_mouse": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Mus musculus",
+      "asset_id": "c8f71c27-71db-4b34-ac2d-e97fea8762cf",
+      "page_url": "https://www.phylopic.org/images/c8f71c27-71db-4b34-ac2d-e97fea8762cf/mus-musculus",
+      "svg_url": "https://images.phylopic.org/images/c8f71c27-71db-4b34-ac2d-e97fea8762cf/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/c8f71c27-71db-4b34-ac2d-e97fea8762cf/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Jiro Wada"
+    },
+    "primate_macaque": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Macaca mulatta",
+      "asset_id": "eedde61f-3402-4f7c-9350-49b74f5e1dba",
+      "page_url": "https://www.phylopic.org/images/eedde61f-3402-4f7c-9350-49b74f5e1dba/macaca-mulatta",
+      "svg_url": "https://images.phylopic.org/images/eedde61f-3402-4f7c-9350-49b74f5e1dba/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/eedde61f-3402-4f7c-9350-49b74f5e1dba/thumbnail/192x192.png",
+      "license": "PDM 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "attribution": "T. Michael Keesey"
+    },
+    "tree_stone_pine": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Pinus pinea",
+      "asset_id": "9872213f-fefd-4946-b80e-3dbb6cd1793d",
+      "page_url": "https://www.phylopic.org/images/9872213f-fefd-4946-b80e-3dbb6cd1793d/pinus-pinea",
+      "svg_url": "https://images.phylopic.org/images/9872213f-fefd-4946-b80e-3dbb6cd1793d/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/9872213f-fefd-4946-b80e-3dbb6cd1793d/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Guillaume Dera"
+    },
+    "mammal_reindeer": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Rangifer tarandus",
+      "asset_id": "a7e8f29e-a4e2-499a-b913-491f78f44f1d",
+      "page_url": "https://www.phylopic.org/images/a7e8f29e-a4e2-499a-b913-491f78f44f1d/rangifer-tarandus",
+      "svg_url": "https://images.phylopic.org/images/a7e8f29e-a4e2-499a-b913-491f78f44f1d/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/a7e8f29e-a4e2-499a-b913-491f78f44f1d/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Steven Traver"
+    },
+    "crab_green": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Carcinus maenas",
+      "asset_id": "96523a56-068b-436f-a44f-ebf05605e700",
+      "page_url": "https://www.phylopic.org/images/96523a56-068b-436f-a44f-ebf05605e700/carcinus-maenas",
+      "svg_url": "https://images.phylopic.org/images/96523a56-068b-436f-a44f-ebf05605e700/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/96523a56-068b-436f-a44f-ebf05605e700/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Alexandra Hahn"
+    },
+    "mammal_brown_bear": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Ursus arctos",
+      "asset_id": "c7fbe213-1eac-4f81-80d0-674c3bd2d6b0",
+      "page_url": "https://www.phylopic.org/images/c7fbe213-1eac-4f81-80d0-674c3bd2d6b0/ursus-arctos",
+      "svg_url": "https://images.phylopic.org/images/c7fbe213-1eac-4f81-80d0-674c3bd2d6b0/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/c7fbe213-1eac-4f81-80d0-674c3bd2d6b0/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Margot Michaud"
+    },
+    "bird_eastern_phoebe": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Sayornis phoebe",
+      "asset_id": "1844043e-f24a-4a9c-a45d-dafeb787316f",
+      "page_url": "https://www.phylopic.org/images/1844043e-f24a-4a9c-a45d-dafeb787316f/sayornis-phoebe",
+      "svg_url": "https://images.phylopic.org/images/1844043e-f24a-4a9c-a45d-dafeb787316f/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/1844043e-f24a-4a9c-a45d-dafeb787316f/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Andy Wilson"
+    },
+    "venus_flytrap": {
+      "provider": "PhyloPic",
+      "representative_taxon": "Dionaea muscipula",
+      "asset_id": "ee0fd502-22ca-4f38-ba8b-db8c06825680",
+      "page_url": "https://www.phylopic.org/images/ee0fd502-22ca-4f38-ba8b-db8c06825680/dionaea-muscipula",
+      "svg_url": "https://images.phylopic.org/images/ee0fd502-22ca-4f38-ba8b-db8c06825680/vector.svg",
+      "thumbnail_url": "https://images.phylopic.org/images/ee0fd502-22ca-4f38-ba8b-db8c06825680/thumbnail/192x192.png",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": null
+    },
+    "unknown_question": {
+      "provider": "Font Awesome Free 7.2.0",
+      "representative_taxon": null,
+      "asset_id": "circle-question",
+      "page_url": "https://fontawesome.com/icons/circle-question?f=classic&s=regular",
+      "svg_url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/7.2.0/svgs/regular/circle-question.svg",
+      "thumbnail_url": null,
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Fonticons, Inc."
+    }
+  },
+  "sunburst_clipart": {
+    "Animalia": "animal_cat",
+    "Plantae": "plant_arabidopsis",
+    "Chordata": "fish_carp",
+    "Arthropoda": "bee_honeybee",
+    "Tracheophyta": "tree_oak",
+    "Mammalia": "mammal_wolf",
+    "Aves": "bird_common_nighthawk",
+    "Insecta": "butterfly_monarch",
+    "Magnoliopsida": "flower_sunflower",
+    "Liliopsida": "palm_sabal",
+    "Poales": "rice_oryza"
+  },
+  "sunburst_order_clipart": {
+    "Fabales": "pea_garden",
+    "Rodentia": "mammal_mouse",
+    "Primates": "primate_macaque",
+    "Pinales": "tree_stone_pine",
+    "Artiodactyla": "mammal_reindeer",
+    "Decapoda": "crab_green",
+    "Carnivora": "mammal_brown_bear",
+    "Anura": "frog_common",
+    "Passeriformes": "bird_eastern_phoebe",
+    "Caryophyllales": "venus_flytrap"
+  },
+  "retired_clipart_assets": [
+    "flower_hibiscus",
+    "monocot_tofieldia",
+    "grass_poa",
+    "tree_ginkgo"
+  ],
+  "scheme_order": [
+    "broad",
+    "analysis",
+    "detail"
+  ],
+  "schemes": {
+    "broad": {
+      "description": "Six headline groups for simple figures and broad benchmarking.",
+      "output_column": "broad_taxa_groups",
+      "group_order": [
+        "Chordates",
+        "Non-chordate animals",
+        "Plants",
+        "Fungi",
+        "Other",
+        "Unresolved"
+      ],
+      "group_colors": {
+        "Chordates": "#2E7D32",
+        "Non-chordate animals": "#6F91C7",
+        "Plants": "#D9954C",
+        "Fungi": "#8C6BB1",
+        "Other": "#7F8C8D",
+        "Unresolved": "#B9B9B9"
+      },
+      "group_clipart": {
+        "Chordates": "fish_carp",
+        "Non-chordate animals": "butterfly_monarch",
+        "Plants": "plant_arabidopsis",
+        "Fungi": "fungus_field_mushroom",
+        "Other": "protist_euglena",
+        "Unresolved": "unknown_question"
+      },
+      "unresolved_group": "Unresolved",
+      "rules": [
+        {
+          "id": "fungi_kingdom",
+          "group": "Fungi",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Fungi"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "plant_kingdom",
+          "group": "Plants",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Plantae"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "animalia_chordata",
+          "group": "Chordates",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Animalia"
+              ]
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "in",
+              "values": [
+                "Chordata"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "animalia_non_chordata",
+          "group": "Non-chordate animals",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Animalia"
+              ]
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "present"
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "not_in",
+              "values": [
+                "Chordata"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bacteria_and_archaea_as_other",
+          "group": "Other",
+          "all": [
+            {
+              "rank": "DOMAIN",
+              "operator": "in",
+              "values": [
+                "Bacteria",
+                "Archaea"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "other_resolved_kingdom",
+          "group": "Other",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "present"
+            },
+            {
+              "rank": "KINGDOM",
+              "operator": "not_in",
+              "values": [
+                "Animalia",
+                "Plantae",
+                "Fungi"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "analysis": {
+      "description": "Nine compact labels for driver heatmaps and general comparative analyses.",
+      "output_column": "taxa_analysis_groups",
+      "group_order": [
+        "Vertebrates",
+        "Arthropods",
+        "Other invertebrates",
+        "Vascular plants",
+        "Other or unspecified plants",
+        "Fungi",
+        "Bacteria & archaea",
+        "Other taxa",
+        "Unresolved"
+      ],
+      "group_colors": {
+        "Vertebrates": "#2E7D32",
+        "Arthropods": "#E15759",
+        "Other invertebrates": "#76B7B2",
+        "Vascular plants": "#D9954C",
+        "Other or unspecified plants": "#EDC948",
+        "Fungi": "#8C6BB1",
+        "Bacteria & archaea": "#9C755F",
+        "Other taxa": "#7F8C8D",
+        "Unresolved": "#B9B9B9"
+      },
+      "group_clipart": {
+        "Vertebrates": "fish_carp",
+        "Arthropods": "bee_honeybee",
+        "Other invertebrates": "jellyfish_atlantic_sea_nettle",
+        "Vascular plants": "fern_common_polypody",
+        "Other or unspecified plants": "plant_arabidopsis",
+        "Fungi": "fungus_field_mushroom",
+        "Bacteria & archaea": "bacterium_salmonella",
+        "Other taxa": "protist_euglena",
+        "Unresolved": "unknown_question"
+      },
+      "unresolved_group": "Unresolved",
+      "rules": [
+        {
+          "id": "fungi_kingdom",
+          "group": "Fungi",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Fungi"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vascular_plants",
+          "group": "Vascular plants",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Plantae"
+              ]
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "in",
+              "values": [
+                "Tracheophyta"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "other_or_unspecified_plants",
+          "group": "Other or unspecified plants",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Plantae"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "animalia_vertebrata",
+          "group": "Vertebrates",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Animalia"
+              ]
+            },
+            {
+              "rank": "SUBPHYLUM",
+              "operator": "in",
+              "values": [
+                "Vertebrata"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "animalia_arthropoda",
+          "group": "Arthropods",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Animalia"
+              ]
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "in",
+              "values": [
+                "Arthropoda"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "animalia_other_non_chordata",
+          "group": "Other invertebrates",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Animalia"
+              ]
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "present"
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "not_in",
+              "values": [
+                "Chordata",
+                "Arthropoda"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "animalia_nonvertebrate_chordata",
+          "group": "Other invertebrates",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Animalia"
+              ]
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "in",
+              "values": [
+                "Chordata"
+              ]
+            },
+            {
+              "rank": "SUBPHYLUM",
+              "operator": "present"
+            },
+            {
+              "rank": "SUBPHYLUM",
+              "operator": "not_in",
+              "values": [
+                "Vertebrata"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bacteria_and_archaea",
+          "group": "Bacteria & archaea",
+          "all": [
+            {
+              "rank": "DOMAIN",
+              "operator": "in",
+              "values": [
+                "Bacteria",
+                "Archaea"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "other_resolved_kingdom",
+          "group": "Other taxa",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "present"
+            },
+            {
+              "rank": "KINGDOM",
+              "operator": "not_in",
+              "values": [
+                "Animalia",
+                "Plantae",
+                "Fungi"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "detail": {
+      "description": "Fourteen interpretable labels for supplementary and focused within-corpus analyses.",
+      "output_column": "taxa_detail_groups",
+      "group_order": [
+        "Mammals",
+        "Birds",
+        "Fishes",
+        "Reptiles & amphibians",
+        "Arthropods",
+        "Molluscs",
+        "Other invertebrates",
+        "Vascular plants",
+        "Non-vascular plants & Plantae algae",
+        "Plants—phylum unspecified",
+        "Fungi",
+        "Bacteria & archaea",
+        "Other taxa",
+        "Unresolved"
+      ],
+      "group_colors": {
+        "Mammals": "#2E7D32",
+        "Birds": "#59A14F",
+        "Fishes": "#4E79A7",
+        "Reptiles & amphibians": "#76B7B2",
+        "Arthropods": "#E15759",
+        "Molluscs": "#FF9DA7",
+        "Other invertebrates": "#B07AA1",
+        "Vascular plants": "#D9954C",
+        "Non-vascular plants & Plantae algae": "#EDC948",
+        "Plants—phylum unspecified": "#BAB0AC",
+        "Fungi": "#8C6BB1",
+        "Bacteria & archaea": "#9C755F",
+        "Other taxa": "#7F8C8D",
+        "Unresolved": "#D3D3D3"
+      },
+      "group_clipart": {
+        "Mammals": "mammal_wolf",
+        "Birds": "bird_common_nighthawk",
+        "Fishes": "fish_carp",
+        "Reptiles & amphibians": "frog_common",
+        "Arthropods": "bee_honeybee",
+        "Molluscs": "snail_roman",
+        "Other invertebrates": "jellyfish_atlantic_sea_nettle",
+        "Vascular plants": "fern_common_polypody",
+        "Non-vascular plants & Plantae algae": "moss_sphagnum",
+        "Plants—phylum unspecified": "plant_arabidopsis",
+        "Fungi": "fungus_field_mushroom",
+        "Bacteria & archaea": "bacterium_salmonella",
+        "Other taxa": "protist_euglena",
+        "Unresolved": "unknown_question"
+      },
+      "unresolved_group": "Unresolved",
+      "rules": [
+        {
+          "id": "fungi_kingdom",
+          "group": "Fungi",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Fungi"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vascular_plants",
+          "group": "Vascular plants",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Plantae"
+              ]
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "in",
+              "values": [
+                "Tracheophyta"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nonvascular_plants_and_plantae_algae",
+          "group": "Non-vascular plants & Plantae algae",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Plantae"
+              ]
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "present"
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "not_in",
+              "values": [
+                "Tracheophyta"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "plants_phylum_unspecified",
+          "group": "Plants—phylum unspecified",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Plantae"
+              ]
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "missing"
+            }
+          ]
+        },
+        {
+          "id": "vertebrate_mammals",
+          "group": "Mammals",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Animalia"
+              ]
+            },
+            {
+              "rank": "SUBPHYLUM",
+              "operator": "in",
+              "values": [
+                "Vertebrata"
+              ]
+            },
+            {
+              "rank": "CLASS",
+              "operator": "in",
+              "values": [
+                "Mammalia"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vertebrate_birds",
+          "group": "Birds",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Animalia"
+              ]
+            },
+            {
+              "rank": "SUBPHYLUM",
+              "operator": "in",
+              "values": [
+                "Vertebrata"
+              ]
+            },
+            {
+              "rank": "CLASS",
+              "operator": "in",
+              "values": [
+                "Aves"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vertebrate_reptiles_and_amphibians",
+          "group": "Reptiles & amphibians",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Animalia"
+              ]
+            },
+            {
+              "rank": "SUBPHYLUM",
+              "operator": "in",
+              "values": [
+                "Vertebrata"
+              ]
+            },
+            {
+              "rank": "CLASS",
+              "operator": "in",
+              "values": [
+                "Reptilia",
+                "Amphibia"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vertebrate_fishes",
+          "group": "Fishes",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Animalia"
+              ]
+            },
+            {
+              "rank": "SUBPHYLUM",
+              "operator": "in",
+              "values": [
+                "Vertebrata"
+              ]
+            },
+            {
+              "rank": "CLASS",
+              "operator": "present"
+            },
+            {
+              "rank": "CLASS",
+              "operator": "not_in",
+              "values": [
+                "Mammalia",
+                "Aves",
+                "Reptilia",
+                "Amphibia"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "animalia_arthropoda",
+          "group": "Arthropods",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Animalia"
+              ]
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "in",
+              "values": [
+                "Arthropoda"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "animalia_mollusca",
+          "group": "Molluscs",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Animalia"
+              ]
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "in",
+              "values": [
+                "Mollusca"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "animalia_other_non_chordata",
+          "group": "Other invertebrates",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Animalia"
+              ]
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "present"
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "not_in",
+              "values": [
+                "Chordata",
+                "Arthropoda",
+                "Mollusca"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "animalia_nonvertebrate_chordata",
+          "group": "Other invertebrates",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "in",
+              "values": [
+                "Animalia"
+              ]
+            },
+            {
+              "rank": "PHYLUM",
+              "operator": "in",
+              "values": [
+                "Chordata"
+              ]
+            },
+            {
+              "rank": "SUBPHYLUM",
+              "operator": "present"
+            },
+            {
+              "rank": "SUBPHYLUM",
+              "operator": "not_in",
+              "values": [
+                "Vertebrata"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bacteria_and_archaea",
+          "group": "Bacteria & archaea",
+          "all": [
+            {
+              "rank": "DOMAIN",
+              "operator": "in",
+              "values": [
+                "Bacteria",
+                "Archaea"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "other_resolved_kingdom",
+          "group": "Other taxa",
+          "all": [
+            {
+              "rank": "KINGDOM",
+              "operator": "present"
+            },
+            {
+              "rank": "KINGDOM",
+              "operator": "not_in",
+              "values": [
+                "Animalia",
+                "Plantae",
+                "Fungi"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

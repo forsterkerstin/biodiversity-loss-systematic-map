@@ -1,0 +1,1333 @@
+{
+  "Americas": {
+    "Caribbean": [
+      {
+        "GID_0": "ABW",
+        "ISO_3166_alpha_3": "ABW",
+        "Country": "Aruba"
+      },
+      {
+        "GID_0": "AIA",
+        "ISO_3166_alpha_3": "AIA",
+        "Country": "Anguilla"
+      },
+      {
+        "GID_0": "ATG",
+        "ISO_3166_alpha_3": "ATG",
+        "Country": "Antigua and Barbuda"
+      },
+      {
+        "GID_0": "BES",
+        "ISO_3166_alpha_3": "BES",
+        "Country": "Bonaire, Sint Eustatius and Saba"
+      },
+      {
+        "GID_0": "BHS",
+        "ISO_3166_alpha_3": "BHS",
+        "Country": "Bahamas (the)"
+      },
+      {
+        "GID_0": "BLM",
+        "ISO_3166_alpha_3": "BLM",
+        "Country": "Saint Barth\u00e9lemy"
+      },
+      {
+        "GID_0": "BMU",
+        "ISO_3166_alpha_3": "BMU",
+        "Country": "Bermuda"
+      },
+      {
+        "GID_0": "BRB",
+        "ISO_3166_alpha_3": "BRB",
+        "Country": "Barbados"
+      },
+      {
+        "GID_0": "CUB",
+        "ISO_3166_alpha_3": "CUB",
+        "Country": "Cuba"
+      },
+      {
+        "GID_0": "CUW",
+        "ISO_3166_alpha_3": "CUW",
+        "Country": "Cura\u00e7ao"
+      },
+      {
+        "GID_0": "CYM",
+        "ISO_3166_alpha_3": "CYM",
+        "Country": "Cayman Islands (the)"
+      },
+      {
+        "GID_0": "DMA",
+        "ISO_3166_alpha_3": "DMA",
+        "Country": "Dominica"
+      },
+      {
+        "GID_0": "DOM",
+        "ISO_3166_alpha_3": "DOM",
+        "Country": "Dominican Republic (the)"
+      },
+      {
+        "GID_0": "GLP",
+        "ISO_3166_alpha_3": "GLP",
+        "Country": "Guadeloupe"
+      },
+      {
+        "GID_0": "GRD",
+        "ISO_3166_alpha_3": "GRD",
+        "Country": "Grenada"
+      },
+      {
+        "GID_0": "HTI",
+        "ISO_3166_alpha_3": "HTI",
+        "Country": "Haiti"
+      },
+      {
+        "GID_0": "JAM",
+        "ISO_3166_alpha_3": "JAM",
+        "Country": "Jamaica"
+      },
+      {
+        "GID_0": "KNA",
+        "ISO_3166_alpha_3": "KNA",
+        "Country": "Saint Kitts and Nevis"
+      },
+      {
+        "GID_0": "LCA",
+        "ISO_3166_alpha_3": "LCA",
+        "Country": "Saint Lucia"
+      },
+      {
+        "GID_0": "MAF",
+        "ISO_3166_alpha_3": "MAF",
+        "Country": "Saint Martin (French part)"
+      },
+      {
+        "GID_0": "MSR",
+        "ISO_3166_alpha_3": "MSR",
+        "Country": "Montserrat"
+      },
+      {
+        "GID_0": "MTQ",
+        "ISO_3166_alpha_3": "MTQ",
+        "Country": "Martinique"
+      },
+      {
+        "GID_0": "PRI",
+        "ISO_3166_alpha_3": "PRI",
+        "Country": "Puerto Rico"
+      },
+      {
+        "GID_0": "SXM",
+        "ISO_3166_alpha_3": "SXM",
+        "Country": "Sint Maarten (Dutch part)"
+      },
+      {
+        "GID_0": "TCA",
+        "ISO_3166_alpha_3": "TCA",
+        "Country": "Turks and Caicos Islands (the)"
+      },
+      {
+        "GID_0": "TTO",
+        "ISO_3166_alpha_3": "TTO",
+        "Country": "Trinidad and Tobago"
+      },
+      {
+        "GID_0": "",
+        "ISO_3166_alpha_3": "",
+        "Country": "United States Minor Outlying Islands (Navassa)"
+      },
+      {
+        "GID_0": "VCT",
+        "ISO_3166_alpha_3": "VCT",
+        "Country": "Saint Vincent and the Grenadines"
+      },
+      {
+        "GID_0": "VGB",
+        "ISO_3166_alpha_3": "VGB",
+        "Country": "Virgin Islands (British)"
+      },
+      {
+        "GID_0": "VIR",
+        "ISO_3166_alpha_3": "VIR",
+        "Country": "Virgin Islands (U.S.)"
+      }
+    ],
+    "South America": [
+      {
+        "GID_0": "ARG",
+        "ISO_3166_alpha_3": "ARG",
+        "Country": "Argentina"
+      },
+      {
+        "GID_0": "BOL",
+        "ISO_3166_alpha_3": "BOL",
+        "Country": "Bolivia (Plurinational State of)"
+      },
+      {
+        "GID_0": "BRA",
+        "ISO_3166_alpha_3": "BRA",
+        "Country": "Brazil"
+      },
+      {
+        "GID_0": "BVT",
+        "ISO_3166_alpha_3": "BVT",
+        "Country": "Bouvet Island"
+      },
+      {
+        "GID_0": "CHL",
+        "ISO_3166_alpha_3": "CHL",
+        "Country": "Chile"
+      },
+      {
+        "GID_0": "COL",
+        "ISO_3166_alpha_3": "COL",
+        "Country": "Colombia"
+      },
+      {
+        "GID_0": "ECU",
+        "ISO_3166_alpha_3": "ECU",
+        "Country": "Ecuador"
+      },
+      {
+        "GID_0": "FLK",
+        "ISO_3166_alpha_3": "FLK",
+        "Country": "Falkland Islands (the) [Malvinas]"
+      },
+      {
+        "GID_0": "GUF",
+        "ISO_3166_alpha_3": "GUF",
+        "Country": "French Guiana"
+      },
+      {
+        "GID_0": "GUY",
+        "ISO_3166_alpha_3": "GUY",
+        "Country": "Guyana"
+      },
+      {
+        "GID_0": "PER",
+        "ISO_3166_alpha_3": "PER",
+        "Country": "Peru"
+      },
+      {
+        "GID_0": "PRY",
+        "ISO_3166_alpha_3": "PRY",
+        "Country": "Paraguay"
+      },
+      {
+        "GID_0": "SGS",
+        "ISO_3166_alpha_3": "SGS",
+        "Country": "South Georgia and the South Sandwich Islands"
+      },
+      {
+        "GID_0": "SUR",
+        "ISO_3166_alpha_3": "SUR",
+        "Country": "Suriname"
+      },
+      {
+        "GID_0": "URY",
+        "ISO_3166_alpha_3": "URY",
+        "Country": "Uruguay"
+      },
+      {
+        "GID_0": "VEN",
+        "ISO_3166_alpha_3": "VEN",
+        "Country": "Venezuela (Bolivarian Republic of)"
+      }
+    ],
+    "Mesoamerica": [
+      {
+        "GID_0": "BLZ",
+        "ISO_3166_alpha_3": "BLZ",
+        "Country": "Belize"
+      },
+      {
+        "GID_0": "CRI",
+        "ISO_3166_alpha_3": "CRI",
+        "Country": "Costa Rica"
+      },
+      {
+        "GID_0": "GTM",
+        "ISO_3166_alpha_3": "GTM",
+        "Country": "Guatemala"
+      },
+      {
+        "GID_0": "HND",
+        "ISO_3166_alpha_3": "HND",
+        "Country": "Honduras"
+      },
+      {
+        "GID_0": "MEX",
+        "ISO_3166_alpha_3": "MEX",
+        "Country": "Mexico"
+      },
+      {
+        "GID_0": "NIC",
+        "ISO_3166_alpha_3": "NIC",
+        "Country": "Nicaragua"
+      },
+      {
+        "GID_0": "PAN",
+        "ISO_3166_alpha_3": "PAN",
+        "Country": "Panama"
+      },
+      {
+        "GID_0": "SLV",
+        "ISO_3166_alpha_3": "SLV",
+        "Country": "El Salvador"
+      }
+    ],
+    "North America": [
+      {
+        "GID_0": "CAN",
+        "ISO_3166_alpha_3": "CAN",
+        "Country": "Canada"
+      },
+      {
+        "GID_0": "GRL",
+        "ISO_3166_alpha_3": "GRL",
+        "Country": "Greenland"
+      },
+      {
+        "GID_0": "SPM",
+        "ISO_3166_alpha_3": "SPM",
+        "Country": "Saint Pierre and Miquelon"
+      },
+      {
+        "GID_0": "USA",
+        "ISO_3166_alpha_3": "USA",
+        "Country": "United States of America (the)"
+      }
+    ]
+  },
+  "Asia and the Pacific": {
+    "South Asia": [
+      {
+        "GID_0": "AFG",
+        "ISO_3166_alpha_3": "AFG",
+        "Country": "Afghanistan"
+      },
+      {
+        "GID_0": "BGD",
+        "ISO_3166_alpha_3": "BGD",
+        "Country": "Bangladesh"
+      },
+      {
+        "GID_0": "BTN",
+        "ISO_3166_alpha_3": "BTN",
+        "Country": "Bhutan"
+      },
+      {
+        "GID_0": "IND",
+        "ISO_3166_alpha_3": "IND",
+        "Country": "India"
+      },
+      {
+        "GID_0": "IOT",
+        "ISO_3166_alpha_3": "IOT",
+        "Country": "British Indian Ocean Territory (the)"
+      },
+      {
+        "GID_0": "IRN",
+        "ISO_3166_alpha_3": "IRN",
+        "Country": "Iran (Islamic Republic of)"
+      },
+      {
+        "GID_0": "LKA",
+        "ISO_3166_alpha_3": "LKA",
+        "Country": "Sri Lanka"
+      },
+      {
+        "GID_0": "MDV",
+        "ISO_3166_alpha_3": "MDV",
+        "Country": "Maldives"
+      },
+      {
+        "GID_0": "NPL",
+        "ISO_3166_alpha_3": "NPL",
+        "Country": "Nepal"
+      },
+      {
+        "GID_0": "PAK",
+        "ISO_3166_alpha_3": "PAK",
+        "Country": "Pakistan"
+      }
+    ],
+    "Western Asia": [
+      {
+        "GID_0": "ARE",
+        "ISO_3166_alpha_3": "ARE",
+        "Country": "United Arab Emirates (the)"
+      },
+      {
+        "GID_0": "BHR",
+        "ISO_3166_alpha_3": "BHR",
+        "Country": "Bahrain"
+      },
+      {
+        "GID_0": "IRQ",
+        "ISO_3166_alpha_3": "IRQ",
+        "Country": "Iraq"
+      },
+      {
+        "GID_0": "JOR",
+        "ISO_3166_alpha_3": "JOR",
+        "Country": "Jordan"
+      },
+      {
+        "GID_0": "KWT",
+        "ISO_3166_alpha_3": "KWT",
+        "Country": "Kuwait"
+      },
+      {
+        "GID_0": "LBN",
+        "ISO_3166_alpha_3": "LBN",
+        "Country": "Lebanon"
+      },
+      {
+        "GID_0": "OMN",
+        "ISO_3166_alpha_3": "OMN",
+        "Country": "Oman"
+      },
+      {
+        "GID_0": "PSE",
+        "ISO_3166_alpha_3": "PSE",
+        "Country": "Palestine, State of"
+      },
+      {
+        "GID_0": "QAT",
+        "ISO_3166_alpha_3": "QAT",
+        "Country": "Qatar"
+      },
+      {
+        "GID_0": "SAU",
+        "ISO_3166_alpha_3": "SAU",
+        "Country": "Saudi Arabia"
+      },
+      {
+        "GID_0": "SYR",
+        "ISO_3166_alpha_3": "SYR",
+        "Country": "Syrian Arab Republic (the)"
+      },
+      {
+        "GID_0": "YEM",
+        "ISO_3166_alpha_3": "YEM",
+        "Country": "Yemen"
+      }
+    ],
+    "Oceania": [
+      {
+        "GID_0": "ASM",
+        "ISO_3166_alpha_3": "ASM",
+        "Country": "American Samoa"
+      },
+      {
+        "GID_0": "ATF",
+        "ISO_3166_alpha_3": "ATF",
+        "Country": "French Southern Territories (the)"
+      },
+      {
+        "GID_0": "AUS",
+        "ISO_3166_alpha_3": "AUS",
+        "Country": "Australia"
+      },
+      {
+        "GID_0": "COK",
+        "ISO_3166_alpha_3": "COK",
+        "Country": "Cook Islands (the)"
+      },
+      {
+        "GID_0": "FJI",
+        "ISO_3166_alpha_3": "FJI",
+        "Country": "Fiji"
+      },
+      {
+        "GID_0": "FSM",
+        "ISO_3166_alpha_3": "FSM",
+        "Country": "Micronesia (Federated States of)"
+      },
+      {
+        "GID_0": "GUM",
+        "ISO_3166_alpha_3": "GUM",
+        "Country": "Guam"
+      },
+      {
+        "GID_0": "HMD",
+        "ISO_3166_alpha_3": "HMD",
+        "Country": "Heard Island and McDonald Islands"
+      },
+      {
+        "GID_0": "KIR",
+        "ISO_3166_alpha_3": "KIR",
+        "Country": "Kiribati"
+      },
+      {
+        "GID_0": "MHL",
+        "ISO_3166_alpha_3": "MHL",
+        "Country": "Marshall Islands (the)"
+      },
+      {
+        "GID_0": "MNP",
+        "ISO_3166_alpha_3": "MNP",
+        "Country": "Northern Mariana Islands (the)"
+      },
+      {
+        "GID_0": "NCL",
+        "ISO_3166_alpha_3": "NCL",
+        "Country": "New Caledonia"
+      },
+      {
+        "GID_0": "NFK",
+        "ISO_3166_alpha_3": "NFK",
+        "Country": "Norfolk Island"
+      },
+      {
+        "GID_0": "NIU",
+        "ISO_3166_alpha_3": "NIU",
+        "Country": "Niue"
+      },
+      {
+        "GID_0": "NRU",
+        "ISO_3166_alpha_3": "NRU",
+        "Country": "Nauru"
+      },
+      {
+        "GID_0": "NZL",
+        "ISO_3166_alpha_3": "NZL",
+        "Country": "New Zealand"
+      },
+      {
+        "GID_0": "PCN",
+        "ISO_3166_alpha_3": "PCN",
+        "Country": "Pitcairn"
+      },
+      {
+        "GID_0": "PLW",
+        "ISO_3166_alpha_3": "PLW",
+        "Country": "Palau"
+      },
+      {
+        "GID_0": "PNG",
+        "ISO_3166_alpha_3": "PNG",
+        "Country": "Papua New Guinea"
+      },
+      {
+        "GID_0": "PYF",
+        "ISO_3166_alpha_3": "PYF",
+        "Country": "French Polynesia"
+      },
+      {
+        "GID_0": "SLB",
+        "ISO_3166_alpha_3": "SLB",
+        "Country": "Solomon Islands"
+      },
+      {
+        "GID_0": "TKL",
+        "ISO_3166_alpha_3": "TKL",
+        "Country": "Tokelau"
+      },
+      {
+        "GID_0": "TON",
+        "ISO_3166_alpha_3": "TON",
+        "Country": "Tonga"
+      },
+      {
+        "GID_0": "TUV",
+        "ISO_3166_alpha_3": "TUV",
+        "Country": "Tuvalu"
+      },
+      {
+        "GID_0": "UMI",
+        "ISO_3166_alpha_3": "UMI",
+        "Country": "United States Minor Outlying Islands (the)"
+      },
+      {
+        "GID_0": "VUT",
+        "ISO_3166_alpha_3": "VUT",
+        "Country": "Vanuatu"
+      },
+      {
+        "GID_0": "WLF",
+        "ISO_3166_alpha_3": "WLF",
+        "Country": "Wallis and Futuna"
+      },
+      {
+        "GID_0": "WSM",
+        "ISO_3166_alpha_3": "WSM",
+        "Country": "Samoa"
+      },
+      {
+        "GID_0": "XCL",
+        "ISO_3166_alpha_3": "",
+        "Country": "Clipperton Island"
+      },
+      {
+        "GID_0": "",
+        "ISO_3166_alpha_3": "",
+        "Country": "Hawaii (USA)"
+      }
+    ],
+    "South-East Asia": [
+      {
+        "GID_0": "BRN",
+        "ISO_3166_alpha_3": "BRN",
+        "Country": "Brunei Darussalam"
+      },
+      {
+        "GID_0": "CCK",
+        "ISO_3166_alpha_3": "CCK",
+        "Country": "Cocos (Keeling) Islands (the)"
+      },
+      {
+        "GID_0": "CXR",
+        "ISO_3166_alpha_3": "CXR",
+        "Country": "Christmas Island"
+      },
+      {
+        "GID_0": "IDN",
+        "ISO_3166_alpha_3": "IDN",
+        "Country": "Indonesia"
+      },
+      {
+        "GID_0": "KHM",
+        "ISO_3166_alpha_3": "KHM",
+        "Country": "Cambodia"
+      },
+      {
+        "GID_0": "LAO",
+        "ISO_3166_alpha_3": "LAO",
+        "Country": "Lao People's Democratic Republic (the)"
+      },
+      {
+        "GID_0": "MMR",
+        "ISO_3166_alpha_3": "MMR",
+        "Country": "Myanmar"
+      },
+      {
+        "GID_0": "MYS",
+        "ISO_3166_alpha_3": "MYS",
+        "Country": "Malaysia"
+      },
+      {
+        "GID_0": "PHL",
+        "ISO_3166_alpha_3": "PHL",
+        "Country": "Philippines (the)"
+      },
+      {
+        "GID_0": "SGP",
+        "ISO_3166_alpha_3": "SGP",
+        "Country": "Singapore"
+      },
+      {
+        "GID_0": "THA",
+        "ISO_3166_alpha_3": "THA",
+        "Country": "Thailand"
+      },
+      {
+        "GID_0": "TLS",
+        "ISO_3166_alpha_3": "TLS",
+        "Country": "Timor-Leste"
+      },
+      {
+        "GID_0": "VNM",
+        "ISO_3166_alpha_3": "VNM",
+        "Country": "Viet Nam"
+      },
+      {
+        "GID_0": "XPI",
+        "ISO_3166_alpha_3": "",
+        "Country": "Paracel Islands"
+      },
+      {
+        "GID_0": "XSP",
+        "ISO_3166_alpha_3": "",
+        "Country": "Spratly Islands"
+      }
+    ],
+    "North-East Asia": [
+      {
+        "GID_0": "CHN",
+        "ISO_3166_alpha_3": "CHN",
+        "Country": "China"
+      },
+      {
+        "GID_0": "HKG",
+        "ISO_3166_alpha_3": "HKG",
+        "Country": "Hong Kong (Special Administrative Region China)"
+      },
+      {
+        "GID_0": "JPN",
+        "ISO_3166_alpha_3": "JPN",
+        "Country": "Japan"
+      },
+      {
+        "GID_0": "KOR",
+        "ISO_3166_alpha_3": "KOR",
+        "Country": "Korea (the Republic of)"
+      },
+      {
+        "GID_0": "MAC",
+        "ISO_3166_alpha_3": "MAC",
+        "Country": "Macao (Special Adminstrative Region China"
+      },
+      {
+        "GID_0": "MNG",
+        "ISO_3166_alpha_3": "MNG",
+        "Country": "Mongolia"
+      },
+      {
+        "GID_0": "PRK",
+        "ISO_3166_alpha_3": "PRK",
+        "Country": "Korea (the Democratic People's Republic of)"
+      },
+      {
+        "GID_0": "TWN",
+        "ISO_3166_alpha_3": "TWN",
+        "Country": "Taiwan (Province of China)"
+      }
+    ]
+  },
+  "Africa": {
+    "Southern Africa": [
+      {
+        "GID_0": "AGO",
+        "ISO_3166_alpha_3": "AGO",
+        "Country": "Angola"
+      },
+      {
+        "GID_0": "BWA",
+        "ISO_3166_alpha_3": "BWA",
+        "Country": "Botswana"
+      },
+      {
+        "GID_0": "LSO",
+        "ISO_3166_alpha_3": "LSO",
+        "Country": "Lesotho"
+      },
+      {
+        "GID_0": "MOZ",
+        "ISO_3166_alpha_3": "MOZ",
+        "Country": "Mozambique"
+      },
+      {
+        "GID_0": "MWI",
+        "ISO_3166_alpha_3": "MWI",
+        "Country": "Malawi"
+      },
+      {
+        "GID_0": "NAM",
+        "ISO_3166_alpha_3": "NAM",
+        "Country": "Namibia"
+      },
+      {
+        "GID_0": "SHN",
+        "ISO_3166_alpha_3": "SHN",
+        "Country": "Saint Helena, Ascension and Tristan da Cunha"
+      },
+      {
+        "GID_0": "SWZ",
+        "ISO_3166_alpha_3": "SWZ",
+        "Country": "Eswatini"
+      },
+      {
+        "GID_0": "ZAF",
+        "ISO_3166_alpha_3": "ZAF",
+        "Country": "South Africa"
+      },
+      {
+        "GID_0": "ZMB",
+        "ISO_3166_alpha_3": "ZMB",
+        "Country": "Zambia"
+      },
+      {
+        "GID_0": "ZWE",
+        "ISO_3166_alpha_3": "ZWE",
+        "Country": "Zimbabwe"
+      }
+    ],
+    "Central Africa": [
+      {
+        "GID_0": "BDI",
+        "ISO_3166_alpha_3": "BDI",
+        "Country": "Burundi"
+      },
+      {
+        "GID_0": "CAF",
+        "ISO_3166_alpha_3": "CAF",
+        "Country": "Central African Republic (the)"
+      },
+      {
+        "GID_0": "CMR",
+        "ISO_3166_alpha_3": "CMR",
+        "Country": "Cameroon"
+      },
+      {
+        "GID_0": "COD",
+        "ISO_3166_alpha_3": "COD",
+        "Country": "Congo (the Democratic Republic of the)"
+      },
+      {
+        "GID_0": "COG",
+        "ISO_3166_alpha_3": "COG",
+        "Country": "Congo (the)"
+      },
+      {
+        "GID_0": "GAB",
+        "ISO_3166_alpha_3": "GAB",
+        "Country": "Gabon"
+      },
+      {
+        "GID_0": "GNQ",
+        "ISO_3166_alpha_3": "GNQ",
+        "Country": "Equatorial Guinea"
+      },
+      {
+        "GID_0": "STP",
+        "ISO_3166_alpha_3": "STP",
+        "Country": "Sao Tome and Principe"
+      },
+      {
+        "GID_0": "TCD",
+        "ISO_3166_alpha_3": "TCD",
+        "Country": "Chad"
+      }
+    ],
+    "West Africa": [
+      {
+        "GID_0": "BEN",
+        "ISO_3166_alpha_3": "BEN",
+        "Country": "Benin"
+      },
+      {
+        "GID_0": "BFA",
+        "ISO_3166_alpha_3": "BFA",
+        "Country": "Burkina Faso"
+      },
+      {
+        "GID_0": "CIV",
+        "ISO_3166_alpha_3": "CIV",
+        "Country": "C\u00f4te d'Ivoire"
+      },
+      {
+        "GID_0": "CPV",
+        "ISO_3166_alpha_3": "CPV",
+        "Country": "Cabo Verde"
+      },
+      {
+        "GID_0": "GHA",
+        "ISO_3166_alpha_3": "GHA",
+        "Country": "Ghana"
+      },
+      {
+        "GID_0": "GIN",
+        "ISO_3166_alpha_3": "GIN",
+        "Country": "Guinea"
+      },
+      {
+        "GID_0": "GMB",
+        "ISO_3166_alpha_3": "GMB",
+        "Country": "Gambia (the)"
+      },
+      {
+        "GID_0": "GNB",
+        "ISO_3166_alpha_3": "GNB",
+        "Country": "Guinea-Bissau"
+      },
+      {
+        "GID_0": "LBR",
+        "ISO_3166_alpha_3": "LBR",
+        "Country": "Liberia"
+      },
+      {
+        "GID_0": "MLI",
+        "ISO_3166_alpha_3": "MLI",
+        "Country": "Mali"
+      },
+      {
+        "GID_0": "NER",
+        "ISO_3166_alpha_3": "NER",
+        "Country": "Niger (the)"
+      },
+      {
+        "GID_0": "NGA",
+        "ISO_3166_alpha_3": "NGA",
+        "Country": "Nigeria"
+      },
+      {
+        "GID_0": "SEN",
+        "ISO_3166_alpha_3": "SEN",
+        "Country": "Senegal"
+      },
+      {
+        "GID_0": "SLE",
+        "ISO_3166_alpha_3": "SLE",
+        "Country": "Sierra Leone"
+      },
+      {
+        "GID_0": "TGO",
+        "ISO_3166_alpha_3": "TGO",
+        "Country": "Togo"
+      }
+    ],
+    "East Africa and adjacent islands": [
+      {
+        "GID_0": "COM",
+        "ISO_3166_alpha_3": "COM",
+        "Country": "Comoros (the)"
+      },
+      {
+        "GID_0": "DJI",
+        "ISO_3166_alpha_3": "DJI",
+        "Country": "Djibouti"
+      },
+      {
+        "GID_0": "ERI",
+        "ISO_3166_alpha_3": "ERI",
+        "Country": "Eritrea"
+      },
+      {
+        "GID_0": "ETH",
+        "ISO_3166_alpha_3": "ETH",
+        "Country": "Ethiopia"
+      },
+      {
+        "GID_0": "KEN",
+        "ISO_3166_alpha_3": "KEN",
+        "Country": "Kenya"
+      },
+      {
+        "GID_0": "MDG",
+        "ISO_3166_alpha_3": "MDG",
+        "Country": "Madagascar"
+      },
+      {
+        "GID_0": "MUS",
+        "ISO_3166_alpha_3": "MUS",
+        "Country": "Mauritius"
+      },
+      {
+        "GID_0": "MYT",
+        "ISO_3166_alpha_3": "MYT",
+        "Country": "Mayotte"
+      },
+      {
+        "GID_0": "REU",
+        "ISO_3166_alpha_3": "REU",
+        "Country": "R\u00e9union"
+      },
+      {
+        "GID_0": "RWA",
+        "ISO_3166_alpha_3": "RWA",
+        "Country": "Rwanda"
+      },
+      {
+        "GID_0": "SOM",
+        "ISO_3166_alpha_3": "SOM",
+        "Country": "Somalia"
+      },
+      {
+        "GID_0": "SSD",
+        "ISO_3166_alpha_3": "SSD",
+        "Country": "South Sudan"
+      },
+      {
+        "GID_0": "SYC",
+        "ISO_3166_alpha_3": "SYC",
+        "Country": "Seychelles"
+      },
+      {
+        "GID_0": "TZA",
+        "ISO_3166_alpha_3": "TZA",
+        "Country": "Tanzania, the United Republic of"
+      },
+      {
+        "GID_0": "UGA",
+        "ISO_3166_alpha_3": "UGA",
+        "Country": "Uganda"
+      }
+    ],
+    "North Africa": [
+      {
+        "GID_0": "DZA",
+        "ISO_3166_alpha_3": "DZA",
+        "Country": "Algeria"
+      },
+      {
+        "GID_0": "EGY",
+        "ISO_3166_alpha_3": "EGY",
+        "Country": "Egypt"
+      },
+      {
+        "GID_0": "ESH",
+        "ISO_3166_alpha_3": "ESH",
+        "Country": "Western Sahara*"
+      },
+      {
+        "GID_0": "LBY",
+        "ISO_3166_alpha_3": "LBY",
+        "Country": "Libya"
+      },
+      {
+        "GID_0": "MAR",
+        "ISO_3166_alpha_3": "MAR",
+        "Country": "Morocco"
+      },
+      {
+        "GID_0": "MRT",
+        "ISO_3166_alpha_3": "MRT",
+        "Country": "Mauritania"
+      },
+      {
+        "GID_0": "SDN",
+        "ISO_3166_alpha_3": "SDN",
+        "Country": "Sudan (the)"
+      },
+      {
+        "GID_0": "TUN",
+        "ISO_3166_alpha_3": "TUN",
+        "Country": "Tunisia"
+      }
+    ]
+  },
+  "Europe and Central Asia": {
+    "Central and Western Europe": [
+      {
+        "GID_0": "ALA",
+        "ISO_3166_alpha_3": "ALA",
+        "Country": "\u00c5land Islands"
+      },
+      {
+        "GID_0": "ALB",
+        "ISO_3166_alpha_3": "ALB",
+        "Country": "Albania"
+      },
+      {
+        "GID_0": "AND",
+        "ISO_3166_alpha_3": "AND",
+        "Country": "Andorra"
+      },
+      {
+        "GID_0": "AUT",
+        "ISO_3166_alpha_3": "AUT",
+        "Country": "Austria"
+      },
+      {
+        "GID_0": "BEL",
+        "ISO_3166_alpha_3": "BEL",
+        "Country": "Belgium"
+      },
+      {
+        "GID_0": "BGR",
+        "ISO_3166_alpha_3": "BGR",
+        "Country": "Bulgaria"
+      },
+      {
+        "GID_0": "BIH",
+        "ISO_3166_alpha_3": "BIH",
+        "Country": "Bosnia and Herzegovina"
+      },
+      {
+        "GID_0": "CHE",
+        "ISO_3166_alpha_3": "CHE",
+        "Country": "Switzerland"
+      },
+      {
+        "GID_0": "CYP",
+        "ISO_3166_alpha_3": "CYP",
+        "Country": "Cyprus"
+      },
+      {
+        "GID_0": "CZE",
+        "ISO_3166_alpha_3": "CZE",
+        "Country": "Czechia"
+      },
+      {
+        "GID_0": "DEU",
+        "ISO_3166_alpha_3": "DEU",
+        "Country": "Germany"
+      },
+      {
+        "GID_0": "DNK",
+        "ISO_3166_alpha_3": "DNK",
+        "Country": "Denmark"
+      },
+      {
+        "GID_0": "ESP",
+        "ISO_3166_alpha_3": "ESP",
+        "Country": "Spain"
+      },
+      {
+        "GID_0": "EST",
+        "ISO_3166_alpha_3": "EST",
+        "Country": "Estonia"
+      },
+      {
+        "GID_0": "FIN",
+        "ISO_3166_alpha_3": "FIN",
+        "Country": "Finland"
+      },
+      {
+        "GID_0": "FRA",
+        "ISO_3166_alpha_3": "FRA",
+        "Country": "France"
+      },
+      {
+        "GID_0": "FRO",
+        "ISO_3166_alpha_3": "FRO",
+        "Country": "Faroe Islands (the)"
+      },
+      {
+        "GID_0": "GBR",
+        "ISO_3166_alpha_3": "GBR",
+        "Country": "United Kingdom of Great Britain and Northern Ireland (the)"
+      },
+      {
+        "GID_0": "GGY",
+        "ISO_3166_alpha_3": "GGY",
+        "Country": "Guernsey"
+      },
+      {
+        "GID_0": "GIB",
+        "ISO_3166_alpha_3": "GIB",
+        "Country": "Gibraltar"
+      },
+      {
+        "GID_0": "GRC",
+        "ISO_3166_alpha_3": "GRC",
+        "Country": "Greece"
+      },
+      {
+        "GID_0": "HRV",
+        "ISO_3166_alpha_3": "HRV",
+        "Country": "Croatia"
+      },
+      {
+        "GID_0": "HUN",
+        "ISO_3166_alpha_3": "HUN",
+        "Country": "Hungary"
+      },
+      {
+        "GID_0": "IMN",
+        "ISO_3166_alpha_3": "IMN",
+        "Country": "Isle of Man"
+      },
+      {
+        "GID_0": "IRL",
+        "ISO_3166_alpha_3": "IRL",
+        "Country": "Ireland"
+      },
+      {
+        "GID_0": "ISL",
+        "ISO_3166_alpha_3": "ISL",
+        "Country": "Iceland"
+      },
+      {
+        "GID_0": "ISR",
+        "ISO_3166_alpha_3": "ISR",
+        "Country": "Israel"
+      },
+      {
+        "GID_0": "ITA",
+        "ISO_3166_alpha_3": "ITA",
+        "Country": "Italy"
+      },
+      {
+        "GID_0": "JEY",
+        "ISO_3166_alpha_3": "JEY",
+        "Country": "Jersey"
+      },
+      {
+        "GID_0": "LIE",
+        "ISO_3166_alpha_3": "LIE",
+        "Country": "Liechtenstein"
+      },
+      {
+        "GID_0": "LTU",
+        "ISO_3166_alpha_3": "LTU",
+        "Country": "Lithuania"
+      },
+      {
+        "GID_0": "LUX",
+        "ISO_3166_alpha_3": "LUX",
+        "Country": "Luxembourg"
+      },
+      {
+        "GID_0": "LVA",
+        "ISO_3166_alpha_3": "LVA",
+        "Country": "Latvia"
+      },
+      {
+        "GID_0": "MCO",
+        "ISO_3166_alpha_3": "MCO",
+        "Country": "Monaco"
+      },
+      {
+        "GID_0": "MKD",
+        "ISO_3166_alpha_3": "MKD",
+        "Country": "North Macedonia"
+      },
+      {
+        "GID_0": "MLT",
+        "ISO_3166_alpha_3": "MLT",
+        "Country": "Malta"
+      },
+      {
+        "GID_0": "MNE",
+        "ISO_3166_alpha_3": "MNE",
+        "Country": "Montenegro"
+      },
+      {
+        "GID_0": "NLD",
+        "ISO_3166_alpha_3": "NLD",
+        "Country": "Netherlands (the)"
+      },
+      {
+        "GID_0": "NOR",
+        "ISO_3166_alpha_3": "NOR",
+        "Country": "Norway"
+      },
+      {
+        "GID_0": "POL",
+        "ISO_3166_alpha_3": "POL",
+        "Country": "Poland"
+      },
+      {
+        "GID_0": "PRT",
+        "ISO_3166_alpha_3": "PRT",
+        "Country": "Portugal"
+      },
+      {
+        "GID_0": "ROU",
+        "ISO_3166_alpha_3": "ROU",
+        "Country": "Romania"
+      },
+      {
+        "GID_0": "SJM",
+        "ISO_3166_alpha_3": "SJM",
+        "Country": "Svalbard and Jan Mayen"
+      },
+      {
+        "GID_0": "SMR",
+        "ISO_3166_alpha_3": "SMR",
+        "Country": "San Marino"
+      },
+      {
+        "GID_0": "SRB",
+        "ISO_3166_alpha_3": "SRB",
+        "Country": "Serbia"
+      },
+      {
+        "GID_0": "SVK",
+        "ISO_3166_alpha_3": "SVK",
+        "Country": "Slovakia"
+      },
+      {
+        "GID_0": "SVN",
+        "ISO_3166_alpha_3": "SVN",
+        "Country": "Slovenia"
+      },
+      {
+        "GID_0": "SWE",
+        "ISO_3166_alpha_3": "SWE",
+        "Country": "Sweden"
+      },
+      {
+        "GID_0": "TUR",
+        "ISO_3166_alpha_3": "TUR",
+        "Country": "Turkey"
+      },
+      {
+        "GID_0": "VAT",
+        "ISO_3166_alpha_3": "VAT",
+        "Country": "Holy See (the)"
+      },
+      {
+        "GID_0": "XAD",
+        "ISO_3166_alpha_3": "",
+        "Country": "Akrotiri and Dhekelia"
+      },
+      {
+        "GID_0": "XKO",
+        "ISO_3166_alpha_3": "",
+        "Country": "Kosovo"
+      },
+      {
+        "GID_0": "XNC",
+        "ISO_3166_alpha_3": "",
+        "Country": "Northern Cyprus"
+      }
+    ],
+    "Eastern Europe": [
+      {
+        "GID_0": "ARM",
+        "ISO_3166_alpha_3": "ARM",
+        "Country": "Armenia"
+      },
+      {
+        "GID_0": "AZE",
+        "ISO_3166_alpha_3": "AZE",
+        "Country": "Azerbaijan"
+      },
+      {
+        "GID_0": "BLR",
+        "ISO_3166_alpha_3": "BLR",
+        "Country": "Belarus"
+      },
+      {
+        "GID_0": "GEO",
+        "ISO_3166_alpha_3": "GEO",
+        "Country": "Georgia"
+      },
+      {
+        "GID_0": "MDA",
+        "ISO_3166_alpha_3": "MDA",
+        "Country": "Moldova (the Republic of)"
+      },
+      {
+        "GID_0": "RUS",
+        "ISO_3166_alpha_3": "RUS",
+        "Country": "Russian Federation (the)"
+      },
+      {
+        "GID_0": "UKR",
+        "ISO_3166_alpha_3": "UKR",
+        "Country": "Ukraine"
+      }
+    ],
+    "Central Asia": [
+      {
+        "GID_0": "KAZ",
+        "ISO_3166_alpha_3": "KAZ",
+        "Country": "Kazakhstan"
+      },
+      {
+        "GID_0": "KGZ",
+        "ISO_3166_alpha_3": "KGZ",
+        "Country": "Kyrgyzstan"
+      },
+      {
+        "GID_0": "TJK",
+        "ISO_3166_alpha_3": "TJK",
+        "Country": "Tajikistan"
+      },
+      {
+        "GID_0": "TKM",
+        "ISO_3166_alpha_3": "TKM",
+        "Country": "Turkmenistan"
+      },
+      {
+        "GID_0": "UZB",
+        "ISO_3166_alpha_3": "UZB",
+        "Country": "Uzbekistan"
+      }
+    ]
+  },
+  "Antarctica": {
+    "Antarctica": [
+      {
+        "GID_0": "ATA",
+        "ISO_3166_alpha_3": "ATA",
+        "Country": "Antarctica"
+      }
+    ]
+  }
+}

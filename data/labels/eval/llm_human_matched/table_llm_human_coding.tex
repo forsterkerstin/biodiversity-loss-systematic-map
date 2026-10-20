@@ -1,0 +1,39 @@
+\begin{table}[H]
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{4pt}
+\centering
+\scriptsize
+\begin{tabular}{|>{\raggedright\arraybackslash}p{0.20\linewidth}
+                |>{\raggedright\arraybackslash}p{0.16\linewidth}
+                |>{\centering\arraybackslash}p{0.05\linewidth}
+                |>{\centering\arraybackslash}p{0.11\linewidth}
+                |>{\centering\arraybackslash}p{0.11\linewidth}
+                |>{\centering\arraybackslash}p{0.09\linewidth}
+                |>{\centering\arraybackslash}p{0.09\linewidth}|}
+\hline
+\textbf{Dimension} & \textbf{Label} & \textbf{$n$} & \textbf{Precision (\%)} & \textbf{Recall (\%)} & \textbf{F1 (\%)} & \textbf{$\kappa$} \\
+\hline
+Direct drivers & driver & 100 & 74.14 & 81.08 & 76.36 & 0.72 \\
+\hline
+\multirow{2}{*}{Threats} & threats\_l0 & 86 & 91.57 & 84.35 & 85.94 & 0.83 \\
+ & threats\_l1$^{a}$ & 47 & 84.26 & 84.48 & 82.97 & 0.82 \\
+\hline
+\multirow{3}{*}{Geographic scope} & region & 100 & 86.20 & 87.62 & 86.52 & 0.85 \\
+ & sub-region & 100 & 73.83 & 80.19 & 76.52 & 0.70 \\
+ & country & 100 & 94.95 & 85.05 & 87.58 & 0.86 \\
+\hline
+Ecosystem typology & realm & 100 & 94.82 & 95.00 & 94.52 & 0.91 \\
+\hline
+\multirow{6}{*}{Taxonomy} & kingdom & 100 & 98.62 & 97.09 & 97.43 & 0.86 \\
+ & phylum & 93 & 99.47 & 97.87 & 98.50 & 0.88 \\
+ & class & 89 & 93.09 & 93.48 & 93.02 & 0.64 \\
+ & order & 86 & 96.78 & 96.04 & 96.11 & 0.93 \\
+ & genus & 83 & 91.38 & 91.47 & 91.02 & 0.91 \\
+ & species & 87 & 93.95 & 93.53 & 92.87 & 0.93 \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Aggregate (five dimensions)}} & -- & \textbf{87.48} & \textbf{87.94} & \textbf{86.74} & \textbf{0.82} \\
+\hline
+\end{tabular}
+\caption{\textbf{Agreement between LLM and human coding.} Saved predictions of the final LLM configuration compared with the authors' title-and-abstract annotations of the same records, with the human annotations as comparison labels. The annotations comprise 500 record--dimension assignments (100 per dimension) covering 479 unique articles. Across the five dimensions, the LLM and the human annotations agreed with a macro-averaged weighted precision of 87.48\%, recall of 87.94\%, F1 of 86.74\%, and Cohen's~$\kappa$ of 0.82. Weighted metrics were first averaged within each dimension and then macro-averaged across the five dimensions, including both levels of the IUCN threat classification; Cohen's~$\kappa$ was averaged over the fields for which it is defined. $n$ denotes records valid for scoring and varies by field because records without a human label, and records with unclear or inapplicable labels (e.g., \textit{Unclear}, \textit{Not applicable}), are excluded by the scoring rules. $^{a}$The detailed threat level is generated only when the broad level selects a category with subcategories; 13 records for which the broad level returned \textit{Unclear} or \textit{Other options} have no detailed-level prediction and are excluded.}
+\label{tab:llm_human_coding}
+\end{table}

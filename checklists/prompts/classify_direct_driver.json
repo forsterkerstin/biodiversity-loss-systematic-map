@@ -1,0 +1,32 @@
+{
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "driver_labels",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "results": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "enum": [
+                "Land/sea use change",
+                "Direct Exploitation and Resource Extraction",
+                "Climate Change",
+                "Pollution",
+                "Invasive alien species"
+              ]
+            }
+          }
+        },
+        "required": [
+          "results"
+        ]
+      }
+    }
+  }
+}

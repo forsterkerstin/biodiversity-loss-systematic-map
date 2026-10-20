@@ -1,0 +1,107 @@
+{
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "geo_labels_v3",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "scope": {
+            "type": "string",
+            "enum": [
+              "global",
+              "regional",
+              "country",
+              "subnational_or_site",
+              "unclear"
+            ]
+          },
+          "regions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "All Regions",
+                "Americas",
+                "Asia and the Pacific",
+                "Africa",
+                "Europe and Central Asia",
+                "Antarctica"
+              ]
+            }
+          },
+          "subregions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "Caribbean",
+                "South America",
+                "Mesoamerica",
+                "North America",
+                "South Asia",
+                "Western Asia",
+                "Oceania",
+                "South-East Asia",
+                "North-East Asia",
+                "Southern Africa",
+                "Central Africa",
+                "West Africa",
+                "East Africa and adjacent islands",
+                "North Africa",
+                "Central and Western Europe",
+                "Eastern Europe",
+                "Central Asia"
+              ]
+            }
+          },
+          "countries_iso3": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "locales": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "locale_coordinates": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "locale": {
+                  "type": "string"
+                },
+                "lat": {
+                  "type": "number"
+                },
+                "lon": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "locale",
+                "lat",
+                "lon"
+              ]
+            }
+          }
+        },
+        "required": [
+          "scope",
+          "regions",
+          "subregions",
+          "countries_iso3",
+          "locales",
+          "locale_coordinates"
+        ]
+      }
+    }
+  }
+}

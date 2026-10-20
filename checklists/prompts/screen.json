@@ -1,0 +1,103 @@
+{
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "driver_stage1_compact_v4",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "step1": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "results": {
+                "type": "integer",
+                "enum": [-1, 0, 1]
+              },
+              "biodiversity_types": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "genetic_change",
+                    "species_change",
+                    "community_change",
+                    "ecosystem_change"
+                  ]
+                },
+                "maxItems": 4
+              }
+            },
+            "required": ["results", "biodiversity_types"]
+          },
+          "step2": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "results": {
+                "type": "integer",
+                "enum": [-1, 0, 1]
+              },
+              "direction": {
+                "type": "string",
+                "enum": [
+                  "negative",
+                  "positive",
+                  "mixed",
+                  "unclear",
+                  "none"
+                ]
+              }
+            },
+            "required": ["results", "direction"]
+          },
+          "step3": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "results": {
+                "type": "integer",
+                "enum": [-1, 0, 1]
+              },
+              "drivers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "maxItems": 8
+              }
+            },
+            "required": ["results", "drivers"]
+          },
+          "step4": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "results": {
+                "type": "integer",
+                "enum": [-1, 0, 1]
+              },
+              "linkage": {
+                "type": "string",
+                "enum": [
+                  "direct_primary_evidence",
+                  "assessed",
+                  "modelled",
+                  "projected",
+                  "plausibly_implied",
+                  "other_positive",
+                  "unclear",
+                  "none"
+                ]
+              }
+            },
+            "required": ["results", "linkage"]
+          }
+        },
+        "required": ["step1", "step2", "step3", "step4"]
+      }
+    }
+  }
+}

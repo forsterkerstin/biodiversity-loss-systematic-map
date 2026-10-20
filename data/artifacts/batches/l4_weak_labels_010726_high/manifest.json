@@ -1,0 +1,16 @@
+{
+  "run_name": "l4_weak_labels_010726_high",
+  "created_at": "2026-07-04T21:20:41.777261Z",
+  "batch_size": 10000,
+  "total_documents": 50,
+  "data_dir": "data/artifacts/batches/l4_weak_labels_010726_high/data",
+  "request_dir": "data/artifacts/batches/l4_weak_labels_010726_high/request",
+  "batches": [
+    {
+      "data_path": "data/artifacts/batches/l4_weak_labels_010726_high/data/batch-l4_weak_labels_010726_high-001.jsonl",
+      "request_path": "data/artifacts/batches/l4_weak_labels_010726_high/request/batch-l4_weak_labels_010726_high-001-requests.jsonl",
+      "path": "data/artifacts/batches/l4_weak_labels_010726_high/data/batch-l4_weak_labels_010726_high-001.jsonl",
+      "count": 50
+    }
+  ]
+}

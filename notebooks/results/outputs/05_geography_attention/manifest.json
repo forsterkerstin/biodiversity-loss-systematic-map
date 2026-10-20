@@ -1,0 +1,35 @@
+{
+  "result": "05_geography_attention",
+  "method_details": {
+    "analysis_scope": {
+      "n_publications": 146630,
+      "n_assignments": 165215,
+      "n_countries": 213,
+      "n_regions": 4
+    },
+    "attention": {
+      "grain": "UT x country, region resolved per-country via the IPBES crosswalk",
+      "fractional_weight_formula": "w_i,c = 1 / (number of countries named by publication i); weights sum to one per publication across its named countries",
+      "measures": {
+        "whole_publications": "distinct articles naming the place, unweighted",
+        "fractional_publication_equivalent": "additive fractional measure behind attention_share_pct and the wheel figure"
+      }
+    },
+    "wheel_figure": {
+      "region_order": [
+        "Africa",
+        "Asia and the Pacific",
+        "Americas",
+        "Europe and Central Asia"
+      ],
+      "start_angle_degrees": 90,
+      "low_attention_threshold_pct": 0.1,
+      "highlight_attention_threshold_pct": 1.0
+    }
+  },
+  "artifacts": {
+    "csv/country_attention.csv": "Per-country fractional research-attention share.",
+    "csv/region_attention.csv": "Per-IPBES-region fractional research-attention share.",
+    "figures/geography_attention_hierarchy_reference.pdf": "Region -> country research-attention wheel."
+  }
+}

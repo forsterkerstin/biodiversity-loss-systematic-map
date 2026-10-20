@@ -1,0 +1,113 @@
+{
+  "artifacts": {
+    "screening_exclusion_overlap": "screening_exclusion_overlap.csv",
+    "screening_publications": "screening_publications.parquet"
+  },
+  "consumed_build_cache": {
+    "filename": "eligible_screening_publications.parquet",
+    "recoverability": "rerun notebooks/data_processing/03_screening_analysis_prep.ipynb",
+    "removed_at_utc": "2026-08-16T20:52:49.378182+00:00"
+  },
+  "created_at_utc": "2026-08-16T20:47:12.027596+00:00",
+  "eligible_columns": [
+    "UT",
+    "title",
+    "abstract",
+    "source",
+    "publication_year",
+    "wos_categories",
+    "doi",
+    "s1_r",
+    "s2_r",
+    "s3_r",
+    "s4_r",
+    "s1_bio",
+    "s2_dir",
+    "s3_drivers",
+    "s4_link",
+    "is_eligible"
+  ],
+  "eligible_direction_audit": [
+    {
+      "direction_of_change": "negative",
+      "percent_of_eligible": 41.81781529711714,
+      "records": 253081
+    },
+    {
+      "direction_of_change": "mixed",
+      "percent_of_eligible": 23.34223949477775,
+      "records": 141267
+    },
+    {
+      "direction_of_change": "positive",
+      "percent_of_eligible": 18.61933017073723,
+      "records": 112684
+    },
+    {
+      "direction_of_change": "unclear",
+      "percent_of_eligible": 16.220615037367875,
+      "records": 98167
+    }
+  ],
+  "rows": {
+    "eligible_screening_publications": 605199,
+    "screening_exclusion_overlap": 15,
+    "screening_publications": 2414191
+  },
+  "schema_version": 2,
+  "screening_analysis_columns": [
+    "UT",
+    "publication_year",
+    "source",
+    "is_eligible",
+    "eligibility",
+    "s1_r",
+    "s2_r",
+    "s3_r",
+    "s4_r",
+    "s2_dir"
+  ],
+  "source": {
+    "mtime_ns": 1783583256673725559,
+    "path": "data/screened-partitions/all/screening_all.csv",
+    "size_bytes": 5721795267
+  },
+  "summary": {
+    "complete_ineligible_with_zero_reason": 1808992,
+    "eligibility_label_eligible": 605199,
+    "eligibility_label_not_eligible": 1808992,
+    "eligible_negative": 253081,
+    "eligible_not_negative": 352118,
+    "eligible_records": 605199,
+    "eligible_with_unclear_step": 121707,
+    "not_eligible_records": 1808992,
+    "raw_column_count": 24,
+    "raw_columns": [
+      "UT",
+      "title",
+      "authors",
+      "abstract",
+      "source",
+      "publication_year",
+      "wos_categories",
+      "doi",
+      "custom_id",
+      "model",
+      "created_at",
+      "raw_output",
+      "pred",
+      "s1_r",
+      "s2_r",
+      "s3_r",
+      "s4_r",
+      "s1_bio",
+      "s2_dir",
+      "s3_drivers",
+      "s4_link",
+      "_source_run",
+      "is_eligible",
+      "eligibility"
+    ],
+    "screened_records": 2414191
+  }
+}

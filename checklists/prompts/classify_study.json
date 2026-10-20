@@ -1,0 +1,129 @@
+{
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "biodiversity_study_classification",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "results": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "study_design": {
+                  "type": "string",
+                  "enum": [
+                    "Observational",
+                    "Experimental",
+                    "Modelling",
+                    "Review",
+                    "Unclear"
+                  ]
+                },
+                "methods_data_collection": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "methods_analysis": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "has_comparison": {
+                  "type": "boolean"
+                },
+                "comparison_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "BeforeAfter",
+                      "ControlImpact",
+                      "BACI",
+                      "DifferenceInDifferences",
+                      "InterruptedTimeSeries",
+                      "TimeSeries_Punctuated",
+                      "TimeSeries_ContinuousHighFrequency",
+                      "Matching_PropensityScore",
+                      "SyntheticControl",
+                      "SpatialGradient_NearFar_UpDownstream",
+                      "PresenceAbsence",
+                      "TreatedUntreated",
+                      "Other",
+                      "Unclear"
+                    ]
+                  }
+                },
+                "impact_assessments": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "driver_x": {
+                        "type": "string"
+                      },
+                      "biodiversity_outcomes_y": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "claim_strength": {
+                        "type": "string",
+                        "enum": [
+                          "CausalStrong",
+                          "AssociationModerate",
+                          "DescriptiveWeak",
+                          "Unclear"
+                        ]
+                      },
+                      "evidence_snippets": {
+                        "type": "array",
+                        "minItems": 0,
+                        "maxItems": 3,
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "required": [
+                      "driver_x",
+                      "biodiversity_outcomes_y",
+                      "claim_strength",
+                      "evidence_snippets"
+                    ]
+                  }
+                },
+                "taxa": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "study_design",
+                "methods_data_collection",
+                "methods_analysis",
+                "has_comparison",
+                "comparison_types",
+                "impact_assessments",
+                "taxa"
+              ]
+            }
+          }
+        },
+        "required": [
+          "results"
+        ]
+      }
+    }
+  }
+}

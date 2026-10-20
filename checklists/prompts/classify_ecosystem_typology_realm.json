@@ -1,0 +1,33 @@
+{
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "ecosystem_realm_labels",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "results": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "stop_reason": {
+            "type": "string",
+            "enum": [
+              "stop",
+              "continue"
+            ]
+          }
+        },
+        "required": [
+          "results",
+          "stop_reason"
+        ]
+      }
+    }
+  }
+}

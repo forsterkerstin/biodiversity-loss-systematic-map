@@ -1,0 +1,261 @@
+{
+  "evals": {
+    "labels_dir": "data/labels",
+    "output_dir": "data/labels/eval",
+    "gbif_cache_path": "checklists/mappings/gbif_lookup_cache.pkl"
+  },
+  "orchestrator": {
+    "limit_docs": null,
+    "batch_size": 10000,
+    "model": "gpt-5-nano-2025-08-07",
+    "reasoning": "medium",
+    "submission_mode": "batch",
+    "run_evals": false,
+    "paths": {
+      "mappings_dir": "checklists/mappings",
+      "datasets_dir": "data/artifacts/datasets",
+      "batches_dir": "data/artifacts/batches",
+      "batch_outputs_dir": "data/artifacts/batch_outputs"
+    }
+  },
+  "prompts": {
+    "dir": "checklists/prompts",
+    "keys": {
+      "driver": "classify_direct_driver",
+      "screening": "screen",
+      "geography": "classify_region",
+      "taxa": "classify_taxa",
+      "study": "classify_study",
+      "ecosystems": "classify_ecosystem_typology",
+      "ecosystems_core": "classify_ecosystem_typology_core",
+      "ecosystems_realm": "classify_ecosystem_typology_realm",
+      "ecosystems_biome": "classify_ecosystem_typology_biome",
+      "ecosystems_efg": "classify_ecosystem_typology_efg",
+      "threats": "classify_threats",
+      "threats_core": "classify_threats_core",
+      "threats_l0": "classify_threats",
+      "threats_l1": "classify_threats_l1",
+      "threats_l2": "classify_threats_l2"
+    }
+  },
+  "dataset_config": {
+    "special_keys": {
+      "missing": "__MISSING__",
+      "multi_label": "__MULTI__",
+      "no_kingdom": "__NO_KINGDOM__"
+    },
+    "base_columns": [
+      "Article Title",
+      "Abstract",
+      "DOI",
+      "source",
+      "UT (Unique WOS ID)"
+    ],
+    "unique_id_column": "UT (Unique WOS ID)",
+    "abstract_column": "Abstract",
+    "label_configs": {
+      "l0": {
+        "strat_column": "source"
+      },
+      "l1": {
+        "strat_column": "driver"
+      },
+      "l2": {
+        "strat_column": "threats_l0"
+      },
+      "l3": {
+        "strat_column": "region"
+      },
+      "l4": {
+        "strat_column": "realm"
+      },
+      "l6": {
+        "strat_column": "phylum",
+        "missing_key": "__NO_KINGDOM__",
+        "drop_if_all_missing": [
+          "kingdom",
+          "phylum",
+          "class",
+          "order",
+          "specie"
+        ]
+      }
+    },
+    "sampling": {
+      "n_sample": 100
+    },
+    "merged_corpus": {
+      "key_column": "UT",
+      "chunksize": 250000,
+      "screening": {
+        "path": "data/screened-partitions/all/screening_all.csv",
+        "eligibility_column": "is_eligible",
+        "columns": [
+          "UT",
+          "title",
+          "abstract",
+          "source",
+          "publication_year",
+          "wos_categories",
+          "doi",
+          "s1_r",
+          "s2_r",
+          "s3_r",
+          "s4_r",
+          "s1_bio",
+          "s2_dir",
+          "s3_drivers",
+          "s4_link"
+        ]
+      },
+      "coding_sources": [
+        {
+          "name": "driver",
+          "path": "data/coding-driver/all/driver_all.csv",
+          "columns": [
+            "driver"
+          ]
+        },
+        {
+          "name": "threats_l0",
+          "path": "data/coding-threats_l0/all/threats_l0_all.csv",
+          "columns": [
+            "pred_threat_l0"
+          ]
+        },
+        {
+          "name": "geography",
+          "path": "data/coding-geography/all/geography_all.csv",
+          "columns": [
+            "pred_regions",
+            "pred_subregions",
+            "pred_countries",
+            "locales",
+            "locale_coordinates"
+          ]
+        },
+        {
+          "name": "ecosystems",
+          "path": "data/coding-ecosystems/all/ecosystems_all.csv",
+          "columns": [
+            "realm",
+            "biome"
+          ]
+        },
+        {
+          "name": "study",
+          "path": "data/coding-study/all/study_all.csv",
+          "columns": [
+            "pred_study_design",
+            "pred_methods_data_collection",
+            "pred_methods_analysis",
+            "pred_has_comparison",
+            "pred_comparison_types"
+          ]
+        }
+      ]
+    },
+    "splits": {
+      "ratios": {
+        "train": 60,
+        "dev": 20,
+        "test": 20
+      },
+      "seed": 42,
+      "label_paths": {
+        "l0": "data/labels/l0",
+        "l1": "data/labels/l1",
+        "l2": "data/labels/l2",
+        "l3": "data/labels/l3",
+        "l4": "data/labels/l4",
+        "l6": "data/labels/l6"
+      }
+    },
+    "screening_dataset": {
+      "source": "data/consistency-check-datasets/screening/reference_screening_dataset.xlsx",
+      "sheets": [
+        "Jaureguiberry et al - Import (1",
+        "Keck et al - import (1711)",
+        "Shaw et al - import (418)",
+        "Murphy et al - import (142)",
+        "Ecosystem Change - Import (31)"
+      ],
+      "label_column": "eligbility",
+      "output": "data/labels/l0/L0) Screening.csv",
+      "manual_sample_output_dir": "data/consistency-check-datasets/screening/to-manual-label"
+    },
+    "coding_dataset": {
+      "source": "data/consistency-check-datasets/data-coding/reference_coding_dataset.xlsx",
+      "sheets": [
+        "S1) Benitez lopez et al",
+        "S2) Jaureguiberry et al",
+        "S3) Moullec et al",
+        "S4) Urban et al",
+        "S5) Wright et al",
+        "S6) Lowery et al",
+        "S7) Ridley et al",
+        "S8) Keck et al",
+        "S9) Pulido-Chadid et al"
+      ],
+      "labels": [
+        {
+          "name": "L1) Driver",
+          "extra_cols": [
+            "driver"
+          ],
+          "output": "data/labels/l1/L1) driver set.csv"
+        },
+        {
+          "name": "L2) Threats",
+          "extra_cols": [
+            "threats_l0",
+            "threats_l1"
+          ],
+          "output": "data/labels/l2/L2) threats set.csv"
+        },
+        {
+          "name": "L3) Geography",
+          "extra_cols": [
+            "region",
+            "sub-region",
+            "country"
+          ],
+          "output": "data/labels/l3/L3) geography set.csv"
+        },
+        {
+          "name": "L4) Ecosystems",
+          "extra_cols": [
+            "realm",
+            "biome"
+          ],
+          "output": "data/labels/l4/L4) ecosystem set.csv"
+        },
+        {
+          "name": "L6) Taxa",
+          "extra_cols": [
+            "kingdom",
+            "phylum",
+            "class",
+            "order",
+            "genus",
+            "specie"
+          ],
+          "output": "data/labels/l6/L6) taxa set.csv"
+        }
+      ],
+      "manual_sample_output_dir": "data/consistency-check-datasets/data-coding/to-manual-label"
+    },
+    "gbif": {
+      "source": "data/gbif/curated/gbif_curated.csv",
+      "cache": "checklists/mappings/gbif_lookup_cache.pkl",
+      "chunksize": 200000,
+      "taxonomic_columns": [
+        "kingdom",
+        "phylum",
+        "class",
+        "order",
+        "genus"
+      ]
+    }
+  }
+}

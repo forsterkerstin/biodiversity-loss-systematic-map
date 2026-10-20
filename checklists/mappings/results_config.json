@@ -1,0 +1,507 @@
+{
+  "schema_version": 1,
+  "threat_l0": {
+    "description": "Canonical order, display label, and color for level-0 threat results.",
+    "categories": [
+      {
+        "label": "Residential & Commercial Development",
+        "display_name": "Residential & commercial dev.",
+        "code": "1",
+        "family": "Oranges",
+        "color": "#A96E4C",
+        "stack_sort_color": "#B04611"
+      },
+      {
+        "label": "Agriculture & Aquaculture",
+        "display_name": "Agriculture & aquaculture",
+        "code": "2",
+        "family": "Oranges",
+        "color": "#D9954C",
+        "stack_sort_color": "#ED7E1D"
+      },
+      {
+        "label": "Energy Production & Mining",
+        "display_name": "Energy production & mining",
+        "code": "3",
+        "family": "Oranges",
+        "color": "#E8BC80",
+        "stack_sort_color": "#EEA353"
+      },
+      {
+        "label": "Transportation & Service Corridors",
+        "display_name": "Transport & service corridors",
+        "code": "4",
+        "family": "Oranges",
+        "color": "#F2D7AB",
+        "stack_sort_color": "#F1C183"
+      },
+      {
+        "label": "Biological Resource Use",
+        "display_name": "Biological resource use",
+        "code": "5",
+        "family": "Greens",
+        "color": "#689B78",
+        "stack_sort_color": "#238B49"
+      },
+      {
+        "label": "Human Intrusions & Disturbance",
+        "display_name": "Human intrusions & disturbance",
+        "code": "6",
+        "family": "Greens",
+        "color": "#C1DEC5",
+        "stack_sort_color": "#81CF8C"
+      },
+      {
+        "label": "Invasive & Other Problematic Species, Genes & Diseases",
+        "display_name": "Invasive & problematic species",
+        "code": "8",
+        "family": "Greens",
+        "color": "#8FC89A",
+        "stack_sort_color": "#4ABF67"
+      },
+      {
+        "label": "Natural System Modifications",
+        "display_name": "Natural system modifications",
+        "code": "7",
+        "family": "Blues",
+        "color": "#B9D2DF",
+        "stack_sort_color": "#87B8D9"
+      },
+      {
+        "label": "Pollution",
+        "display_name": "Pollution",
+        "code": "9",
+        "family": "Blues",
+        "color": "#6B95B8",
+        "stack_sort_color": "#1D66AF"
+      },
+      {
+        "label": "Climate Change & Severe Weather",
+        "display_name": "Climate change & severe weather",
+        "code": "11",
+        "family": "Blues",
+        "color": "#0072B2",
+        "stack_sort_color": "#4594D9"
+      },
+      {
+        "label": "Geological Events",
+        "display_name": "Geological events",
+        "code": "10",
+        "family": "Greys",
+        "color": "#D0D0D0",
+        "stack_sort_color": "#8F8F8F"
+      },
+      {
+        "label": "Other Options",
+        "display_name": "Other options",
+        "code": "12",
+        "family": "Greys",
+        "color": "#D9D9D9",
+        "stack_sort_color": "#A8A8A8"
+      },
+      {
+        "label": "Unclear",
+        "display_name": "Unclear",
+        "code": "U",
+        "family": "Greys",
+        "color": "#929292",
+        "stack_sort_color": "#757575"
+      }
+    ],
+    "stack_order": [
+      "Pollution",
+      "Climate Change & Severe Weather",
+      "Natural System Modifications",
+      "Biological Resource Use",
+      "Invasive & Other Problematic Species, Genes & Diseases",
+      "Human Intrusions & Disturbance",
+      "Residential & Commercial Development",
+      "Agriculture & Aquaculture",
+      "Energy Production & Mining",
+      "Transportation & Service Corridors",
+      "Unclear",
+      "Geological Events",
+      "Other Options"
+    ]
+  },
+  "driver_l1": {
+    "description": "Canonical order, display label, and color for IPBES direct-driver results. Colors follow the corresponding Threat-L0 category or color family for cross-figure consistency.",
+    "categories": [
+      {
+        "label": "Land/sea use change",
+        "display_name": "Land/sea-use change",
+        "color": "#D9954C"
+      },
+      {
+        "label": "Direct Exploitation and Resource Extraction",
+        "display_name": "Direct exploitation",
+        "color": "#689B78"
+      },
+      {
+        "label": "Climate Change",
+        "display_name": "Climate change",
+        "color": "#0072B2"
+      },
+      {
+        "label": "Pollution",
+        "display_name": "Pollution",
+        "color": "#6B95B8"
+      },
+      {
+        "label": "Invasive alien species",
+        "display_name": "Invasive alien species",
+        "color": "#8FC89A"
+      }
+    ],
+    "stack_order": [
+      "Land/sea use change",
+      "Direct Exploitation and Resource Extraction",
+      "Climate Change",
+      "Pollution",
+      "Invasive alien species"
+    ]
+  },
+  "world_bank_income": {
+    "description": "Shared World Bank reference data: source paths and canonical display order. Read by the income-composition (02) and geography-attention (05) results.",
+    "world_bank_mapping": "checklists/mappings/ipbes_world_bank_mapping.json",
+    "world_bank_snapshot_curated": "data/world-bank/snapshots/wdi-2026-06-30/curated",
+    "group_order": [
+      "Low income",
+      "Lower middle income",
+      "Upper middle income",
+      "High income"
+    ]
+  },
+  "screening_analysis_prep": {
+    "description": "Canonical full-screening aggregates and eligible screening handoff.",
+    "screening_source": "data/screened-partitions/all/screening_all.csv",
+    "corpus_config": "checklists/mappings/repo_config.json",
+    "chunksize": 250000,
+    "output_directory": "notebooks/data_processing/outputs/03_screening_analysis_prep"
+  },
+  "biodiversity_evidence_prep": {
+    "description": "Core one-row-per-eligible-publication dataset with stable numeric id, external UT, screening, driver, threats, geography, realm, study, and current taxa fields.",
+    "retain_eligible_build_cache": false,
+    "output_directory": "notebooks/data_processing/outputs/04_dataset"
+  },
+  "screening_results": {
+    "description": "Screening-stage summary and exclusion-overlap figure.",
+    "output_directory": "notebooks/results/outputs/00_screening",
+    "figure_filename": "screening_criteria_overlap"
+  },
+  "driver_composition": {
+    "description": "Historical-income threat-composition settings for results notebook 02_income_composition (manuscript Result 2).",
+    "direction": "negative",
+    "primary_start_year": 2000,
+    "primary_end_year": 2025,
+    "historical_classifications_file": "classifications_historical.parquet",
+    "output_directory": "notebooks/results/outputs/02_income_composition",
+    "data_subdirectory": "data",
+    "table_subdirectory": "csv",
+    "figure_subdirectory": "figures",
+    "composition_figure_filename": "income_composition",
+    "classified_assignments_file": "historical_income_publication_country_assignments.parquet",
+    "bootstrap_replicates": 1000,
+    "random_seed": 20260719,
+    "focus_threats": [
+      "Agriculture & Aquaculture",
+      "Biological Resource Use",
+      "Invasive & Other Problematic Species, Genes & Diseases",
+      "Climate Change & Severe Weather",
+      "Pollution",
+      "Natural System Modifications"
+    ],
+    "contrast_plot_excluded_threats": [
+      "Other Options",
+      "Unclear"
+    ]
+  },
+  "driver_realm": {
+    "description": "IPBES direct-driver composition across ecosystem realms for 03_realm_composition (manuscript Result 3).",
+    "direction": "negative",
+    "primary_start_year": 2000,
+    "primary_end_year": 2025,
+    "core_realms": [
+      "Terrestrial",
+      "Freshwater",
+      "Marine"
+    ],
+    "analysis_realms": [
+      "Terrestrial",
+      "Subterranean",
+      "Subterranean-Freshwater",
+      "Subterranean-Marine",
+      "Freshwater-Terrestrial",
+      "Freshwater",
+      "Freshwater-Marine",
+      "Marine",
+      "Marine-Terrestrial",
+      "Marine-Freshwater-Terrestrial"
+    ],
+    "realm_display_names": {
+      "Terrestrial": "Terrestrial",
+      "Subterranean": "Subterranean",
+      "Subterranean-Freshwater": "Subterranean–freshwater",
+      "Subterranean-Marine": "Subterranean–marine",
+      "Freshwater-Terrestrial": "Freshwater–terrestrial",
+      "Freshwater": "Freshwater",
+      "Freshwater-Marine": "Freshwater–marine",
+      "Marine": "Marine",
+      "Marine-Terrestrial": "Marine–terrestrial",
+      "Marine-Freshwater-Terrestrial": "Marine–freshwater–terrestrial"
+    },
+    "realm_short_names": {
+      "Terrestrial": "T",
+      "Subterranean": "S",
+      "Subterranean-Freshwater": "S–F",
+      "Subterranean-Marine": "S–M",
+      "Freshwater-Terrestrial": "F–T",
+      "Freshwater": "F",
+      "Freshwater-Marine": "F–M",
+      "Marine": "M",
+      "Marine-Terrestrial": "M–T",
+      "Marine-Freshwater-Terrestrial": "M–F–T"
+    },
+    "output_directory": "notebooks/results/outputs/03_realm_composition",
+    "figure_subdirectory": "figures",
+    "l1_core_realm_bar_figure_filename": "l1_driver_composition_core_realms",
+    "pollution_nameability_figure_filename": "pollution_plastics_exploitation_trends_core_realms",
+    "table_subdirectory": "csv"
+  },
+  "taxa_analysis_prep": {
+    "description": "Canonical one-row-per-UT taxa handoff shared by all taxa results notebooks.",
+    "taxa_source": "data/coding-taxa/all/taxa_all.parquet",
+    "taxa_lineage_source": "data/coding-taxa/all/taxa_lineages.parquet",
+    "gbif_source": "data/gbif/curated/gbif_curated.csv",
+    "gbif_eml_source": "data/gbif/extracted/eml.xml",
+    "taxa_group_mapping": "checklists/mappings/taxa_broad_groups.json",
+    "corpus_config": "checklists/mappings/repo_config.json",
+    "output_directory": "notebooks/data_processing/outputs/02_taxa_analysis_prep"
+  },
+  "taxonomic_lens": {
+    "description": "Result 04 - taxonomic and geographic mismatch in biodiversity evidence. Manuscript-complete: it computes every value the section reports. Self-contained - it reads no other results key, only two data-processing handoffs (taxa_analysis_prep for taxa, biodiversity_evidence_prep for study countries) and the World Bank snapshot for the IUCN threat benchmark.",
+    "manuscript_section": "Taxonomic attention is skewed against described diversity, and is not correcting",
+    "output_directory": "notebooks/results/outputs/04_taxonomic_lens",
+    "table_subdirectory": "csv",
+    "figure_subdirectory": "figures",
+    "artifact_prefix": "04",
+    "direction": "negative",
+    "primary_start_year": 2000,
+    "primary_end_year": 2025,
+    "bootstrap_replicates": 1000,
+    "random_seed": 20260731,
+    "benchmark_groups": [
+      "Chordates",
+      "Non-chordate animals",
+      "Plants",
+      "Fungi",
+      "Other"
+    ],
+    "unresolved_group": "Unresolved",
+    "combined_figure_filename": "taxonomic_and_geographic_gap",
+    "benchmark_group_stack_order": [
+      "Non-chordate animals",
+      "Fungi",
+      "Other",
+      "Plants",
+      "Chordates"
+    ],
+    "trend_residual_group": "Other",
+    "geography_source": "notebooks/data_processing/outputs/04_dataset/dataset.parquet",
+    "threat_gap_group": "Chordates",
+    "threat_gap_starnes_source": "data/ipbes-species-data/1a_redlist_total_species_ipbes_regions.csv",
+    "hierarchy_exploration": {
+      "description": "Kingdom-Phylum-Class-Order sunburst for Figure taxonomic_hierarchy. Uses the curated extract of the fixed 2023-08-28 GBIF snapshot, records the raw archive metadata for provenance, and retains exact hierarchy paths common to the newer research-match classification and that fixed snapshot.",
+      "gbif_source": "data/gbif/curated/gbif_curated.csv",
+      "gbif_raw_archive_metadata": "data/gbif/extracted/eml.xml",
+      "sunburst": {
+        "description": "Research-attention angular sunburst with independent denominators: research geometry uses the exact Order-aligned publication subset, while described-species percentages use the complete benchmarkable accepted-GBIF base used by the headline figure. Named taxa receive their full fixed-snapshot GBIF counts and Remaining is the exact local complement under each expanded parent. Remaining aggregates are terminal and continue through unused outer rings as unlabeled parent-coloured tints; the combined top-level Other kingdoms remains neutral. The Nature-sized display keeps Orders in the enlarged outer ring but limits the compact paired-percentage hierarchy below it to Kingdom, Phylum, and Class.",
+        "terminal_rank": "order",
+        "gbif_root_group_mapping": {
+          "Animalia": [
+            "Chordates",
+            "Non-chordate animals"
+          ],
+          "Plantae": [
+            "Plants"
+          ],
+          "Fungi": [
+            "Fungi"
+          ],
+          "Other kingdoms": [
+            "Other"
+          ]
+        },
+        "major_kingdoms": [
+          "Animalia",
+          "Plantae",
+          "Fungi"
+        ],
+        "terminal_kingdoms": [
+          "Fungi"
+        ],
+        "phylum_min_within_parent_pct": 2.0,
+        "class_min_within_parent_pct": 2.0,
+        "order_max_children": 6,
+        "order_max_other_within_parent_pct": 5.0,
+        "relaxed_order_expansion_min_class_research_share_pct": 5.0,
+        "order_named_min_global_share_pct": 1.0,
+        "legend_order_min_global_share_pct": 1.0,
+        "legend_show_orders": false,
+        "in_wheel_label_min_angle_deg": 18.0,
+        "class_label_min_angle_deg": 5.0,
+        "order_label_min_angle_deg": 0.0,
+        "extend_terminal_branches": true,
+        "inner_radius": 0.44,
+        "rank_ring_widths": {
+          "kingdom": 0.3,
+          "phylum": 0.34,
+          "class": 0.46,
+          "order": 0.72
+        },
+        "rank_color_lightness": {
+          "phylum": 0.58,
+          "class": 0.7,
+          "order": 0.83
+        },
+        "rank_color_saturation": {
+          "phylum": 0.64,
+          "class": 0.52,
+          "order": 0.4
+        },
+        "figure_filename": "taxonomic_hierarchy"
+      }
+    }
+  },
+  "embedding_map": {
+    "description": "Supplementary Figures S7-S9: UMAP map of the biodiversity-loss articles coloured by ecosystem realm, direct driver and taxonomic class.",
+    "dataset_source": "notebooks/data_processing/outputs/04_dataset/dataset.parquet",
+    "umap_source": "notebooks/data_processing/outputs/04_dataset/umap_coordinates.parquet",
+    "output_directory": "notebooks/results/outputs/06_embedding_map",
+    "table_subdirectory": "csv",
+    "figure_subdirectory": "figures",
+    "direction": "negative",
+    "point_size": 0.5,
+    "alpha": 1.0,
+    "driver_colors": {
+      "Land/sea use change": "#35a936",
+      "Direct Exploitation and Resource Extraction": "#c76528",
+      "Climate Change": "#2698c2",
+      "Pollution": "#6657b8",
+      "Invasive alien species": "#d62478"
+    },
+    "ranked_palette": [
+      "#2f7d44",
+      "#c56527",
+      "#2a91bb",
+      "#6657b8",
+      "#d42a77",
+      "#8b6f47",
+      "#5c8f2b",
+      "#8f4f98",
+      "#247d78",
+      "#b7463c",
+      "#51657d",
+      "#777777"
+    ]
+  },
+  "geography_attention": {
+    "description": "Result 05 - country and region concentration of publication-fractional biodiversity-loss research attention.",
+    "low_attention_threshold_pct": 0.1,
+    "highlight_attention_threshold_pct": 1.0,
+    "output_directory": "notebooks/results/outputs/05_geography_attention",
+    "table_subdirectory": "csv",
+    "figure_subdirectory": "figures",
+    "country_attention_file": "country_attention.csv",
+    "region_attention_file": "region_attention.csv",
+    "reference_figure_filename": "geography_attention_hierarchy_reference",
+    "clockwise_start_angle": 90,
+    "region_order": [
+      "Africa",
+      "Asia and the Pacific",
+      "Americas",
+      "Europe and Central Asia"
+    ],
+    "region_colors": {
+      "Africa": "#D9954C",
+      "Asia and the Pacific": "#6F91C7",
+      "Americas": "#2E7D32",
+      "Europe and Central Asia": "#8C6BB1"
+    }
+  },
+  "temporal_development": {
+    "description": "Shared parameters and figure annotations for 01_evidence_growth (manuscript Result 1).",
+    "output_directory": "notebooks/results/outputs/01_evidence_growth",
+    "threat_order": [
+      "Residential & Commercial Development",
+      "Agriculture & Aquaculture",
+      "Energy Production & Mining",
+      "Transportation & Service Corridors",
+      "Biological Resource Use",
+      "Human Intrusions & Disturbance",
+      "Natural System Modifications",
+      "Invasive & Other Problematic Species, Genes & Diseases",
+      "Pollution",
+      "Geological Events",
+      "Climate Change & Severe Weather",
+      "Other Options",
+      "Unclear"
+    ],
+    "analysis_start_year": 2000,
+    "analysis_end_year": 2025,
+    "policy_events": [
+      {
+        "year": 2002,
+        "description": "First global\nbiodiversity\ntarget (CBD)",
+        "text_y": 4200,
+        "horizontal_alignment": "center",
+        "x_offset": 0.0
+      },
+      {
+        "year": 2005,
+        "description": "Millennium\nEcosystem\nAssessment",
+        "text_y": 6000,
+        "horizontal_alignment": "center",
+        "x_offset": 0.0
+      },
+      {
+        "year": 2010,
+        "description": "Aichi Targets set;\n2010 target missed",
+        "text_y": 8600,
+        "horizontal_alignment": "center",
+        "x_offset": 0.0
+      },
+      {
+        "year": 2012,
+        "description": "IPBES\nestablished",
+        "text_y": 11400,
+        "horizontal_alignment": "center",
+        "x_offset": 0.0
+      },
+      {
+        "year": 2019,
+        "description": "IPBES warns 1M\nspecies at risk",
+        "text_y": 17600,
+        "horizontal_alignment": "right",
+        "x_offset": -0.25
+      },
+      {
+        "year": 2020,
+        "description": "No Aichi Target\nfully met",
+        "text_y": 20200,
+        "horizontal_alignment": "center",
+        "x_offset": 0.0
+      },
+      {
+        "year": 2022,
+        "description": "Kunming-Montreal\nFramework adopted",
+        "text_y": 22400,
+        "horizontal_alignment": "center",
+        "x_offset": 0.0
+      }
+    ],
+    "table_subdirectory": "csv",
+    "figure_subdirectory": "figures",
+    "combined_figure_filename": "combined_time_development"
+  }
+}

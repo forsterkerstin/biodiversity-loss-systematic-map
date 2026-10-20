@@ -1,0 +1,30 @@
+{
+  "result": "01_evidence_growth",
+  "method_details": {
+    "analysis_scope": {
+      "years": "2000-2025 complete publication years",
+      "n_years": 26,
+      "n_publications": 245168
+    },
+    "panel_a": {
+      "grain": "one unique publication (UT) per publication year",
+      "n_publications": 245168,
+      "n_2000": 2530,
+      "n_2025": 20520
+    },
+    "panel_b": {
+      "grain": "UT x publication_year x distinct threat",
+      "n_publications": 245168,
+      "n_publication_threat_assignments": 315636,
+      "n_threat_classes": 12,
+      "fractional_weight_formula": "w_i,t = 1 / k_i, where k_i is the number of distinct threats assigned to publication i; sum_t(w_i,t) = 1",
+      "share_formula": "share_t,y (%) = 100 * sum_i(w_i,t,y) / N_y, where N_y is the number of unique publications in year y"
+    }
+  },
+  "artifacts": {
+    "csv/evidence_audit.csv": "Counts retained at each evidence-selection step, including eligible records, biodiversity-loss records, complete-year coverage, and document-threat assignments.",
+    "csv/annual_publication_counts.csv": "Annual unique biodiversity-loss publication counts for 2000-2025, with cumulative counts and year-on-year growth.",
+    "csv/threat_year_shares.csv": "Annual fractional distribution of publications across broad IUCN threat categories; a publication assigned to k threats contributes 1/k to each.",
+    "figures/combined_time_development.pdf": "Two-panel figure showing annual publication volume and annual fractional threat shares."
+  }
+}

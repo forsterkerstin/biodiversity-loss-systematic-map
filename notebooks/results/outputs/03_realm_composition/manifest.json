@@ -1,0 +1,64 @@
+{
+  "result": "03_realm_composition",
+  "method_details": {
+    "dataset_filters": {
+      "direction": "negative",
+      "year_window": "2000-2025 complete publication years",
+      "n_direction_filtered": 253081,
+      "n_in_window": 245168,
+      "n_outside_window_or_missing_year": 7913,
+      "realm_filter": "Exactly one core realm (Terrestrial, Freshwater, Marine) per publication; Not Applicable, All realms, multi-label realm combinations, and transition/subterranean realms are excluded",
+      "realm_exclusions": {
+        "Excluded realm: Not Applicable": 11858,
+        "Excluded realm: Freshwater-Marine": 8492,
+        "Excluded realm: Marine-Terrestrial": 3195,
+        "Excluded realm: Freshwater-Terrestrial": 2567,
+        "Excluded realm: Subterranean-Freshwater": 1117,
+        "Excluded realm: Subterranean": 1047,
+        "Excluded realm: All realms": 613,
+        "Excluded realm: Marine-Freshwater-Terrestrial": 399,
+        "Multiple realm labels": 314,
+        "Excluded realm: Subterranean-Marine": 36
+      },
+      "driver_filter": "At least one usable IPBES L1 driver label",
+      "n_excluded_no_driver": 0,
+      "n_final_publications": 215530,
+      "realm_supports": {
+        "Terrestrial": 114710,
+        "Freshwater": 64684,
+        "Marine": 36136
+      }
+    },
+    "panel_driver_composition": {
+      "grain": "UT x realm x distinct IPBES L1 driver",
+      "n_publications": 215530,
+      "n_multi_driver_publications": 30839,
+      "n_publication_driver_assignments": 262856,
+      "n_driver_classes": 5,
+      "fractional_weight_formula": "w_i,d = 1 / k_i, where k_i is the number of distinct IPBES L1 drivers assigned to publication i; sum_d(w_i,d) = 1",
+      "share_formula": "share_d,r (%) = 100 * sum_i(w_i,d) / N_r, where N_r is the number of unique publications in realm r"
+    },
+    "panel_pollution_plastics_exploitation_trends": {
+      "scope": "Same direction/year/realm/driver-filtered publications as the driver-composition panel",
+      "pollution_and_exploitation_attention_formula": "share_r,y (%) = 100 * sum_i(w_i,d) / N_r,y for d in {Pollution, Direct Exploitation and Resource Extraction}, same 1/k weighting as the driver-composition panel",
+      "plastics_within_pollution_formula": "share_r,y (%) = 100 * n_plastics_mention / n_pollution_and_text_available (unweighted document count, not fractional)",
+      "plastics_mention_source": "Precomputed at data-processing time (notebooks/data_processing/04_dataset.ipynb, via evidence_corpus_prep.DEFAULT_PLASTICS_PATTERN) from title + abstract text with a case-insensitive regex; persisted as the text_available/plastics_mention columns on dataset.parquet so this notebook never loads abstract text",
+      "figure_smoothing": "Solid lines are a 5-year centered rolling mean of the annual values; faint lines/points show the raw annual share",
+      "exported_endpoint_values": "Raw 2000 and 2025 annual share_pct values as quoted in the manuscript; no trend model is fitted",
+      "outcomes": [
+        "Pollution fractional attention",
+        "Plastics within pollution",
+        "Direct exploitation fractional attention"
+      ]
+    }
+  },
+  "artifacts": {
+    "csv/realm_article_counts.csv": "Unique-publication counts per core realm after all dataset filters.",
+    "csv/realm_exclusion_audit.csv": "Counts of direction/year-filtered publications excluded at the realm-filtering step, by exclusion reason.",
+    "csv/core_realm_driver_composition.csv": "IPBES L1 driver x core-realm fractional composition (%) behind the manuscript figure.",
+    "csv/driver_realm_summary.csv": "Full driver x realm summary: prevalence and fractional share.",
+    "csv/realm_trend_annual.csv": "Annual pollution / plastics-within-pollution / direct-exploitation shares per core realm behind the supplementary figure.",
+    "figures/l1_driver_composition_core_realms.pdf": "Manuscript figure: IPBES L1 driver composition across the three core realms.",
+    "figures/pollution_plastics_exploitation_trends_core_realms.pdf": "Supplementary figure: pollution, plastics-within-pollution, and direct-exploitation attention trends across core realms, 2000-2025."
+  }
+}

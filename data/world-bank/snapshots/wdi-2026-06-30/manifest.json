@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "wdi-2026-06-30",
+  "generated_at": "2026-07-16T15:55:46+00:00",
+  "builder": "data_helpers/build_worldbank_data.py",
+  "ipbes_source": "checklists/mappings/ipbes_regions.json",
+  "mapping_output": "checklists/mappings/ipbes_world_bank_mapping.json",
+  "api_metadata": {
+    "sources": {
+      "page": "1",
+      "pages": "1",
+      "per_page": "1000",
+      "total": "71"
+    },
+    "countries": {
+      "page": 1,
+      "pages": 1,
+      "per_page": "1000",
+      "total": 295
+    },
+    "indicators": {
+      "page": 1,
+      "pages": 2,
+      "per_page": "1000",
+      "total": 1510
+    }
+  },
+  "summary": {
+    "generated_at": "2026-07-16T15:55:46+00:00",
+    "world_bank_api": {
+      "source_count": 71,
+      "data_bearing_source_count": 70,
+      "entity_count": 295,
+      "economy_count": 217,
+      "aggregate_count": 78,
+      "wdi_indicator_count": 1498,
+      "wdi_indicator_api_record_count": 1510,
+      "wdi_indicator_exact_duplicates_removed": 12,
+      "wdi_last_updated": "2026-07-13"
+    },
+    "ipbes": {
+      "record_count": 257,
+      "unique_nonblank_iso3": 249,
+      "blank_iso3_count": 8,
+      "matched_count": 216,
+      "unmatched_count": 41,
+      "match_status_counts": {
+        "exact_iso3": 215,
+        "needs_review": 7,
+        "no_wb_economy": 34,
+        "wb_specific_code": 1
+      },
+      "unmatched_iso3": [
+        "AIA",
+        "ALA",
+        "ATA",
+        "ATF",
+        "BES",
+        "BLM",
+        "BVT",
+        "CCK",
+        "COK",
+        "CXR",
+        "ESH",
+        "FLK",
+        "GGY",
+        "GLP",
+        "GUF",
+        "HMD",
+        "IOT",
+        "JEY",
+        "MSR",
+        "MTQ",
+        "MYT",
+        "NFK",
+        "NIU",
+        "PCN",
+        "REU",
+        "SGS",
+        "SHN",
+        "SJM",
+        "SPM",
+        "TKL",
+        "TWN",
+        "UMI",
+        "VAT",
+        "WLF"
+      ],
+      "review_required": [
+        "United States Minor Outlying Islands (Navassa)",
+        "Clipperton Island",
+        "Hawaii (USA)",
+        "Paracel Islands",
+        "Spratly Islands",
+        "Akrotiri and Dhekelia",
+        "Northern Cyprus"
+      ]
+    },
+    "wdi_observations": {
+      "data_member": "WDICSV.csv",
+      "zip_members": [
+        "WDICSV.csv",
+        "WDICountry.csv",
+        "WDISeries.csv",
+        "WDIcountry-series.csv",
+        "WDIfootnote.csv",
+        "WDIseries-time.csv"
+      ],
+      "source_series_rows": 398468,
+      "non_null_observation_rows": 9011494,
+      "entity_indicator_pairs": 398468,
+      "year_start": 1960,
+      "year_end": 2025,
+      "year_count": 66,
+      "observations_path": "data/world-bank/snapshots/wdi-2026-06-30/curated/observations.parquet",
+      "coverage_path": "data/world-bank/snapshots/wdi-2026-06-30/curated/coverage.parquet",
+      "latest_path": "data/world-bank/snapshots/wdi-2026-06-30/curated/latest_observations.parquet",
+      "auxiliary_members": [
+        {
+          "zip_member": "WDICountry.csv",
+          "artifact": "data/world-bank/snapshots/wdi-2026-06-30/curated/bulk_metadata/wdicountry.parquet",
+          "rows": 265,
+          "columns": [
+            "country_code",
+            "short_name",
+            "table_name",
+            "long_name",
+            "2_alpha_code",
+            "currency_unit",
+            "special_notes",
+            "region",
+            "income_group",
+            "wb_2_code",
+            "national_accounts_base_year",
+            "national_accounts_reference_year",
+            "sna_price_valuation",
+            "lending_category",
+            "other_groups",
+            "system_of_national_accounts",
+            "alternative_conversion_factor",
+            "ppp_survey_year",
+            "balance_of_payments_manual_in_use",
+            "external_debt_reporting_status",
+            "system_of_trade",
+            "government_accounting_concept",
+            "imf_data_dissemination_standard",
+            "latest_population_census",
+            "latest_household_survey",
+            "source_of_most_recent_income_and_expenditure_data",
+            "vital_registration_complete",
+            "latest_agricultural_census",
+            "latest_industrial_data",
+            "latest_trade_data",
+            "latest_water_withdrawal_data"
+          ]
+        },
+        {
+          "zip_member": "WDISeries.csv",
+          "artifact": "data/world-bank/snapshots/wdi-2026-06-30/curated/bulk_metadata/wdiseries.parquet",
+          "rows": 1498,
+          "columns": [
+            "series_code",
+            "topic",
+            "indicator_name",
+            "short_definition",
+            "long_definition",
+            "unit_of_measure",
+            "periodicity",
+            "base_period",
+            "other_notes",
+            "aggregation_method",
+            "limitations_and_exceptions",
+            "notes_from_original_source",
+            "general_comments",
+            "source",
+            "statistical_concept_and_methodology",
+            "development_relevance",
+            "related_source_links",
+            "other_web_links",
+            "related_indicators",
+            "license_type"
+          ]
+        },
+        {
+          "zip_member": "WDIcountry-series.csv",
+          "artifact": "data/world-bank/snapshots/wdi-2026-06-30/curated/bulk_metadata/wdicountry_series.parquet",
+          "rows": 7939,
+          "columns": [
+            "countrycode",
+            "seriescode",
+            "description"
+          ]
+        },
+        {
+          "zip_member": "WDIfootnote.csv",
+          "artifact": "data/world-bank/snapshots/wdi-2026-06-30/curated/bulk_metadata/wdifootnote.parquet",
+          "rows": 848411,
+          "columns": [
+            "countrycode",
+            "seriescode",
+            "year",
+            "description"
+          ]
+        },
+        {
+          "zip_member": "WDIseries-time.csv",
+          "artifact": "data/world-bank/snapshots/wdi-2026-06-30/curated/bulk_metadata/wdiseries_time.parquet",
+          "rows": 143,
+          "columns": [
+            "seriescode",
+            "year",
+            "description"
+          ]
+        }
+      ],
+      "ipbes_latest_rows": 248534,
+      "bulk_indicator_count": 1498,
+      "api_registry_indicator_count": 1498,
+      "api_indicators_absent_from_bulk": [],
+      "bulk_indicators_absent_from_api": [],
+      "zero_value_series_rows": 106455
+    },
+    "downloads": [
+      {
+        "url": "https://datacatalogfiles.worldbank.org/ddh-published/0037712/DR0095333/CLASS_2026_07_01.xlsx",
+        "path": "data/world-bank/snapshots/wdi-2026-06-30/raw/CLASS_2026_07_01.xlsx",
+        "size_bytes": 74378,
+        "sha256": "2896f7c57b92835b00acd114c03dfd75bf84208e931b446b3f1b15f412bcb969",
+        "reused": true
+      },
+      {
+        "url": "https://datacatalogfiles.worldbank.org/ddh-published/0037712/DR0095347/CLASS_hist_2026_07_01.xlsx",
+        "path": "data/world-bank/snapshots/wdi-2026-06-30/raw/CLASS_hist_2026_07_01.xlsx",
+        "size_bytes": 261584,
+        "sha256": "7dceb445b671da73a33268a1c6b81a1afca36d847453c0e3654a9d2f3c46989e",
+        "reused": true
+      },
+      {
+        "url": "https://datacatalogfiles.worldbank.org/ddh-published/0037712/DR0095337/WDIrevisions_26-07.xlsx",
+        "path": "data/world-bank/snapshots/wdi-2026-06-30/raw/WDIrevisions_26-07.xlsx",
+        "size_bytes": 368319,
+        "sha256": "f04cbb59815b17bcf3b8b1ef21e4e36e7149430b59a20794822113e41100032f",
+        "reused": true
+      },
+      {
+        "url": "https://datacatalogfiles.worldbank.org/ddh-published/0037712/DR0095335/WDI_CSV_2026_06_30.zip",
+        "path": "data/world-bank/snapshots/wdi-2026-06-30/raw/WDI_CSV_2026_06_30.zip",
+        "size_bytes": 283184814,
+        "sha256": "95cdffd62f59c40df7bb70d756a80a31f889d13626b09d553c729dbb6bbcad7e",
+        "reused": true
+      }
+    ]
+  },
+  "validation": {
+    "status": "passed",
+    "checked_at": "2026-07-16T15:55:52+00:00",
+    "checks": {
+      "crosswalk_rows": 257,
+      "crosswalk_unique_record_ids": true,
+      "entity_rows": 295,
+      "entity_keys_unique": true,
+      "indicator_rows": 1498,
+      "indicator_keys_unique": true,
+      "current_classification_rows": 265,
+      "historical_classification_rows": 8502,
+      "historical_fy_start": 1989,
+      "historical_fy_end": 2027,
+      "observation_rows": 9011494,
+      "coverage_rows": 398468,
+      "coverage_keys_unique": true,
+      "coverage_arithmetic_valid": true,
+      "missing_cells": 17287394,
+      "non_null_cells": 9011494,
+      "latest_observation_rows": 292013,
+      "latest_keys_unique": true,
+      "latest_years_in_range": true,
+      "bulk_api_indicator_sets_equal": true,
+      "public_mapping_records": 257,
+      "public_mapping_indicator_catalog": 1498,
+      "public_mapping_nested_indicator_values": 248534
+    }
+  },
+  "artifacts": [
+    "curated/bulk_metadata/wdicountry.parquet",
+    "curated/bulk_metadata/wdicountry_series.parquet",
+    "curated/bulk_metadata/wdifootnote.parquet",
+    "curated/bulk_metadata/wdiseries.parquet",
+    "curated/bulk_metadata/wdiseries_time.parquet",
+    "curated/classification_group_composition.parquet",
+    "curated/classification_historical_counts.parquet",
+    "curated/classifications_current.parquet",
+    "curated/classifications_historical.parquet",
+    "curated/coverage.parquet",
+    "curated/entities.parquet",
+    "curated/indicators.parquet",
+    "curated/ipbes_wdi_latest.parquet",
+    "curated/ipbes_world_bank_crosswalk.parquet",
+    "curated/latest_observations.parquet",
+    "curated/observations.parquet",
+    "curated/sources.parquet",
+    "manifest.json",
+    "raw/CLASS_2026_07_01.xlsx",
+    "raw/CLASS_hist_2026_07_01.xlsx",
+    "raw/WDI_CSV_2026_06_30.zip",
+    "raw/WDIrevisions_26-07.xlsx",
+    "raw/api/countries.json",
+    "raw/api/sources.json",
+    "raw/api/wdi_indicators.json",
+    "reports/collection_notes.md",
+    "reports/coverage_summary.json",
+    "reports/current_classification_source_notes.txt",
+    "reports/historical_classification_source_notes.txt",
+    "reports/ipbes_unmatched.csv",
+    "reports/ipbes_world_bank_crosswalk.csv",
+    "reports/validation.json"
+  ]
+}

@@ -1,0 +1,42 @@
+/data/*
+!/data/taxa-clipart/
+!/data/taxa-clipart/**
+!/data/ipbes-polygons/
+!/data/ipbes-polygons/**
+!/data/ipbes-species-data/
+!/data/ipbes-species-data/**
+!/data/world-bank/
+!/data/world-bank/**
+!/data/README.md
+!/data/labels/
+!/data/labels/**
+!/data/labels/eval/
+!/data/labels/eval/**
+!/data/consistency-check-datasets/
+!/data/consistency-check-datasets/**
+!/data/artifacts/
+!/data/artifacts/**
+# Full-corpus runs (run names in checklists/mappings/run_names.json) are not committed.
+/data/artifacts/batches/partition*/
+/data/artifacts/batch_outputs/partition*/
+/data/artifacts/datasets/partition*-dataset.json
+/data/artifacts/batches/coding_*/
+/data/artifacts/batch_outputs/coding_*/
+/data/artifacts/datasets/coding_*-dataset.json
+# GBIF downloads and extracts are rebuilt locally (data/gbif/ is already covered by /data/*).
+/data/artifacts/gbif/
+
+# Local environments and secrets.
+/venv
+/.venv/
+.env
+
+# Repository-wide generated files (keep last so exceptions cannot re-include them).
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+*.zip
+
+# Abstract sidecar of the integrated dataset (Web of Science text; not distributed).
+/notebooks/data_processing/outputs/04_dataset/dataset_abstracts.parquet

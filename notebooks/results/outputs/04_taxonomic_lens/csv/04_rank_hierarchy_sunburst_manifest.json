@@ -1,0 +1,391 @@
+{
+  "aligned_gbif_species_used_for_display_selection": 2199000,
+  "analysis": "research-attention taxonomic sunburst (Figure taxonomic_hierarchy)",
+  "angular_encoding": "article-balanced research attention",
+  "comparison_contract": "exact Order-aligned research geometry with an independent complete benchmarkable accepted-GBIF denominator",
+  "comparison_gbif_species": 2607214,
+  "comparison_publications": 113342,
+  "described_species_encoding": "paired percentage through Class in the compact hierarchy, using the complete benchmarkable accepted-GBIF base; complete Order values remain in the exported table",
+  "figures": [
+    "04_taxonomic_hierarchy.pdf"
+  ],
+  "in_wheel_class_labelled_taxa": [
+    "Amphibia",
+    "Malacostraca",
+    "Bivalvia",
+    "Anthozoa",
+    "Pinopsida"
+  ],
+  "in_wheel_clipart_mapping": {
+    "Animalia": "animal_cat",
+    "Arthropoda": "bee_honeybee",
+    "Aves": "bird_common_nighthawk",
+    "Chordata": "fish_carp",
+    "Insecta": "butterfly_monarch",
+    "Liliopsida": "palm_sabal",
+    "Magnoliopsida": "flower_sunflower",
+    "Mammalia": "mammal_wolf",
+    "Plantae": "plant_arabidopsis",
+    "Poales": "rice_oryza",
+    "Tracheophyta": "tree_oak"
+  },
+  "in_wheel_labelled_taxa": [
+    "Animalia",
+    "Plantae",
+    "Chordata",
+    "Arthropoda",
+    "Tracheophyta",
+    "Mammalia",
+    "Aves",
+    "Insecta",
+    "Magnoliopsida",
+    "Liliopsida",
+    "Poales"
+  ],
+  "in_wheel_order_clipart_mapping": {
+    "Anura": "frog_common",
+    "Artiodactyla": "mammal_reindeer",
+    "Carnivora": "mammal_brown_bear",
+    "Decapoda": "crab_green",
+    "Fabales": "pea_garden",
+    "Pinales": "tree_stone_pine",
+    "Primates": "primate_macaque",
+    "Rodentia": "mammal_mouse"
+  },
+  "in_wheel_order_icon_taxa": [
+    "Rodentia",
+    "Primates",
+    "Artiodactyla",
+    "Carnivora",
+    "Anura",
+    "Decapoda",
+    "Fabales",
+    "Pinales"
+  ],
+  "in_wheel_order_labelled_taxa": [
+    "Rodentia",
+    "Primates",
+    "Artiodactyla",
+    "Carnivora",
+    "Cetacea",
+    "Passeriformes",
+    "Anura",
+    "Hymenoptera",
+    "Lepidoptera",
+    "Diptera",
+    "Coleoptera",
+    "Decapoda",
+    "Diplostraca",
+    "Scleractinia",
+    "Rhabditida",
+    "Fabales",
+    "Fagales",
+    "Asterales",
+    "Solanales",
+    "Caryophyllales",
+    "Malpighiales",
+    "Lamiales",
+    "Rosales",
+    "Myrtales",
+    "Alismatales",
+    "Pinales"
+  ],
+  "legend_terminal_rank": "class",
+  "n_exact_common_order_paths": 723,
+  "order_remainder_encoding": "parent-coloured without hatching; combines every non-displayed Order and species lacking Order under the expanded Class",
+  "rank_path": [
+    "kingdom",
+    "phylum",
+    "class",
+    "order"
+  ],
+  "remainder_contract": "display-only local complement: full parent GBIF count minus individually displayed full-GBIF child counts; actual assignments are exported",
+  "selection": {
+    "class_label_min_angle_deg": 5.0,
+    "class_min_within_parent_pct": 2.0,
+    "description": "Research-attention angular sunburst with independent denominators: research geometry uses the exact Order-aligned publication subset, while described-species percentages use the complete benchmarkable accepted-GBIF base used by the headline figure. Named taxa receive their full fixed-snapshot GBIF counts and Remaining is the exact local complement under each expanded parent. Remaining aggregates are terminal and continue through unused outer rings as unlabeled parent-coloured tints; the combined top-level Other kingdoms remains neutral. The Nature-sized display keeps Orders in the enlarged outer ring but limits the compact paired-percentage hierarchy below it to Kingdom, Phylum, and Class.",
+    "extend_terminal_branches": true,
+    "figure_filename": "taxonomic_hierarchy",
+    "gbif_root_group_mapping": {
+      "Animalia": [
+        "Chordates",
+        "Non-chordate animals"
+      ],
+      "Fungi": [
+        "Fungi"
+      ],
+      "Other kingdoms": [
+        "Other"
+      ],
+      "Plantae": [
+        "Plants"
+      ]
+    },
+    "in_wheel_label_min_angle_deg": 18.0,
+    "inner_radius": 0.44,
+    "legend_order_min_global_share_pct": 1.0,
+    "legend_show_orders": false,
+    "major_kingdoms": [
+      "Animalia",
+      "Plantae",
+      "Fungi"
+    ],
+    "order_label_min_angle_deg": 0.0,
+    "order_max_children": 6,
+    "order_max_other_within_parent_pct": 5.0,
+    "order_named_min_global_share_pct": 1.0,
+    "phylum_min_within_parent_pct": 2.0,
+    "rank_color_lightness": {
+      "class": 0.7,
+      "order": 0.83,
+      "phylum": 0.58
+    },
+    "rank_color_saturation": {
+      "class": 0.52,
+      "order": 0.4,
+      "phylum": 0.64
+    },
+    "rank_ring_widths": {
+      "class": 0.46,
+      "kingdom": 0.3,
+      "order": 0.72,
+      "phylum": 0.34
+    },
+    "relaxed_order_expansion_min_class_research_share_pct": 5.0,
+    "terminal_kingdoms": [
+      "Fungi"
+    ],
+    "terminal_rank": "order"
+  },
+  "tables": [
+    "04_rank_hierarchy_order_comparison.csv",
+    "04_rank_hierarchy_full_gbif_counts.csv",
+    "04_rank_hierarchy_gbif_display_assignments.csv",
+    "04_rank_hierarchy_sunburst_nodes.csv",
+    "04_rank_hierarchy_sunburst_audit.csv"
+  ],
+  "terminal_continuations": [
+    {
+      "filled_rank": "phylum",
+      "plot_color": "#d8914f",
+      "source_rank": "kingdom",
+      "taxon": "Fungi"
+    },
+    {
+      "filled_rank": "class",
+      "plot_color": "#dab18b",
+      "source_rank": "kingdom",
+      "taxon": "Fungi"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#e5d3c2",
+      "source_rank": "kingdom",
+      "taxon": "Fungi"
+    },
+    {
+      "filled_rank": "phylum",
+      "plot_color": "#949494",
+      "source_rank": "kingdom",
+      "taxon": "Other kingdoms"
+    },
+    {
+      "filled_rank": "class",
+      "plot_color": "#b2b2b2",
+      "source_rank": "kingdom",
+      "taxon": "Other kingdoms"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#d4d4d4",
+      "source_rank": "kingdom",
+      "taxon": "Other kingdoms"
+    },
+    {
+      "filled_rank": "class",
+      "plot_color": "#8b8fda",
+      "source_rank": "phylum",
+      "taxon": "Remaining Animalia phyla"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2c4e5",
+      "source_rank": "phylum",
+      "taxon": "Remaining Animalia phyla"
+    },
+    {
+      "filled_rank": "class",
+      "plot_color": "#8bdab6",
+      "source_rank": "phylum",
+      "taxon": "Remaining Plantae phyla"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2e5d5",
+      "source_rank": "phylum",
+      "taxon": "Remaining Plantae phyla"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2d7e5",
+      "source_rank": "class",
+      "taxon": "Elasmobranchii"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2d4e5",
+      "source_rank": "class",
+      "taxon": "Ascidiacea"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2d2e5",
+      "source_rank": "class",
+      "taxon": "Remaining Chordata classes"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2d2e5",
+      "source_rank": "class",
+      "taxon": "Arachnida"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2cfe5",
+      "source_rank": "class",
+      "taxon": "Remaining Arthropoda classes"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2d6e5",
+      "source_rank": "class",
+      "taxon": "Bivalvia"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2d2e5",
+      "source_rank": "class",
+      "taxon": "Gastropoda"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2cfe5",
+      "source_rank": "class",
+      "taxon": "Cephalopoda"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2cbe5",
+      "source_rank": "class",
+      "taxon": "Remaining Mollusca classes"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2d0e5",
+      "source_rank": "class",
+      "taxon": "Hydrozoa"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2cde5",
+      "source_rank": "class",
+      "taxon": "Scyphozoa"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2cae5",
+      "source_rank": "class",
+      "taxon": "Myxozoa"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2c8e5",
+      "source_rank": "class",
+      "taxon": "Remaining Cnidaria classes"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2cee5",
+      "source_rank": "class",
+      "taxon": "Clitellata"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2c8e5",
+      "source_rank": "class",
+      "taxon": "Polychaeta"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2c3e5",
+      "source_rank": "class",
+      "taxon": "Remaining Annelida classes"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2c2e5",
+      "source_rank": "class",
+      "taxon": "Remaining Nematoda classes"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2e5c5",
+      "source_rank": "class",
+      "taxon": "Polypodiopsida"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2e5c7",
+      "source_rank": "class",
+      "taxon": "Remaining Tracheophyta classes"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2e5c4",
+      "source_rank": "class",
+      "taxon": "Chlorophyceae"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2e5c8",
+      "source_rank": "class",
+      "taxon": "Trebouxiophyceae"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2e5cc",
+      "source_rank": "class",
+      "taxon": "Ulvophyceae"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2e5cf",
+      "source_rank": "class",
+      "taxon": "Remaining Chlorophyta classes"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2e5cb",
+      "source_rank": "class",
+      "taxon": "Bryopsida"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2e5cf",
+      "source_rank": "class",
+      "taxon": "Sphagnopsida"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2e5d2",
+      "source_rank": "class",
+      "taxon": "Polytrichopsida"
+    },
+    {
+      "filled_rank": "order",
+      "plot_color": "#c2e5d6",
+      "source_rank": "class",
+      "taxon": "Remaining Bryophyta classes"
+    }
+  ]
+}

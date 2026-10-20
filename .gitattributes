@@ -1,0 +1,18 @@
+# Store data and document formats in Git LFS.
+*.parquet filter=lfs diff=lfs merge=lfs -text
+*.csv     filter=lfs diff=lfs merge=lfs -text
+*.pdf     filter=lfs diff=lfs merge=lfs -text
+*.txt     filter=lfs diff=lfs merge=lfs -text
+*.xlsx    filter=lfs diff=lfs merge=lfs -text
+*.pkl     filter=lfs diff=lfs merge=lfs -text
+*.shp     filter=lfs diff=lfs merge=lfs -text
+*.shx     filter=lfs diff=lfs merge=lfs -text
+*.dbf     filter=lfs diff=lfs merge=lfs -text
+
+# Keep the saved evaluation runs in plain Git.
+data/artifacts/**   !filter !diff !merge !text
+
+# Keep the environment specification in plain Git.
+requirements.txt    !filter !diff !merge text
+
+# ZIP files intentionally have no LFS rule (and are ignored by .gitignore).

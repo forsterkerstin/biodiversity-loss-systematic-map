@@ -1,6 +1,6 @@
-# Biodiversity loss research map
+# biodiversity-loss-systematic-map
 
-Code and data for *Uneven research attention to biodiversity loss revealed by large language models* (Mohiuddin, Forster & Feuerriegel). An LLM pipeline screened 2.4 million Web of Science records for evidence of biodiversity change and coded the 605,199 eligible records, 253,081 of which report biodiversity loss, by direct driver, threat, geography, ecosystem and taxon. The coded map is available on OSF at [osf.io/xg8yq](https://osf.io/xg8yq/overview); the methods follow the [registered protocol](https://doi.org/10.57808/proceed.2026.31).
+Code and data for *Uneven research attention to biodiversity loss revealed by large language models* (Mohiuddin, Forster & Feuerriegel). An LLM pipeline screened 2.4 million Web of Science records for evidence of biodiversity change and coded the 605,199 eligible records, 253,081 of which report biodiversity loss, by geography, ecosystems, taxonomy, direct drivers, and threats. The coded map is available on OSF at [osf.io/xg8yq](https://osf.io/xg8yq/overview); the methods follow the [registered protocol](https://doi.org/10.57808/proceed.2026.31).
 
 ## Contents
 

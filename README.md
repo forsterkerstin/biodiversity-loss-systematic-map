@@ -17,7 +17,7 @@ data/                    reference labels, evaluation runs, external reference d
 
 ## Installation
 
-Requires Python 3.12 and [Git LFS](https://git-lfs.com) (data, about 3 GB).
+Requires Python 3.12 and [Git LFS](https://git-lfs.com) (data, about 1.3 GB).
 
 ```bash
 git clone https://github.com/forsterkerstin/biodiversity-loss-systematic-map.git
